@@ -16,8 +16,11 @@
 <meta property="og:site_name" content="Ned Lee&#39;s bolg">
 <meta property="og:description" content="[TOC] 一、Spring框架概述1.1 什么是Spring Spring是一个开源框架，Spring是于2003 年兴起的一个轻量级的Java 开发框架，由Rod Johnson 在其著作Expert One-On-One J2EE Development and Design中阐述的部分理念和原型衍生而来。它是为了解决企业应用开发的复杂性而创建的。框架的主要优势之一就是其分层架构，分层架构允">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-11-28T07:35:15.248Z">
+<meta property="og:image" content="http:&#x2F;&#x2F;q1o3t6lvp.bkt.clouddn.com&#x2F;image&#x2F;jpg20191128195309.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;q1o3t6lvp.bkt.clouddn.com&#x2F;image&#x2F;jpg%E6%A0%B8%E5%BF%83api.png">
+<meta property="og:updated_time" content="2019-11-28T13:55:34.366Z">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http:&#x2F;&#x2F;q1o3t6lvp.bkt.clouddn.com&#x2F;image&#x2F;jpg20191128195309.png">
   
     <link rel="alternative" href="/atom.xml" title="Ned Lee&#39;s bolg" type="application/atom+xml">
   
@@ -177,9 +180,9 @@
 <h2 id="一、Spring框架概述"><a href="#一、Spring框架概述" class="headerlink" title="一、Spring框架概述"></a>一、Spring框架概述</h2><h3 id="1-1-什么是Spring"><a href="#1-1-什么是Spring" class="headerlink" title="1.1 什么是Spring"></a>1.1 什么是Spring</h3><ul>
 <li><p>Spring是一个开源框架，Spring是于2003 年兴起的一个轻量级的Java 开发框架，由Rod Johnson 在其著作Expert One-On-One J2EE Development and Design中阐述的部分理念和原型衍生而来。它是为了解决企业应用开发的复杂性而创建的。框架的主要优势之一就是其分层架构，分层架构允许使用者选择使用哪一个组件，同时为 J2EE 应用程序开发提供集成的框架。Spring使用基本的JavaBean来完成以前只可能由EJB完成的事情。然而，Spring的用途不仅限于服务器端的开发。从简单性、可测试性和松耦合的角度而言，任何Java应用都可以从Spring中受益。Spring的核心是控制反转（IoC）和面向切面（AOP）。简单来说，Spring是一个<strong>分层</strong>的JavaSE/EE <span style="color:red">full-stack(一站式) </span><strong>轻量级</strong>开源框架。</p>
 </li>
-<li><p>轻量级指的是与EJB对比，依赖资源少，销毁的资源少 </p>
+<li><p><strong>轻量级</strong>指的是与EJB对比，依赖资源少，销毁的资源少 </p>
 </li>
-<li><p>分层指的是一站式，每一个层都提供的解决方案</p>
+<li><p><strong>分层</strong>指的是一站式，每一个层都提供的解决方案</p>
 </li>
 <li><ul>
 <li>web层：struts，spring-MVC</li>
@@ -261,6 +264,7 @@
 <h2 id="二、入门之IoC-掌握）"><a href="#二、入门之IoC-掌握）" class="headerlink" title="二、入门之IoC(掌握）"></a>二、入门之IoC(掌握）</h2><blockquote>
 <p>​        准备工作，基于MyEclipse，所以需导入jar包，jar包包括 4个核心（beans、core、context、expression） + 1个依赖（commons-loggins…jar）  </p>
 </blockquote>
+<p><img src="http://q1o3t6lvp.bkt.clouddn.com/image/jpg20191128195309.png" alt="没有找到"></p>
 <h3 id="2-1-目标类"><a href="#2-1-目标类" class="headerlink" title="2.1 目标类"></a>2.1 目标类</h3><ul>
 <li>提供UserService接口和实现类</li>
 <li>获得UserService实现类的实例</li>
@@ -292,7 +296,32 @@
 
 <h4 id="第三步：测试-1"><a href="#第三步：测试-1" class="headerlink" title="第三步：测试"></a>第三步：测试</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">TestDI</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">	<span class="meta">@Test</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">test01</span><span class="params">()</span></span>&#123;</span><br><span class="line">		</span><br><span class="line">		<span class="comment">//从spring容器获得</span></span><br><span class="line">				String xmlPath = <span class="string">"com/springlearning/b_di/beans.xml"</span>;</span><br><span class="line"></span><br><span class="line">				ApplicationContext applicationContext = <span class="keyword">new</span> ClassPathXmlApplicationContext(xmlPath);</span><br><span class="line">				BookService bookService = (BookService) applicationContext.getBean(<span class="string">"bookServiceId"</span>);</span><br><span class="line">				</span><br><span class="line">				bookService.addBook();</span><br><span class="line"></span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">		</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<h2 id="四、MyEclipse-schema-xml-提示"><a href="#四、MyEclipse-schema-xml-提示" class="headerlink" title="四、MyEclipse schema xml 提示"></a>四、MyEclipse schema xml 提示</h2>
+<h2 id="四、核心API"><a href="#四、核心API" class="headerlink" title="四、核心API"></a>四、核心API</h2><ul>
+<li>API整体了解，之后不使用，在学习过程需要</li>
+</ul>
+<p><img src="http://q1o3t6lvp.bkt.clouddn.com/image/jpg%E6%A0%B8%E5%BF%83api.png" alt="无法显示"></p>
+<ul>
+<li>BeanFactory ：这是一个工厂，用于生成任意bean(采取延迟加载，第一次getBean时才会初始化Bean)</li>
+<li>ApplicationContext：是BeanFactory的子接口，功能更强大。（国际化处理、事件传递、Bean自动装配、各种不同应用层的Context实现）。当配置文件被加载，就进行对象实例化  </li>
+</ul>
+<p><span style="color:red">         <strong>ClassPathXmlApplicationContext</strong>   </span>用于加载classpath（类路径、src）下的xml</p>
+<p>​                             加载xml运行时位置 –&gt; /WEB-INF/classes/…xml  </p>
+<p><span style="color:red">         <strong>FileSystemXmlApplicationContext</strong>   </span>用于加载指定盘符下的xml  </p>
+<p>​                            加载xml运行时位置 –&gt; /WEB-INF/…xml        </p>
+<p>​                通过java web ServletContext.getRealPath() 获得具体盘符</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Test</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">test02</span><span class="params">()</span></span>&#123;</span><br><span class="line">		<span class="comment">//使用BeanFactory  --第一次调用getBean实例化</span></span><br><span class="line">		String xmlPath = <span class="string">"com/springlearning/b_di/beans.xml"</span>;</span><br><span class="line">		</span><br><span class="line">		BeanFactory beanFactory = <span class="keyword">new</span> XmlBeanFactory(<span class="keyword">new</span> ClassPathResource(xmlPath));</span><br><span class="line">		</span><br><span class="line">		BookService bookService = (BookService) beanFactory.getBean(<span class="string">"bookServiceId"</span>);<span class="comment">//第一次调用getBean时进行对象实例化</span></span><br><span class="line">		</span><br><span class="line">		bookService.addBook();</span><br><span class="line">		</span><br><span class="line">	&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="五、装配Bean基于XML"><a href="#五、装配Bean基于XML" class="headerlink" title="五、装配Bean基于XML"></a>五、装配Bean基于XML</h2><h3 id="5-1-实例化方式"><a href="#5-1-实例化方式" class="headerlink" title="5.1 实例化方式"></a>5.1 实例化方式</h3><ul>
+<li>三种bean实例化方式：<strong>默认构造</strong>、<strong>静态工厂</strong>、<strong>实例工厂</strong></li>
+</ul>
+<h4 id="5-1-1默认构造"><a href="#5-1-1默认构造" class="headerlink" title="5.1.1默认构造"></a>5.1.1默认构造</h4><p>​       <bean id class> 必须提供默认构造</bean></p>
+<h4 id="5-1-2-静态工厂"><a href="#5-1-2-静态工厂" class="headerlink" title="5.1.2 静态工厂"></a>5.1.2 静态工厂</h4><ul>
+<li><p>常用与spring整合其他框架（或者工具)</p>
+</li>
+<li><p>静态工厂指用于生成实例对象，所有的方法必须是static</p>
+<bean id class="工厂全限定类名" factory-method="静态方法">  </bean></li>
+</ul>
+
       
 
       
@@ -540,11 +569,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color3">随笔</a>
+                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color2">Spring</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color2">Spring</a>
+                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color3">随笔</a>
               </li>
             
             <div class="clearfix"></div>
