@@ -18,7 +18,8 @@
 <meta property="og:locale" content="en">
 <meta property="og:image" content="http:&#x2F;&#x2F;q1o3t6lvp.bkt.clouddn.com&#x2F;image&#x2F;jpg20191128195309.png">
 <meta property="og:image" content="http:&#x2F;&#x2F;q1o3t6lvp.bkt.clouddn.com&#x2F;image&#x2F;jpg%E6%A0%B8%E5%BF%83api.png">
-<meta property="og:updated_time" content="2019-11-28T14:09:28.566Z">
+<meta property="og:image" content="http:&#x2F;&#x2F;q1o3t6lvp.bkt.clouddn.com&#x2F;2019-11-29_14-34-30%E6%88%AA%E5%B1%8F.jpg">
+<meta property="og:updated_time" content="2019-11-29T06:37:55.472Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http:&#x2F;&#x2F;q1o3t6lvp.bkt.clouddn.com&#x2F;image&#x2F;jpg20191128195309.png">
   
@@ -333,7 +334,58 @@
 
 <h5 id="5-1-3-2-Spring配置"><a href="#5-1-3-2-Spring配置" class="headerlink" title="5.1.3.2 Spring配置"></a>5.1.3.2 Spring配置</h5><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 创建工厂实例 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">bean</span> <span class="attr">id</span>=<span class="string">"myBeanFactoryId"</span> <span class="attr">class</span>=<span class="string">"com.springlearning.c_inject.c_factory.MyBeanFactory"</span>&gt;</span><span class="tag">&lt;/<span class="name">bean</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!-- 获得userservice </span></span><br><span class="line"><span class="comment">	* factory-bean 确定工厂实例</span></span><br><span class="line"><span class="comment">	* factory-method 确定普通方法</span></span><br><span class="line"><span class="comment">--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">bean</span> <span class="attr">id</span>=<span class="string">"userServiceId"</span> <span class="attr">factory-bean</span>=<span class="string">"myBeanFactoryId"</span> <span class="attr">factory-method</span>=<span class="string">"createService"</span>&gt;</span><span class="tag">&lt;/<span class="name">bean</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
-
+<h5 id="5-2-Bean的种类"><a href="#5-2-Bean的种类" class="headerlink" title="5.2 Bean的种类"></a>5.2 Bean的种类</h5><p><strong>第一种：</strong></p>
+<p>普通bean：之前操作的都是普通bean。<code>&lt;bean id=&quot;&quot; class=&quot;A&quot;&gt;</code>，spring直接创建A实例，并返回</p>
+<p><strong>第二种：</strong></p>
+<p>FactoryBean：是一个特殊的bean，具有工厂生成对象能力，只能生成特定的对象。</p>
+<p>​    bean必须使用 FactoryBean接口，此接口提供方法 getObject() 用于获得特定bean。</p>
+<p>​    <code>&lt;bean id=&quot;&quot; class=&quot;FB&quot;&gt;</code>先创建FB实例，然后调用getObject()方法，并返回方法的返回值</p>
+<p>​       例如：FB fb = new FB();</p>
+<p>​                   return fb.getObject();</p>
+<p><strong>第三种：</strong></p>
+<p>BeanFactory：工厂，用于生成任意bean。比如生产第一种Bean。</p>
+<p><strong>BeanFactory 和 FactoryBean 对比：</strong></p>
+<p>FactoryBean：特殊bean，用于生成另一个特定的bean。例如：ProxyFactoryBean ，此工厂bean用于生产代理。<code>&lt;bean id=&quot;&quot; class=&quot;....ProxyFactoryBean&quot;&gt;</code>获得代理对象实例。AOP使用</p>
+<h5 id="5-3-Bean的作用域"><a href="#5-3-Bean的作用域" class="headerlink" title="5.3 Bean的作用域"></a>5.3 Bean的作用域</h5><table>
+<thead>
+<tr>
+<th align="left">类别</th>
+<th align="left">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">singleton</td>
+<td align="left">在Spring IOC容器中仅存在一个Bean实例，Bean都以单例模式存在，singleton为默认值</td>
+</tr>
+<tr>
+<td align="left">prototype</td>
+<td align="left">每次从容器中调用Bean时，都返回一个新的实例，即每次调用getBean()时，相当于执行new XxxBean()</td>
+</tr>
+<tr>
+<td align="left">request</td>
+<td align="left">每次HTTP请求都会创建一个新的Bean，该作用域仅适用于WebApplicationContext环境<br>（每次http请求是会创建一个实例，该实例仅在当前http request有效）</td>
+</tr>
+<tr>
+<td align="left">session</td>
+<td align="left">同一个HTTP Session共享一个Bean，不同Session使用不同Bean，仅适用于WebApplicationContext环境 <br>（每次http请求时会创建一个实例，该实例仅在当前http session有效）</td>
+</tr>
+<tr>
+<td align="left">globalsession</td>
+<td align="left">一般用于Portlet应用环境，该作用域仅适用于WebApplicationContext环境 <br>（全局session，仅在portlet应用中使用）</td>
+</tr>
+</tbody></table>
+<ul>
+<li><p>取值：</p>
+<p><span style="color:red">         singleton 单例  </span>,默认值</p>
+<p><span style="color:red">                prototype 多例</span>,每执行一次getBean将获得一个实例。例如:struts整合spring，配置action多例。  </p>
+</li>
+<li><p>配置信息</p>
+<p><code>&lt;bean id=*&quot;userServiceId&quot; class=*&quot;com.springlearning.d_scope.UserServiceImpl&quot; *scope=*&quot;prototype&quot;&gt;&lt;/bean&gt;</code></p>
+</li>
+</ul>
+<p><strong>如果为单例模式，new的对象都是同一个，如果为多例模式，new的对象是不同的</strong></p>
+<p><img src="http://q1o3t6lvp.bkt.clouddn.com/2019-11-29_14-34-30%E6%88%AA%E5%B1%8F.jpg" alt="没有找到"></p>
+<h5 id="5-4-生命周期"><a href="#5-4-生命周期" class="headerlink" title="5.4 生命周期"></a>5.4 生命周期</h5>
       
 
       
@@ -581,11 +633,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color2">Spring</a>
+                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color3">随笔</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color3">随笔</a>
+                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color2">Spring</a>
               </li>
             
             <div class="clearfix"></div>
