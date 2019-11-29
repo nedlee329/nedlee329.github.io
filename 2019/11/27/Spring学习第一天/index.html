@@ -19,7 +19,8 @@
 <meta property="og:image" content="http:&#x2F;&#x2F;q1o3t6lvp.bkt.clouddn.com&#x2F;image&#x2F;jpg20191128195309.png">
 <meta property="og:image" content="http:&#x2F;&#x2F;q1o3t6lvp.bkt.clouddn.com&#x2F;image&#x2F;jpg%E6%A0%B8%E5%BF%83api.png">
 <meta property="og:image" content="http:&#x2F;&#x2F;q1o3t6lvp.bkt.clouddn.com&#x2F;2019-11-29_14-34-30%E6%88%AA%E5%B1%8F.jpg">
-<meta property="og:updated_time" content="2019-11-29T06:37:55.472Z">
+<meta property="og:image" content="http:&#x2F;&#x2F;q1o3t6lvp.bkt.clouddn.com&#x2F;SpringBean%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F.png">
+<meta property="og:updated_time" content="2019-11-29T08:45:00.501Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http:&#x2F;&#x2F;q1o3t6lvp.bkt.clouddn.com&#x2F;image&#x2F;jpg20191128195309.png">
   
@@ -334,7 +335,7 @@
 
 <h5 id="5-1-3-2-Spring配置"><a href="#5-1-3-2-Spring配置" class="headerlink" title="5.1.3.2 Spring配置"></a>5.1.3.2 Spring配置</h5><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 创建工厂实例 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">bean</span> <span class="attr">id</span>=<span class="string">"myBeanFactoryId"</span> <span class="attr">class</span>=<span class="string">"com.springlearning.c_inject.c_factory.MyBeanFactory"</span>&gt;</span><span class="tag">&lt;/<span class="name">bean</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!-- 获得userservice </span></span><br><span class="line"><span class="comment">	* factory-bean 确定工厂实例</span></span><br><span class="line"><span class="comment">	* factory-method 确定普通方法</span></span><br><span class="line"><span class="comment">--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">bean</span> <span class="attr">id</span>=<span class="string">"userServiceId"</span> <span class="attr">factory-bean</span>=<span class="string">"myBeanFactoryId"</span> <span class="attr">factory-method</span>=<span class="string">"createService"</span>&gt;</span><span class="tag">&lt;/<span class="name">bean</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
-<h5 id="5-2-Bean的种类"><a href="#5-2-Bean的种类" class="headerlink" title="5.2 Bean的种类"></a>5.2 Bean的种类</h5><p><strong>第一种：</strong></p>
+<h4 id="5-2-Bean的种类"><a href="#5-2-Bean的种类" class="headerlink" title="5.2 Bean的种类"></a>5.2 Bean的种类</h4><p><strong>第一种：</strong></p>
 <p>普通bean：之前操作的都是普通bean。<code>&lt;bean id=&quot;&quot; class=&quot;A&quot;&gt;</code>，spring直接创建A实例，并返回</p>
 <p><strong>第二种：</strong></p>
 <p>FactoryBean：是一个特殊的bean，具有工厂生成对象能力，只能生成特定的对象。</p>
@@ -346,7 +347,7 @@
 <p>BeanFactory：工厂，用于生成任意bean。比如生产第一种Bean。</p>
 <p><strong>BeanFactory 和 FactoryBean 对比：</strong></p>
 <p>FactoryBean：特殊bean，用于生成另一个特定的bean。例如：ProxyFactoryBean ，此工厂bean用于生产代理。<code>&lt;bean id=&quot;&quot; class=&quot;....ProxyFactoryBean&quot;&gt;</code>获得代理对象实例。AOP使用</p>
-<h5 id="5-3-Bean的作用域"><a href="#5-3-Bean的作用域" class="headerlink" title="5.3 Bean的作用域"></a>5.3 Bean的作用域</h5><table>
+<h4 id="5-3-Bean的作用域"><a href="#5-3-Bean的作用域" class="headerlink" title="5.3 Bean的作用域"></a>5.3 Bean的作用域</h4><table>
 <thead>
 <tr>
 <th align="left">类别</th>
@@ -385,7 +386,23 @@
 </ul>
 <p><strong>如果为单例模式，new的对象都是同一个，如果为多例模式，new的对象是不同的</strong></p>
 <p><img src="http://q1o3t6lvp.bkt.clouddn.com/2019-11-29_14-34-30%E6%88%AA%E5%B1%8F.jpg" alt="没有找到"></p>
-<h5 id="5-4-生命周期"><a href="#5-4-生命周期" class="headerlink" title="5.4 生命周期"></a>5.4 生命周期</h5>
+<h4 id="5-4-Spring-Bean的生命周期"><a href="#5-4-Spring-Bean的生命周期" class="headerlink" title="5.4 Spring Bean的生命周期"></a>5.4 Spring Bean的生命周期</h4><p><img src="http://q1o3t6lvp.bkt.clouddn.com/SpringBean%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F.png" alt="没有找到"></p>
+<p><strong>总结：</strong></p>
+<p>​         对于springbean的生命周期，我们需要关注的主要有两个方法：</p>
+<p>　　　　1.增强bean的功能可以使用后处理Bean，BeanPostProcessor</p>
+<p>　　　　2.如果需要初始化或销毁操作，我们可以使用init-method方法和destory-method方法。</p>
+<p>　同时还需要注意一点：destory-method方法是只针对于<strong>scope=singleton</strong>的时候才有效果！</p>
+<h5 id="5-4-1-初始化和销毁"><a href="#5-4-1-初始化和销毁" class="headerlink" title="5.4.1 初始化和销毁"></a>5.4.1 初始化和销毁</h5><ul>
+<li>目标方法执行前和执行后，将进行初始化或销毁。</li>
+</ul>
+<p><code>&lt;bean id=&quot;&quot; class=&quot;&quot; init-method=&quot;初始化方法名称&quot; destroy-method=&quot;销毁的方法名称&quot;&gt;</code></p>
+<h6 id="5-4-1-1-目标类"><a href="#5-4-1-1-目标类" class="headerlink" title="5.4.1.1 目标类"></a>5.4.1.1 目标类</h6><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.springlearning.e_lifecycle;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">UserServiceImpl</span> <span class="keyword">implements</span> <span class="title">UserService</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">addUser</span><span class="params">()</span> </span>&#123;</span><br><span class="line">		System.out.println(<span class="string">"e_lifecycle add user"</span>);</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">myInit</span><span class="params">()</span></span>&#123;</span><br><span class="line">		System.out.println(<span class="string">"初始化！！"</span>);</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">myDestory</span><span class="params">()</span></span>&#123;</span><br><span class="line">		System.out.println(<span class="string">"销毁！！"</span>);</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h6 id="5-4-1-2-Spring配置"><a href="#5-4-1-2-Spring配置" class="headerlink" title="5.4.1.2 Spring配置"></a>5.4.1.2 Spring配置</h6><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!--  </span></span><br><span class="line"><span class="comment">		init-method 用于配置初始化方法,准备数据等</span></span><br><span class="line"><span class="comment">		destroy-method 用于配置销毁方法,清理资源等</span></span><br><span class="line"><span class="comment">	--&gt;</span></span><br><span class="line">     </span><br><span class="line">	<span class="tag">&lt;<span class="name">bean</span> <span class="attr">id</span>=<span class="string">"userServiceId"</span> <span class="attr">class</span>=<span class="string">"com.springlearning.e_lifecycle.UserServiceImpl"</span> <span class="attr">init-method</span>=<span class="string">"myInit"</span> <span class="attr">destroy-method</span>=<span class="string">"myDestory"</span>&gt;</span><span class="tag">&lt;/<span class="name">bean</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h6 id="5-4-1-3-测试"><a href="#5-4-1-3-测试" class="headerlink" title="5.4.1.3 测试"></a>5.4.1.3 测试</h6><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Test</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">test01</span><span class="params">()</span> <span class="keyword">throws</span> Exception</span>&#123;</span><br><span class="line">         <span class="comment">//spring工厂</span></span><br><span class="line">         String xmlPath = <span class="string">"com/springlearning/e_lifecycle/beans.xml"</span>;</span><br><span class="line"><span class="comment">//         ApplicationContext applicationContext = new ClassPathXmlApplicationContext(xmlPath);之前</span></span><br><span class="line">         ClassPathXmlApplicationContext applicationContext = <span class="keyword">new</span> ClassPathXmlApplicationContext(xmlPath);<span class="comment">//之后</span></span><br><span class="line">         UserService userService = (UserService) applicationContext.getBean(<span class="string">"userServiceId"</span>);</span><br><span class="line">         userService.addUser();</span><br><span class="line">         </span><br><span class="line">       <span class="comment">/*要求：</span></span><br><span class="line"><span class="comment">        *   1.容器必须close，销毁方法才能执行; </span></span><br><span class="line"><span class="comment">            2.必须是单例的(scope为默认值)*/</span></span><br><span class="line"><span class="comment">// 		applicationContext.getClass().getMethod("close").invoke(applicationContext);</span></span><br><span class="line"> 		<span class="comment">// * 此方法接口中没有定义，实现类提供</span></span><br><span class="line"> 		applicationContext.close();  </span><br><span class="line">	&#125;</span><br></pre></td></tr></table></figure>
+
+
       
 
       
@@ -633,11 +650,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color3">随笔</a>
+                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color2">Spring</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color2">Spring</a>
+                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color3">随笔</a>
               </li>
             
             <div class="clearfix"></div>
