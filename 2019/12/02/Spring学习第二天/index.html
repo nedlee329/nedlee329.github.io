@@ -17,7 +17,7 @@
 <meta property="og:description" content="[toc] 一、AOP1.1 AOP 介绍1.1.1 什么是AOP？ 在软件业，AOP为Aspect Oriented Programming的缩写，意为：面向切面编程，通过预编译方式和运行期动态代理实现程序功能的统一维护的一种技术。AOP是OOP（面向对象编程）的延续，是软件开发中的一个热点，也是Spring框架中的一个重要内容，是函数式编程的一种衍生范型。利用AOP可以对业务逻辑的各个部分进行">
 <meta property="og:locale" content="en">
 <meta property="og:image" content="http:&#x2F;&#x2F;q1o3t6lvp.bkt.clouddn.com&#x2F;aop%E6%9C%AF%E8%AF%AD.jpg">
-<meta property="og:updated_time" content="2019-12-03T14:39:58.603Z">
+<meta property="og:updated_time" content="2019-12-04T14:05:56.032Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http:&#x2F;&#x2F;q1o3t6lvp.bkt.clouddn.com&#x2F;aop%E6%9C%AF%E8%AF%AD.jpg">
   
@@ -188,6 +188,8 @@
 <li>接口 + 实现类：spring采用 jdk 的<span style="color:red">动态代理</span>Proxy。</li>
 <li>实现类：spring 采用<span style="color:red"> cglib字节码增强</span>。</li>
 </ul>
+<a id="more"></a>
+
 <h4 id="1-1-3-AOP术语【掌握】"><a href="#1-1-3-AOP术语【掌握】" class="headerlink" title="1.1.3 AOP术语【掌握】"></a>1.1.3 AOP术语【掌握】</h4><ol>
 <li><p>target目标类：需要被代理的类。例如：UserService</p>
 </li>
@@ -277,10 +279,10 @@
 </li>
 <li><p><strong>整体概括</strong></p>
 <p>环绕通知，<span style="color:red">必须手动执行目标方法</span></p>
-<p>try{</p>
-<pre><code>//前置通知</code></pre><p>​          //执行目标方法</p>
-<pre><code>//后置通知</code></pre><p>} catch(){</p>
-<pre><code>//抛出异常通知</code></pre><p>}</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">try</span>&#123;</span><br><span class="line">     		<span class="comment">//前置通知</span></span><br><span class="line"></span><br><span class="line">  ​		  <span class="comment">//执行目标方法</span></span><br><span class="line"></span><br><span class="line">    		<span class="comment">//后置通知</span></span><br><span class="line"></span><br><span class="line">  &#125; <span class="keyword">catch</span>()&#123;</span><br><span class="line">  		<span class="comment">//抛出异常通知</span></span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+
+
+
 </li>
 </ul>
 <h3 id="1-4-Spring-编写代理：半自动化"><a href="#1-4-Spring-编写代理：半自动化" class="headerlink" title="1.4 Spring 编写代理：半自动化"></a>1.4 Spring 编写代理：半自动化</h3><ul>
@@ -299,6 +301,145 @@
 
 <h4 id="1-4-4-测试"><a href="#1-4-4-测试" class="headerlink" title="1.4.4 测试"></a>1.4.4 测试</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Test</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">demo01</span><span class="params">()</span></span>&#123;</span><br><span class="line">	String xmlPath = <span class="string">"com/springlearning/b_factory_bean/beans.xml"</span>;</span><br><span class="line">	ApplicationContext applicationContext = <span class="keyword">new</span> ClassPathXmlApplicationContext(xmlPath);</span><br><span class="line">	UserService userService = (UserService) applicationContext.getBean(<span class="string">"proxyServiceId"</span>);</span><br><span class="line">	userService.addUser();</span><br><span class="line">	userService.updateUser();</span><br><span class="line">	userService.deleteUser();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
+<h3 id="1-5-Spring-AOP编程：全自动【掌握】"><a href="#1-5-Spring-AOP编程：全自动【掌握】" class="headerlink" title="1.5 Spring AOP编程：全自动【掌握】"></a>1.5 Spring AOP编程：全自动【掌握】</h3><ul>
+<li>从spring容器获得目标类，如果配置aop，spring将自动生成代理。</li>
+<li>要确定目标类，aspectj 切入点表达式，导入jar包         spring-framework-3.0.2.RELEASE-dependencies\org.aspectj\com.springsource.org.aspectj.weaver\1.6.8.RELEASE  </li>
+</ul>
+<h4 id="1-5-1-Spring-配置"><a href="#1-5-1-Spring-配置" class="headerlink" title="1.5.1 Spring 配置"></a>1.5.1 Spring 配置</h4><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">beans</span> <span class="attr">xmlns</span>=<span class="string">"http://www.springframework.org/schema/beans"</span></span></span><br><span class="line"><span class="tag">    <span class="attr">xmlns:xsi</span>=<span class="string">"http://www.w3.org/2001/XMLSchema-instance"</span></span></span><br><span class="line"><span class="tag">    <span class="attr">xmlns:aop</span>=<span class="string">"http://www.springframework.org/schema/aop"</span></span></span><br><span class="line"><span class="tag">    <span class="attr">xsi:schemaLocation</span>=<span class="string">"http://www.springframework.org/schema/beans </span></span></span><br><span class="line"><span class="tag"><span class="string">                        http://www.springframework.org/schema/beans/spring-beans.xsd</span></span></span><br><span class="line"><span class="tag"><span class="string">                        http://www.springframework.org/schema/aop </span></span></span><br><span class="line"><span class="tag"><span class="string">       				    http://www.springframework.org/schema/aop/spring-aop.xsd"</span>&gt;</span></span><br><span class="line">                       </span><br><span class="line">    <span class="comment">&lt;!-- 1 创建目标类 --&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">bean</span> <span class="attr">id</span>=<span class="string">"userServiceId"</span> <span class="attr">class</span>=<span class="string">"com.springlearning.c_spring_aop.UserServiceImpl"</span>&gt;</span><span class="tag">&lt;/<span class="name">bean</span>&gt;</span></span><br><span class="line">	<span class="comment">&lt;!-- 2 创建切面类 --&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">bean</span> <span class="attr">id</span>=<span class="string">"myAspectId"</span> <span class="attr">class</span>=<span class="string">"com.springlearning.c_spring_aop.MyAspect"</span>&gt;</span><span class="tag">&lt;/<span class="name">bean</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- 3 aop编程 </span></span><br><span class="line"><span class="comment">		3.1 导入命名空间</span></span><br><span class="line"><span class="comment">		3.2 使用 &lt;aop:config&gt;进行配置</span></span><br><span class="line"><span class="comment">				proxy-target-class="true" 声明时使用cglib代理</span></span><br><span class="line"><span class="comment">			&lt;aop:pointcut&gt; 切入点 ，从目标对象获得具体方法</span></span><br><span class="line"><span class="comment">			&lt;aop:advisor&gt; 特殊的切面，只有一个通知 和 一个切入点</span></span><br><span class="line"><span class="comment">				advice-ref 通知引用</span></span><br><span class="line"><span class="comment">				pointcut-ref 切入点引用</span></span><br><span class="line"><span class="comment">		3.3 切入点表达式</span></span><br><span class="line"><span class="comment">			execution(* com.springlearning.c_spring_aop.*.*(..))</span></span><br><span class="line"><span class="comment">			选择方法         返回值任意   包             类名任意   方法名任意   参数任意</span></span><br><span class="line"><span class="comment">	--&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">aop:config</span> <span class="attr">proxy-target-class</span>=<span class="string">"true"</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">aop:pointcut</span> <span class="attr">expression</span>=<span class="string">"execution(* com.springlearning.c_spring_aop.*.*(..))"</span> <span class="attr">id</span>=<span class="string">"myPointCut"</span>/&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">aop:advisor</span> <span class="attr">advice-ref</span>=<span class="string">"myAspectId"</span> <span class="attr">pointcut-ref</span>=<span class="string">"myPointCut"</span>/&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">aop:config</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">beans</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="1-5-2-测试"><a href="#1-5-2-测试" class="headerlink" title="1.5.2 测试"></a>1.5.2 测试</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Test</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">demo01</span><span class="params">()</span></span>&#123;</span><br><span class="line">		String xmlPath = <span class="string">"com/springlearning/c_spring_aop/beans.xml"</span>;</span><br><span class="line">		ApplicationContext applicationContext = <span class="keyword">new</span> ClassPathXmlApplicationContext(xmlPath);</span><br><span class="line">		</span><br><span class="line">		<span class="comment">//获得目标类</span></span><br><span class="line">		UserService userService = (UserService) applicationContext.getBean(<span class="string">"userServiceId"</span>);</span><br><span class="line">		userService.addUser();</span><br><span class="line">		userService.updateUser();</span><br><span class="line">		userService.deleteUser();</span><br><span class="line">	&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="二、AspectJ"><a href="#二、AspectJ" class="headerlink" title="二、AspectJ"></a>二、AspectJ</h2><h3 id="2-1-介绍"><a href="#2-1-介绍" class="headerlink" title="2.1 介绍"></a>2.1 介绍</h3><ul>
+<li><p>AspectJ是一个基于Java语言的<span style="color:red">AOP框架</span></p>
+</li>
+<li><p>Spring2.0以后新增了对AspectJ切点表达式支持</p>
+</li>
+<li><p>@AspectJ 是AspectJ1.5新增功能，通过JDK5注解技术，允许直接在Bean类中定义切面</p>
+<p>新版本Spring框架，建议使用AspectJ方式来开发AOP</p>
+</li>
+<li><p>主要用途：自定义开发</p>
+</li>
+</ul>
+<h3 id="2-2-切入点表达式【掌握】"><a href="#2-2-切入点表达式【掌握】" class="headerlink" title="2.2 切入点表达式【掌握】"></a>2.2 切入点表达式【掌握】</h3><ol>
+<li><p><span style="color:red">execution() </span>用于描述方法 【掌握】</p>
+<p>​    语法：execution(修饰符 返回值 包.类.方法名(参数) throws异常)</p>
+<p>​       修饰符，一般省略</p>
+<p>​           public      公共方法</p>
+<p>​           *          任意</p>
+<p>​       返回值，不能省略</p>
+<p>​           void        返回没有值</p>
+<p>​           String      返回值字符串</p>
+<p>​           *         任意</p>
+<p>​       包，[可省略]</p>
+</li>
+</ol>
+<p>​           com.itheima.crm         固定包</p>
+<p>​           com.itheima.crm.*.service  crm包下面子包任意 （例如：com.itheima.crm.staff.service）</p>
+<p>​           com.itheima.crm..        crm包下面的所有子包（含自己）</p>
+<p>​           com.itheima.crm.*.service..  crm包下面任意子包，固定目录service，service目录任意包</p>
+<p>​           类，[省略]</p>
+<p>​               UserServiceImpl         指定类</p>
+<p>​               *Impl                 以Impl结尾</p>
+<p>​               User*                 以User开头</p>
+<p>​               *                    任意</p>
+<p>​           方法名，不能省略</p>
+<p>​               addUser                固定方法</p>
+<p>​               add*                  以add开头</p>
+<p>​               *Do                  以Do结尾</p>
+<p>​               *                    任意</p>
+<p>​           (参数)</p>
+<p>​               ()                    无参</p>
+<p>​               (int)                  一个整型</p>
+<p>​               (int ,int)               两个</p>
+<p>​               (..)                   参数任意</p>
+<p>​           throws ,可省略，一般不写。</p>
+<p>综合1</p>
+<p>​    <span style="color:red"><strong>execution(* com.springlearning.crm.*.service..*.*(..))</strong></span></p>
+<p>综合2</p>
+<p>​    &lt;aop:pointcut expression=”execution(* com.springlearning.* WithCommit.*(..)) || </p>
+<p>​                                                      execution(* com.springlearning.* Service.*(..))” id=”myPointCut”/&gt;</p>
+<ol start="2">
+<li>within:匹配包或子包中的方法(了解)</li>
+</ol>
+<p>​    within(com.springlearning.aop..*)</p>
+<ol start="3">
+<li>this:匹配实现接口的代理对象中的方法(了解)</li>
+</ol>
+<p>​    this(com.springlearning.aop.user.UserDAO)</p>
+<ol start="4">
+<li>target:匹配实现接口的目标对象中的方法(了解)</li>
+</ol>
+<p>​    target(com.springlearning.aop.user.UserDAO)</p>
+<ol start="5">
+<li>args:匹配参数格式符合标准的方法(了解)</li>
+</ol>
+<p>​    args(int,int)</p>
+<ol start="6">
+<li>bean(id) 对指定的bean所有的方法(了解)</li>
+</ol>
+<p>​    bean(‘userServiceId’)</p>
+<h3 id="2-3-AspectJ-通知类型"><a href="#2-3-AspectJ-通知类型" class="headerlink" title="2.3 AspectJ 通知类型"></a>2.3 AspectJ 通知类型</h3><ul>
+<li><p>aop联盟定义通知类型，具有特性接口，必须实现，从而确定方法名称。</p>
+</li>
+<li><p>aspectj 通知类型，只定义类型名称。以及方法格式。</p>
+</li>
+<li><p>个数：6种，知道5种，掌握1中。</p>
+<p>​    before:前置通知(应用：各种校验)</p>
+<p>​                  在方法执行前执行，如果通知抛出异常，阻止方法运行</p>
+<p>​    afterReturning:后置通知(应用：常规数据处理)</p>
+</li>
+</ul>
+<p>​                        方法正常返回后执行，如果方法中抛出异常，通知无法执行</p>
+<p>​                       必须在方法执行后才执行，所以可以获得方法的返回值。</p>
+<p>​            <span style="color:red">around</span>:环绕通知(应用：十分强大，可以做任何事情)</p>
+<p>​                       方法执行前后分别执行，可以阻止方法的执行</p>
+<p>​                       必须手动执行目标方法</p>
+<p>​            afterThrowing:抛出异常通知(应用：包装异常信息)</p>
+<p>​                       方法抛出异常后执行，如果方法没有抛出异常，无法执行</p>
+<pre><code>after:最终通知(应用：清理现场)</code></pre><p>​                       方法执行完毕后执行，无论方法中是否出现异常</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">环绕通知</span><br><span class="line"></span><br><span class="line"><span class="keyword">try</span>&#123;</span><br><span class="line">     <span class="comment">//前置：before</span></span><br><span class="line">    <span class="comment">//手动执行目标方法</span></span><br><span class="line">    <span class="comment">//后置：afterRetruning</span></span><br><span class="line">&#125; <span class="keyword">catch</span>()&#123;</span><br><span class="line">    <span class="comment">//抛出异常 afterThrowing</span></span><br><span class="line">&#125; <span class="keyword">finally</span>&#123;</span><br><span class="line">    <span class="comment">//最终 after</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-4-导入jar包"><a href="#2-4-导入jar包" class="headerlink" title="2.4 导入jar包"></a>2.4 导入jar包</h3><ul>
+<li><p>4个：</p>
+<p>​    aop联盟规范 –&gt;com.springsource.org.aopaliance-1.0.0.jar</p>
+<p>​    spring aop 实现–&gt;spring-aop-4.2.4.RELEASE.jar</p>
+<p>​    aspect 规范–&gt;com.springsource.org.aspectj.weaver-1.6.8.RELEASE.jar</p>
+<p>​    spring aspect 实现–&gt;spring-aspects-4.2.4.RELEASE.jar</p>
+</li>
+</ul>
+<h3 id="2-5-基于XML"><a href="#2-5-基于XML" class="headerlink" title="2.5 基于XML"></a>2.5 基于XML</h3><ol>
+<li><p>目标类：接口 + 实现</p>
+</li>
+<li><p>切面类：编写多个通知，采用aspectj 通知名称任意（方法名任意）</p>
+</li>
+<li><p>aop编程，将通知应用到目标类</p>
+</li>
+<li><p>测试</p>
+</li>
+</ol>
+<h4 id="2-5-1-切面类"><a href="#2-5-1-切面类" class="headerlink" title="2.5.1 切面类"></a>2.5.1 切面类</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 切面类，含有多个通知</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">MyAspect</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">myBefore</span><span class="params">(JoinPoint joinPoint)</span></span>&#123;</span><br><span class="line">		</span><br><span class="line">		System.out.println(<span class="string">"前置通知与当前目标方法名称："</span>+joinPoint.getSignature().getName());</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">myAfterReturning</span><span class="params">(JoinPoint joinPoint,Object ret)</span></span>&#123;</span><br><span class="line">		</span><br><span class="line">		System.out.println(<span class="string">"后置通知与当前目标方法名称："</span>+joinPoint.getSignature().getName()+<span class="string">"，目标方法的返回值为："</span>+ret);</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="function"><span class="keyword">public</span> Object <span class="title">myAround</span><span class="params">(ProceedingJoinPoint joinPoint)</span> <span class="keyword">throws</span> Throwable</span>&#123;<span class="comment">//必须有参数为可执行的joinPoint</span></span><br><span class="line">		</span><br><span class="line">		System.out.println(<span class="string">"环绕通知的前面"</span>);</span><br><span class="line">		<span class="comment">//手动执行目标方法</span></span><br><span class="line">		Object obj = joinPoint.proceed();</span><br><span class="line">		</span><br><span class="line">		System.out.println(<span class="string">"环绕通知的后面"</span>);</span><br><span class="line">		<span class="keyword">return</span> obj;</span><br><span class="line">		</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">myAfterThrowing</span><span class="params">(JoinPoint joinPoint,Throwable e)</span></span>&#123;</span><br><span class="line">		System.out.println(<span class="string">"抛出异常通知："</span>+e.getMessage());</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">myAfter</span><span class="params">(JoinPoint joinPoint)</span></span>&#123;</span><br><span class="line">		System.out.println(<span class="string">"最终通知！！！！"</span>);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="2-5-2-Spring-配置"><a href="#2-5-2-Spring-配置" class="headerlink" title="2.5.2 Spring 配置"></a>2.5.2 Spring 配置</h4><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">beans</span> <span class="attr">xmlns</span>=<span class="string">"http://www.springframework.org/schema/beans"</span></span></span><br><span class="line"><span class="tag">    <span class="attr">xmlns:xsi</span>=<span class="string">"http://www.w3.org/2001/XMLSchema-instance"</span></span></span><br><span class="line"><span class="tag">    <span class="attr">xmlns:aop</span>=<span class="string">"http://www.springframework.org/schema/aop"</span></span></span><br><span class="line"><span class="tag">    <span class="attr">xsi:schemaLocation</span>=<span class="string">"http://www.springframework.org/schema/beans </span></span></span><br><span class="line"><span class="tag"><span class="string">                        http://www.springframework.org/schema/beans/spring-beans.xsd</span></span></span><br><span class="line"><span class="tag"><span class="string">                        http://www.springframework.org/schema/aop </span></span></span><br><span class="line"><span class="tag"><span class="string">       				    http://www.springframework.org/schema/aop/spring-aop.xsd"</span>&gt;</span></span><br><span class="line">                       </span><br><span class="line">    <span class="comment">&lt;!-- 1 创建目标类 --&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">bean</span> <span class="attr">id</span>=<span class="string">"userServiceId"</span> <span class="attr">class</span>=<span class="string">"com.springlearning.d_aspect.a_xml.UserServiceImpl"</span>&gt;</span><span class="tag">&lt;/<span class="name">bean</span>&gt;</span></span><br><span class="line">	<span class="comment">&lt;!-- 2 创建切面类 --&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">bean</span> <span class="attr">id</span>=<span class="string">"myAspectId"</span> <span class="attr">class</span>=<span class="string">"com.springlearning.d_aspect.a_xml.MyAspect"</span>&gt;</span><span class="tag">&lt;/<span class="name">bean</span>&gt;</span></span><br><span class="line">   <span class="comment">&lt;!-- 3 aop编程 </span></span><br><span class="line"><span class="comment">		&lt;aop:aspect&gt; 将切面类 声明“切面”，从而获得通知（方法）</span></span><br><span class="line"><span class="comment">			ref 切面类引用</span></span><br><span class="line"><span class="comment">		&lt;aop:pointcut&gt; 声明一个切入点，所有的通知都可以使用。</span></span><br><span class="line"><span class="comment">			expression 切入点表达式</span></span><br><span class="line"><span class="comment">			id 名称，用于其它通知引用</span></span><br><span class="line"><span class="comment">	--&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">aop:config</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">aop:aspect</span> <span class="attr">ref</span>=<span class="string">"myAspectId"</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">aop:pointcut</span> <span class="attr">expression</span>=<span class="string">"execution(* com.springlearning.d_aspect.a_xml.UserServiceImpl.*(..))"</span> <span class="attr">id</span>=<span class="string">"myPointCut"</span>/&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">aop:after-throwing</span> <span class="attr">method</span>=<span class="string">"myAfterThrowing"</span> <span class="attr">pointcut-ref</span>=<span class="string">"myPointCut"</span> <span class="attr">throwing</span>=<span class="string">"e"</span> /&gt;</span></span><br><span class="line">			<span class="comment">&lt;!-- 3.1 前置通知 </span></span><br><span class="line"><span class="comment">				&lt;aop:before method="" pointcut="" pointcut-ref=""/&gt;</span></span><br><span class="line"><span class="comment">					method : 通知，及方法名</span></span><br><span class="line"><span class="comment">					pointcut :切入点表达式，此表达式只能当前通知使用。</span></span><br><span class="line"><span class="comment">					pointcut-ref ： 切入点引用，可以与其他通知共享切入点。</span></span><br><span class="line"><span class="comment">				通知方法格式：public void myBefore(JoinPoint joinPoint)&#123;</span></span><br><span class="line"><span class="comment">					参数1：org.aspectj.lang.JoinPoint  用于描述连接点（目标方法），获得目标方法名等</span></span><br><span class="line"><span class="comment">				例如：</span></span><br><span class="line"><span class="comment">			&lt;aop:before method="myBefore" pointcut-ref="myPointCut"/&gt;</span></span><br><span class="line"><span class="comment">			--&gt;</span></span><br><span class="line">			<span class="comment">&lt;!-- 3.2后置通知  ,目标方法后执行，获得返回值</span></span><br><span class="line"><span class="comment">				&lt;aop:after-returning method="" pointcut-ref="" returning=""/&gt;</span></span><br><span class="line"><span class="comment">					returning 通知方法第二个参数的名称</span></span><br><span class="line"><span class="comment">				通知方法格式：public void myAfterReturning(JoinPoint joinPoint,Object ret)&#123;</span></span><br><span class="line"><span class="comment">					参数1：连接点描述</span></span><br><span class="line"><span class="comment">					参数2：类型Object，参数名 returning="ret" 配置的</span></span><br><span class="line"><span class="comment">				例如：</span></span><br><span class="line"><span class="comment">			&lt;aop:after-returning method="myAfterReturning" pointcut-ref="myPointCut" returning="ret" /&gt;</span></span><br><span class="line"><span class="comment">			--&gt;</span></span><br><span class="line">			</span><br><span class="line">			<span class="comment">&lt;!-- 3.3 环绕通知 </span></span><br><span class="line"><span class="comment">				&lt;aop:around method="" pointcut-ref=""/&gt;</span></span><br><span class="line"><span class="comment">				通知方法格式：public Object myAround(ProceedingJoinPoint joinPoint) throws Throwable&#123;</span></span><br><span class="line"><span class="comment">					返回值类型：Object</span></span><br><span class="line"><span class="comment">					方法名：任意</span></span><br><span class="line"><span class="comment">					参数：org.aspectj.lang.ProceedingJoinPoint</span></span><br><span class="line"><span class="comment">					抛出异常</span></span><br><span class="line"><span class="comment">				执行目标方法：Object obj = joinPoint.proceed();</span></span><br><span class="line"><span class="comment">				例如：</span></span><br><span class="line"><span class="comment">			&lt;aop:around method="myAround" pointcut-ref="myPointCut"/&gt;</span></span><br><span class="line"><span class="comment">			--&gt;</span></span><br><span class="line">			<span class="comment">&lt;!-- 3.4 抛出异常</span></span><br><span class="line"><span class="comment">				&lt;aop:after-throwing method="" pointcut-ref="" throwing=""/&gt;</span></span><br><span class="line"><span class="comment">					throwing ：通知方法的第二个参数名称</span></span><br><span class="line"><span class="comment">				通知方法格式：public void myAfterThrowing(JoinPoint joinPoint,Throwable e)&#123;</span></span><br><span class="line"><span class="comment">					参数1：连接点描述对象</span></span><br><span class="line"><span class="comment">					参数2：获得异常信息，类型Throwable ，参数名由throwing="e" 配置</span></span><br><span class="line"><span class="comment">				例如：</span></span><br><span class="line"><span class="comment">			&lt;aop:after-throwing method="myAfterThrowing" pointcut-ref="myPointCut" throwing="e"/&gt;</span></span><br><span class="line"><span class="comment">			--&gt;</span></span><br><span class="line">			<span class="comment">&lt;!-- 3.5 最终通知 	</span></span><br><span class="line"><span class="comment">			&lt;aop:after method="myAfter" pointcut-ref="myPointCut"/&gt;</span></span><br><span class="line"><span class="comment">			--&gt;</span>		</span><br><span class="line">			<span class="tag">&lt;<span class="name">aop:after</span> <span class="attr">method</span>=<span class="string">"myAfter"</span> <span class="attr">pointcut-ref</span>=<span class="string">"myPointCut"</span>/&gt;</span></span><br><span class="line">		<span class="tag">&lt;/<span class="name">aop:aspect</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">aop:config</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">beans</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="2-5-3-个人理解"><a href="#2-5-3-个人理解" class="headerlink" title="2.5.3 个人理解"></a>2.5.3 个人理解</h4><p>​            首先要写的是目标类，目标类包括接口与实现类，有接口实现面向切面编程使用的就是JDK的动态代理，没有的话就会使用CGLIB的字节码增强，如果有接口也可以强制使用CGLIB，只需加一个声明代码（<code>&lt;aop:config proxy-target-class=&quot;true&quot;&gt;</code>）。其次就是切面类，这里面装着许多想要织入目标方法的一些个通知（也就是一些方法），因为采用的是aspectj，所以在切面类中方法名随意些，在配置中才会特意声明这个通知的类型，aspectj的通知类型有6类，包括：</p>
+<ol>
+<li><p>aop:before 前置通知类型，在目标方法之前执行</p>
+</li>
+<li><p>aop:after-returning 后置通知类型，在目标方法之后执行</p>
+</li>
+<li><p>aop:around 环绕通知类型，可在目标方法前后分别执行，注意：<span style="color:red">需手动执行目标方法</span></p>
+</li>
+<li><p>aop:after-throwing 抛出异常通知类型，即可抛出目标方法中存在的异常，在异常之后的方法无法执行</p>
+</li>
+<li><p>aop:after 最终要执行的方法，与trycatch中的finally一样</p>
+</li>
+<li><p>aop:delare-parents 引介通知类型，没怎么用</p>
+<p>​    最重要的就是xml文件的配置，首先，需要将目标类与切面类转化成<code>&lt;bean&gt;</code>标签，方便使用</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 1 创建目标类 --&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">bean</span> <span class="attr">id</span>=<span class="string">"userServiceId"</span> <span class="attr">class</span>=<span class="string">"com.springlearning.d_aspect.a_xml.UserServiceImpl"</span>&gt;</span><span class="tag">&lt;/<span class="name">bean</span>&gt;</span></span><br><span class="line">	<span class="comment">&lt;!-- 2 创建切面类 --&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">bean</span> <span class="attr">id</span>=<span class="string">"myAspectId"</span> <span class="attr">class</span>=<span class="string">"com.springlearning.d_aspect.a_xml.MyAspect"</span>&gt;</span><span class="tag">&lt;/<span class="name">bean</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+</li>
+</ol>
+<p>接着就是面向切面编程的配置，用<code>&lt;aop:config&gt;</code>标签表明在进行面向切面编程配置，然后声明要进行配置的切面，就是<code>&lt;aop:aspect ref= &quot;myAspectId&quot; &gt;</code>,并将之前声明的切面类引用进来，就是说要在该切面类的基础上进行切面编程，之后，进行切入点表达式的声明<code>&lt;aop:pointcut expression=*&quot;execution(\* com.itheima.d_aspect.a_xml.UserServiceImpl.*(..))&quot; id=&quot;myPointCut&quot; /&gt;</code>，就是说我要对哪些包中的哪些类中的哪些方法（目标方法）进行切入，这个切入点表达式也是有一定的格式的，之后便可以进行各种方法的切入了，格式大致为         <code>&lt;aop:before method=&quot;&quot; pointcut=&quot;&quot; pointcut-ref=&quot;&quot;/&gt;</code> ，先声明通知类型，再去切面类中找具体的方法，切入点的话，有上述两种写法，pointcut=””指的是当前通知独有，pointcut-ref=””就是所有通知共同的引用，只是在环绕通知的时候，它的切面类必须声明一个参数(ProceedingJoinPoint joinPoint)  即可执行的joinPoint，用<code>Object obj = joinPoint.proceed();</code>来手动执行目标方法，其他通知类型的参数都是可有可无的。</p>
 
       
 
