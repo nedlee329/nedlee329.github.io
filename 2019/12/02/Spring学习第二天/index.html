@@ -18,7 +18,7 @@
 <meta property="og:locale" content="en">
 <meta property="og:image" content="http:&#x2F;&#x2F;q1o3t6lvp.bkt.clouddn.com&#x2F;aop%E6%9C%AF%E8%AF%AD.jpg">
 <meta property="og:image" content="http:&#x2F;&#x2F;q1o3t6lvp.bkt.clouddn.com&#x2F;jdbc%E6%A8%A1%E6%9D%BFjar%E5%8C%85.png">
-<meta property="og:updated_time" content="2019-12-08T13:05:13.744Z">
+<meta property="og:updated_time" content="2019-12-08T13:15:17.885Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http:&#x2F;&#x2F;q1o3t6lvp.bkt.clouddn.com&#x2F;aop%E6%9C%AF%E8%AF%AD.jpg">
   
@@ -202,7 +202,7 @@
 <p>​        一个切入点和一个通知，组成成一个特殊的面。</p>
 <p><img src="http://q1o3t6lvp.bkt.clouddn.com/aop%E6%9C%AF%E8%AF%AD.jpg" alt="没有找到"></p>
 <h3 id="1-2-手动方式"><a href="#1-2-手动方式" class="headerlink" title="1.2 手动方式"></a>1.2 手动方式</h3><h4 id="1-2-1-JDK动态代理"><a href="#1-2-1-JDK动态代理" class="headerlink" title="1.2.1 JDK动态代理"></a>1.2.1 JDK动态代理</h4><ul>
-<li><p>l JDK动态代理 对“装饰者”设计模式 简化。使用前提：必须有接口</p>
+<li><p>JDK动态代理 对“装饰者”设计模式 简化。使用前提：必须有接口</p>
 <p>1.目标类：接口 + 实现类</p>
 <p>2.切面类：用于存通知 MyAspect</p>
 <p>3.工厂类：编写工厂生成代理</p>
@@ -405,8 +405,9 @@
 
 <h4 id="2-6-2-替换AOP"><a href="#2-6-2-替换AOP" class="headerlink" title="2.6.2 替换AOP"></a>2.6.2 替换AOP</h4><ul>
 <li><p>必须进行aspectj 自动代理</p>
-<p>`<!-- 2.确定 aop注解生效 --></p>
-<pre><code>&lt;aop:aspectj-autoproxy&gt;&lt;/aop:aspectj-autoproxy&gt;`</code></pre></li>
+<p><code>&lt;!-- 2.确定 aop注解生效 --&gt;</code></p>
+<p><code>&lt;aop:aspectj-autoproxy&gt;&lt;/aop:aspectj-autoproxy&gt;</code></p>
+</li>
 <li><p>之前声明切面是在<code>&lt;aop config&gt;</code>的标签下的<code>&lt;aop:aspect ref=&quot;myAspectId&quot;</code>中进行的，在基于注解中，就可以在切面类的部件注解下面再添加一个<code>@Aspect</code>注解就可以找到这个切面类，因为所有方法需要进行通知的方法都是放在这个切面类中的，所以可以不对这个切面类的注解进行命名。</p>
 </li>
 <li><p><strong>替换前置通知，</strong>之前是在<code>&lt;aop:aspect ref=&quot;myAspectId&quot;</code>标签下进行通知标签的设置。例如前置通知<code>&lt;aop:before method=&quot;myBefore&quot; pointcut-ref=&quot;myPointCut&quot;/&gt;</code>，在基于注解中，就可以直接在切面类中的各个方法的头部以添加注解的方式，实现通知方法的织入，例如前置通知<code>@Before(&quot;execution(* com.springlearning.d_aspect.b_anno.UserServiceImpl.*(..))&quot;)</code>，当然，这个切入点也只是当前通知有效，也可以像xml中一样设置公共切入点。</p>
@@ -639,6 +640,15 @@
   
 <nav id="article-nav">
   
+    <a href="/2019/12/08/Spring%E5%AD%A6%E4%B9%A0%E7%AC%AC%E4%B8%89%E5%A4%A9/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          Spring学习第三天
+        
+      </div>
+    </a>
+  
   
     <a href="/2019/11/27/Spring%E5%AD%A6%E4%B9%A0%E7%AC%AC%E4%B8%80%E5%A4%A9/" id="article-nav-older" class="article-nav-link-wrap">
       <div class="article-nav-title">Spring学习第一天</div>
@@ -767,11 +777,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color2">Spring</a>
+                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color3">随笔</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color3">随笔</a>
+                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color2">Spring</a>
               </li>
             
             <div class="clearfix"></div>
