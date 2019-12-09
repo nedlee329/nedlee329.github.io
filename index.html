@@ -172,6 +172,15 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p>[toc]</p>
+<h2 id="一、事务管理"><a href="#一、事务管理" class="headerlink" title="一、事务管理"></a>一、事务管理</h2><h3 id="1-1-回顾事务"><a href="#1-1-回顾事务" class="headerlink" title="1.1 回顾事务"></a>1.1 回顾事务</h3><h4 id="1-1-1-什么是事务？"><a href="#1-1-1-什么是事务？" class="headerlink" title="1.1.1 什么是事务？"></a>1.1.1 什么是事务？</h4><p>​        事务：是数据库操作的最小工作单元，是作为单个逻辑工作单元执行的一系列操作；这些操作作为一个整体一起向系统提交，要么都执行、要么都不执行；事务是一组不可再分割的操作集合（工作逻辑单元）。(理解：一组业务操作ABCD，要么全部成功，要么全部不成功。)</p>
+<h4 id="1-1-2-事务的四大特性"><a href="#1-1-2-事务的四大特性" class="headerlink" title="1.1.2 事务的四大特性"></a>1.1.2 事务的四大特性</h4><p>​        1.原子性</p>
+<p>​        事务是数据库的逻辑工作单位，事务中包含的各操作要么都做，要么都不做 （整体）</p>
+<p>​        2.一致性</p>
+<p>​        事务执行的结果必须是使数据库从一个一致性状态变到另一个一致性状态。因此当数据库只包含成功事务提交的结果时，就说数据库处于一致性状态。如果数据库系统 运行中发生故障，有些事务尚未完成就被迫中断，这些未完成事务对数据库所做的修改有一部分已写入物理数据库，这时数据库就处于一种不正确的状态，或者说是 不一致的状态。 （数据的完整）</p>
+<p>​        3.隔离性</p>
+<p>​        一个事务的执行不能其它事务干扰。即一个事务内部的操作及使用的数据对其它并发事务是隔离的，并发执行的各个事务之间不能互相干扰。  （并发）</p>
+<p>​        4.持续性</p>
+<p>​        也称永久性，指一个事务一旦提交，它对数据库中的数据的改变就应该是永久性的。接下来的其它操作或故障不应该对其执行结果有任何影响。（结果）</p>
         
           <a class="article-more-a" href="/2019/12/08/Spring%E5%AD%A6%E4%B9%A0%E7%AC%AC%E4%B8%89%E5%A4%A9/#more">more >></a>
         
@@ -902,11 +911,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color3">随笔</a>
+                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color2">Spring</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color2">Spring</a>
+                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color3">随笔</a>
               </li>
             
             <div class="clearfix"></div>
