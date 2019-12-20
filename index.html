@@ -151,6 +151,213 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-利用SpringBoot模拟微服务场景" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/12/19/%E5%88%A9%E7%94%A8SpringBoot%E6%A8%A1%E6%8B%9F%E5%BE%AE%E6%9C%8D%E5%8A%A1%E5%9C%BA%E6%99%AF/">利用SpringBoot模拟微服务场景</a>
+    </h1>
+  
+
+        
+        <a href="/2019/12/19/%E5%88%A9%E7%94%A8SpringBoot%E6%A8%A1%E6%8B%9F%E5%BE%AE%E6%9C%8D%E5%8A%A1%E5%9C%BA%E6%99%AF/" class="archive-article-date">
+  	<time datetime="2019-12-19T11:32:28.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-12-19</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="一、了解微服务"><a href="#一、了解微服务" class="headerlink" title="一、了解微服务"></a>一、了解微服务</h2><h3 id="1-1-什么是微服务？"><a href="#1-1-什么是微服务？" class="headerlink" title="1.1 什么是微服务？"></a>1.1 什么是微服务？</h3><p>​         微服务架构的系统是一个分布式的系统，按业务进行划分为独立的服务单元，解决单体系统的不足，同时也满足越来越复杂的业务需求。 </p>
+<p>​        总的来说微服务就是将一个单体架构的应用按业务划分为一个个独立运行的程序即服务，它们之间通过HTTP协议进行通信（也可以采用消息队列来通信，如 RoocketMQ，Kafaka等 ），可以采用不同的编程语言，使用不同的存储技术，自动化部署（如Jenkins）减少人为控制，降低出错概率。服务数量越多，管理起来越复杂，因此采用集中化管理。例如 Eureka，Zookeeper等都是比较常见的服务集中化管理框架。 </p>
+<p><strong>微服务的特点：</strong></p>
+<ul>
+<li>单一职责：微服务中每一个服务都对应唯一的业务能力，做到单一职责</li>
+<li>微：微服务的服务拆分粒度很小，例如一个用户管理就可以作为一个服务。每个服务虽小，但“五脏俱全”。</li>
+<li>面向服务：面向服务是说每个服务都要对外暴露服务接口API。并不关心服务的技术实现，做到与平台和语言无关，也不限定用什么技术实现，只要提供Rest的接口即可。</li>
+<li>自治：自治是说服务间互相独立，互不干扰<ul>
+<li>团队独立：每个服务都是一个独立的开发团队，人数不能过多。</li>
+<li>技术独立：因为是面向服务，提供Rest接口，使用什么技术没有别人干涉</li>
+<li>前后端分离：采用前后端分离开发，提供统一Rest接口，后端不用再为PC、移动段开发不同接口</li>
+<li>数据库分离：每个服务都使用自己的数据源</li>
+<li>部署独立，服务间虽然有调用，但要做到服务重启不影响其它服务。有利于持续集成和持续交付。每个服务都是独立的组件，可复用，可替换，降低耦合，易维护</li>
+</ul>
+</li>
+</ul>
+        
+          <a class="article-more-a" href="/2019/12/19/%E5%88%A9%E7%94%A8SpringBoot%E6%A8%A1%E6%8B%9F%E5%BE%AE%E6%9C%8D%E5%8A%A1%E5%9C%BA%E6%99%AF/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag article-tag-list-link color1">SpringBoot</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/框架学习//" class="article-tag-list-link color5">框架学习</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/12/19/%E5%88%A9%E7%94%A8SpringBoot%E6%A8%A1%E6%8B%9F%E5%BE%AE%E6%9C%8D%E5%8A%A1%E5%9C%BA%E6%99%AF/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" target="_blank" rel="noopener" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-SpringBoot-day01" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/12/17/SpringBoot-day01/">SpringBoot-day01</a>
+    </h1>
+  
+
+        
+        <a href="/2019/12/17/SpringBoot-day01/" class="archive-article-date">
+  	<time datetime="2019-12-17T02:35:06.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-12-17</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="一、了解-Spring-Boot"><a href="#一、了解-Spring-Boot" class="headerlink" title="一、了解 Spring Boot"></a>一、了解 Spring Boot</h2><h3 id="1-1-什么是Spring-Boot？"><a href="#1-1-什么是Spring-Boot？" class="headerlink" title="1.1 什么是Spring Boot？"></a>1.1 什么是Spring Boot？</h3><pre><code>Spring Boot是Spring项目中的一个子工程，与我们所熟知的Spring-framework 同属于spring的产品。</code></pre><p>​        官网解释翻译为：</p>
+<blockquote>
+<p>用一些固定的方式来构建生产级别的spring应用。Spring Boot 推崇约定大于配置的方式以便于你能够尽可能快速的启动并运行程序。</p>
+</blockquote>
+<p>其实人们把Spring Boot 称为搭建程序的`<strong>脚手架</strong>`。其最主要作用就是帮我们快速的构建庞大的spring项目，并且尽可能的减少一切xml配置，做到开箱即用，迅速上手，让我们关注与业务而非配置。</p>
+<h3 id="1-2-为什么学习Spring-Boot？"><a href="#1-2-为什么学习Spring-Boot？" class="headerlink" title="1.2 为什么学习Spring Boot？"></a>1.2 为什么学习Spring Boot？</h3><p>java一直被人诟病的一点就是臃肿、麻烦。其主要原因有两点：</p>
+<ul>
+<li><p>复杂的配置</p>
+<p>项目各种配置其实是开发时的损耗， 因为在思考 Spring 特性配置和解决业务问题之间需要进行思维切换，所以写配置挤占了写应用程序逻辑的时间。</p>
+</li>
+<li><p>一个是混乱的依赖管理</p>
+<p>项目的依赖管理也是件吃力不讨好的事情。决定项目里要用哪些库就已经够让人头痛的了，你还要知道这些库的哪个版本和其他库不会有冲突，这难题实在太棘手。并且，依赖管理也是一种损耗，添加依赖不是写应用程序代码。一旦选错了依赖的版本，随之而来的不兼容问题毫无疑问会是生产力杀手。</p>
+</li>
+</ul>
+<p>而Spring Boot让这一切成为过去！</p>
+<blockquote>
+<p>Spring Boot 简化了基于Spring的应用开发，只需要“run”就能创建一个独立的、生产级别的Spring应用。Spring Boot为Spring平台及第三方库提供开箱即用的设置（提供默认设置，存放默认配置的包就是启动器），这样我们就可以简单的开始。多数Spring Boot应用只需要很少的Spring配置。</p>
+</blockquote>
+<p>我们可以使用SpringBoot创建java应用，并使用java –jar 启动它，就能得到一个生产级别的web工程。</p>
+        
+          <a class="article-more-a" href="/2019/12/17/SpringBoot-day01/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag article-tag-list-link color1">SpringBoot</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/框架学习//" class="article-tag-list-link color5">框架学习</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/12/17/SpringBoot-day01/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" target="_blank" rel="noopener" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-Spring学习第三天" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -911,11 +1118,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color2">Spring</a>
+                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color1">SpringBoot</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color3">随笔</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color2">Spring</a>
               </li>
             
             <div class="clearfix"></div>
