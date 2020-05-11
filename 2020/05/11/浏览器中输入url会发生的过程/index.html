@@ -104,7 +104,7 @@ function activateLightMode(){
 <p><a href="https://blog.csdn.net/ZWE7616175/article/details/80484905" target="_blank" rel="noopener">详细介绍地址</a></p>
 </li>
 </ol>
-<h5 id="Tcp的三次握手协议"><a href="#Tcp的三次握手协议" class="headerlink" title="Tcp的三次握手协议"></a>Tcp的三次握手协议</h5><p><img src="/.com//tcp3.png" alt="没有找到这张图片"></p>
+<h5 id="Tcp的三次握手协议"><a href="#Tcp的三次握手协议" class="headerlink" title="Tcp的三次握手协议"></a>Tcp的三次握手协议</h5><p><img src="/2020/05/11/%E6%B5%8F%E8%A7%88%E5%99%A8%E4%B8%AD%E8%BE%93%E5%85%A5url%E4%BC%9A%E5%8F%91%E7%94%9F%E7%9A%84%E8%BF%87%E7%A8%8B/tcp3.png" alt="没有找到这张图片"></p>
 <p><strong>第一次握手：</strong>建立连接时，客户端发送syn包（syn=x）到服务器，并进入SYN_SENT状态，等待服务器确认；SYN：同步序列编号（Synchronize Sequence Numbers）。</p>
 <p><strong>第二次握手：</strong>服务器收到syn包，必须确认客户的SYN（ack=x+1），同时自己也发送一个SYN包（syn=y），即SYN+ACK包，此时服务器进入SYN_RECV状态；</p>
 <p><strong>第三次握手：</strong>客户端收到服务器的SYN+ACK包，向服务器发送确认包ACK(ack=y+1），此包发送完毕，客户端和服务器进入ESTABLISHED（TCP连接成功）状态，完成三次握手。</p>
