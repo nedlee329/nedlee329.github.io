@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-05-12T11:42:07.005Z</updated>
+  <updated>2020-05-12T12:44:10.341Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,87 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>什么操作会使得当前线程停止？</title>
+    <link href="http://yoursite.com/2020/05/12/%E4%BB%80%E4%B9%88%E6%93%8D%E4%BD%9C%E4%BC%9A%E4%BD%BF%E5%BE%97%E5%BD%93%E5%89%8D%E7%BA%BF%E7%A8%8B%E5%81%9C%E6%AD%A2%EF%BC%9F/"/>
+    <id>http://yoursite.com/2020/05/12/%E4%BB%80%E4%B9%88%E6%93%8D%E4%BD%9C%E4%BC%9A%E4%BD%BF%E5%BE%97%E5%BD%93%E5%89%8D%E7%BA%BF%E7%A8%8B%E5%81%9C%E6%AD%A2%EF%BC%9F/</id>
+    <published>2020-05-12T12:38:45.000Z</published>
+    <updated>2020-05-12T12:44:10.341Z</updated>
+    
+    <content type="html"><![CDATA[<p>A：一个InterruptedException 异常被捕获 大家都知道的嘛 （一般通过interrupt方法 中断线程） 如果抓到一个线程 都会关进catch里面 然后中断当前操作。</p><p>B：线程执行了wait()方法。  线程使用了wait方法，会强行打断当前操作，（暂停状态，不会中断线程） 进入阻塞（暂停）状态，然后需要notify方法或notifyAll方法才能进入就绪状态。</p><p>C：当前线程创建了一个新的线程。  新创建的线程不会抢占时间片，只有等当前线程把时间片用完，其他线程才有资格拿到时间片去执行。</p><p>D：一个高优先级别的线程就绪。 如C相同，你优先级别再高 也待等我现在弄完才会给你。</p><p>E：线程在MediaTracker上执行了waitforID（）调用。 </p><p>这个类是awt里面的，他的功能是加载图像，直到完成之前，该方法一直等待！这个方法是必须要抛出A选项的InterruptedException 异常的 说明这玩意会让其他线程 wait他完成！  所以会暂停当前线程~~大概是这样吧。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;A：一个InterruptedException 异常被捕获 大家都知道的嘛 （一般通过interrupt方法 中断线程） 如果抓到一个线程 都会关进catch里面 然后中断当前操作。&lt;/p&gt;
+&lt;p&gt;B：线程执行了wait()方法。  线程使用了wait方法，会强行打断当前
+      
+    
+    </summary>
+    
+    
+      <category term="牛客小知识" scheme="http://yoursite.com/categories/%E7%89%9B%E5%AE%A2%E5%B0%8F%E7%9F%A5%E8%AF%86/"/>
+    
+    
+      <category term="面试题" scheme="http://yoursite.com/tags/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>关于Java的反射</title>
+    <link href="http://yoursite.com/2020/05/12/%E5%85%B3%E4%BA%8EJava%E7%9A%84%E5%8F%8D%E5%B0%84/"/>
+    <id>http://yoursite.com/2020/05/12/%E5%85%B3%E4%BA%8EJava%E7%9A%84%E5%8F%8D%E5%B0%84/</id>
+    <published>2020-05-12T12:24:53.000Z</published>
+    <updated>2020-05-12T12:37:21.860Z</updated>
+    
+    <content type="html"><![CDATA[<p>反射指的是在运行时能够分析类的能力的程序。</p><p>反射机制可以用来：</p><p>1.在运行时分析类的能力–检查类的结构–所用到的就是<strong>java.lang.reflect包中的Field、Method、Constructor，分别用于描述类的域、方法和构造器</strong>。</p><p>2.在运行时查看对象。</p><p>3.实现通用的数组操作代码。</p><p><strong>反射机制的功能：</strong></p><p>在运行时判断任意一个对象所属的类；在运行时构造任意一个类的对象；在运行时判断任意一个类所具有的成员变量和方法；在运行时调用任意一个对象的方法；生成动态方法。</p><p><strong>反射机制常见作用：</strong></p><p>动态加载类、动态获取类的信息（属性、方法、构造器）；动态构造对象；动态调用类和对象的任意方法、构造器；动态调用和处理属性；获取泛型信息（新增类型：ParameterizedType,GenericArrayType等）；处理注解（反射API:getAnnotationsdeng等）。</p><p><strong>反射机制性能问题：</strong></p><p>反射会降低效率。</p><p>void setAccessible(boolean flag):是否启用访问安全检查的开关，true屏蔽Java语言的访问检查，使得对象的私有属性也可以被查询和设置。禁止安全检查，可以提高反射的运行速度。</p><p>可以考虑使用：cglib/javaassist操作。</p><p> Java语言反射提供一种动态链接程序组件的多功能方法。它允许程序创建和控制任何类的对象(根据安全性限制)，无需提前硬编码目标类。这些特性使得反射特别适用于创建以非常普通的方式与对象协作的库。例如，反射经常在持续存储对象为数据库、XML或其它外部格式的框架中使用。Java reflection非常有用，它使类和数据结构能按名称动态检索相关信息，并允许在运行着的程序中操作这些信息。Java的这一特性非常强大，并且是其它一些常用语言，如C、C++、Fortran 或者Pascal等都不具备的。</p><p>   但反射有两个缺点。第一个是性能问题。用于字段和方法接入时反射要远慢于直接代码。性能问题的程度取决于程序中是如何使用反射的。如果它作为程序运行中相对很少涉及的部分，缓慢的性能将不会是一个问题。即使测试中最坏情况下的计时图显示的反射操作只耗用几微秒。仅反射在性能关键的应用的核心逻辑中使用时性能问题才变得至关重要。</p><p>   许多应用中更严重的一个缺点是使用反射会模糊程序内部实际要发生的事情。程序人员希望在源代码中看到程序的逻辑，反射等绕过了源代码的技术会带来维护问题。反射代码比相应的直接代码更复杂，正如性能比较的代码实例中看到的一样。解决这些问题的最佳方案是保守地使用反射一-仅在它可以真正增加灵活性的地方一记录其在 目标类中的使用。</p><p>   Reflection是Java程序开发语言的特征之一，它允许运行中的Java程序对自身进行检查，或者说”自审”，并能直接操作程序的内部属性。例如，使用它能获得Java类中各成员的名称并显示出来。</p><p>   Java的这-能力在实际应用中也许用得不是很多，但是在其它的程序设计语言中根本就不存在这一-特性。例如，Pascal. C或者C++中就没有办法在程序中获得函数定义相关的信息。</p><p>   JavaBean是reflection的实际应用之一，它能让一些工具可视化的操作软件组件。这些工具通过reflection动态的载入并取得Java组件(类)的属性。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;反射指的是在运行时能够分析类的能力的程序。&lt;/p&gt;
+&lt;p&gt;反射机制可以用来：&lt;/p&gt;
+&lt;p&gt;1.在运行时分析类的能力–检查类的结构–所用到的就是&lt;strong&gt;java.lang.reflect包中的Field、Method、Constructor，分别用于描述类的域、方法
+      
+    
+    </summary>
+    
+    
+      <category term="牛客小知识" scheme="http://yoursite.com/categories/%E7%89%9B%E5%AE%A2%E5%B0%8F%E7%9F%A5%E8%AF%86/"/>
+    
+    
+      <category term="面试题" scheme="http://yoursite.com/tags/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>关于Java中的关键字与保留字</title>
+    <link href="http://yoursite.com/2020/05/12/%E5%85%B3%E4%BA%8EJava%E4%B8%AD%E7%9A%84%E5%85%B3%E9%94%AE%E5%AD%97%E4%B8%8E%E4%BF%9D%E7%95%99%E5%AD%97/"/>
+    <id>http://yoursite.com/2020/05/12/%E5%85%B3%E4%BA%8EJava%E4%B8%AD%E7%9A%84%E5%85%B3%E9%94%AE%E5%AD%97%E4%B8%8E%E4%BF%9D%E7%95%99%E5%AD%97/</id>
+    <published>2020-05-12T12:21:57.000Z</published>
+    <updated>2020-05-12T12:24:26.372Z</updated>
+    
+    <content type="html"><![CDATA[<p>Java关键字是<a href="https://baike.baidu.com/item/电脑语言/7105622" target="_blank" rel="noopener">电脑语言</a>里事先定义的，有特别意义的标识符，有时又叫<a href="https://baike.baidu.com/item/保留字/7674788" target="_blank" rel="noopener">保留字</a>，还有特别意义的变量。Java的关键字对Java的<a href="https://baike.baidu.com/item/编译器/8853067" target="_blank" rel="noopener">编译器</a>有特殊的意义，他们用来表示一种数据类型，或者表示程序的结构等，关键字不能用作变量名、方法名、类名、包名和参数。</p><p> java中true ,false , null在java中不是关键字，也不是保留字，它们只是显式常量值，但是你在程序中不能使用它们作为标识符。</p><p>其中const和goto是java的保留字。java中所有的关键字都是小写的，还有要注意true,false,null,　friendly，sizeof不是java的关键字,但是你不能把它们作为java标识符用。</p><p>goto和const是保留字也是关键字。</p><p>关键字列表 (依字母排序 共50组)：</p><p>abstract, assert, boolean, break, byte, case, catch, char, class, const（保留关键字）, continue, default, do, double, else, enum, extends, final, finally, float, for, goto（保留关键字）, if, implements, import, instanceof, int, interface, long, native, new, package, private, protected, public, return, short, static, strictfp, super, switch, synchronized, this, throw, throws, transient, try, void, volatile, while</p><p>保留字列表 (依字母排序 共14组)，Java保留字是指现有Java版本尚未使用，但以后版本可能会作为关键字使用：</p><p>byValue, cast, false, future, generic, inner, operator, outer, rest, true, var, goto （保留关键字） , const （保留关键字） , null</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Java关键字是&lt;a href=&quot;https://baike.baidu.com/item/电脑语言/7105622&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;电脑语言&lt;/a&gt;里事先定义的，有特别意义的标识符，有时又叫&lt;a href=&quot;https://
+      
+    
+    </summary>
+    
+    
+      <category term="牛客小知识" scheme="http://yoursite.com/categories/%E7%89%9B%E5%AE%A2%E5%B0%8F%E7%9F%A5%E8%AF%86/"/>
+    
+    
+      <category term="面试题" scheme="http://yoursite.com/tags/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    
+  </entry>
   
   <entry>
     <title>关于ArrayLinst与LinkList</title>
@@ -525,79 +606,6 @@
     
     
       <category term="测试" scheme="http://yoursite.com/tags/%E6%B5%8B%E8%AF%95/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Typora使用教程</title>
-    <link href="http://yoursite.com/2019/11/24/Typora%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/"/>
-    <id>http://yoursite.com/2019/11/24/Typora%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/</id>
-    <published>2019-11-24T04:22:38.000Z</published>
-    <updated>2020-05-11T13:07:05.750Z</updated>
-    
-    <content type="html"><![CDATA[<blockquote><blockquote><blockquote><p>” <strong>Markdown</strong> 是一种<strong>轻量级</strong>标记语言，创始人是<strong>约翰·格鲁伯</strong>（John Gruber）。它允许人们 “使用易读易写的纯文本格式编写文档，然后转换成有效的 HTML 文档。” </p></blockquote></blockquote></blockquote> <a id="more"></a> <h2 id="1-基本操作"><a href="#1-基本操作" class="headerlink" title="1.基本操作"></a>1.基本操作</h2><h3 id="1-1内容目录"><a href="#1-1内容目录" class="headerlink" title="1.1内容目录"></a>1.1内容目录</h3><p>[toc]</p><h3 id="1-2标题"><a href="#1-2标题" class="headerlink" title="1.2标题"></a>1.2标题</h3><h1 id="一级标题"><a href="#一级标题" class="headerlink" title="#               一级标题"></a>#               一级标题</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="##          二级标题"></a>##          二级标题</h2><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="###      三级标题"></a>###      三级标题</h3><h4 id="四级标题"><a href="#四级标题" class="headerlink" title="####     四级标题"></a>####     四级标题</h4><h5 id="五级标题"><a href="#五级标题" class="headerlink" title="#####   五级标题"></a>#####   五级标题</h5><h6 id="六级标题"><a href="#六级标题" class="headerlink" title="######  六级标题"></a>######  六级标题</h6><h2 id="1-3引用"><a href="#1-3引用" class="headerlink" title="1.3引用"></a>1.3引用</h2><blockquote><p>引用内容一</p></blockquote><blockquote><p>引用内容二</p></blockquote><blockquote><blockquote><p>引用内容三</p></blockquote></blockquote><h2 id="2-代码"><a href="#2-代码" class="headerlink" title="2.代码"></a>2.代码</h2><h3 id="2-1单行代码"><a href="#2-1单行代码" class="headerlink" title="2.1单行代码"></a>2.1单行代码</h3><p><code>String str1=&quot;你好啊！&quot;;</code></p><h3 id="2-2多行代码"><a href="#2-2多行代码" class="headerlink" title="2.2多行代码"></a>2.2多行代码</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">void</span> <span class="class"><span class="keyword">class</span> <span class="title">Test</span></span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;&#125;</span><br><span class="line">    System.out.println(<span class="string">"你好！"</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure> <!-- more --> <h2 id="3-列表"><a href="#3-列表" class="headerlink" title="3.列表"></a>3.列表</h2><h3 id="3-1无序列表"><a href="#3-1无序列表" class="headerlink" title="3.1无序列表"></a>3.1无序列表</h3><ul><li>无序列表1</li></ul><ul><li>无序列表2</li></ul><ul><li>无序列表3</li></ul><h3 id="3-2多行无序列表"><a href="#3-2多行无序列表" class="headerlink" title="3.2多行无序列表"></a>3.2多行无序列表</h3><ul><li><p>多行无序列表1</p></li><li><ul><li><p>多行无序列表2</p></li><li><ul><li>多行无序列表3</li></ul></li></ul></li></ul><h3 id="3-3有序列表"><a href="#3-3有序列表" class="headerlink" title="3.3有序列表"></a>3.3有序列表</h3><p>1.有序列表1</p><p>2.有序列表2</p><p>3.有序列表3</p><h3 id="3-4多行有序列表"><a href="#3-4多行有序列表" class="headerlink" title="3.4多行有序列表"></a>3.4多行有序列表</h3><p>1.多行有序列表1</p><p>2.多行有序列表2</p><p>​    1.多行有序列表2-1</p><p>​    2.多行有序列表2-2</p><p>3.多行有序列表3</p><p>​    1.多行有序列表3-1</p><p>​    2.多行有序列表3-2</p><h3 id="3-5任务列表"><a href="#3-5任务列表" class="headerlink" title="3.5任务列表"></a>3.5任务列表</h3><p> -[ ] 抽烟</p><p> -[x] 喝酒</p><p> -[ ] 烫头</p><h3 id="3-6表格"><a href="#3-6表格" class="headerlink" title="3.6表格"></a>3.6表格</h3><table><thead><tr><th>姓名</th><th>性别</th><th>年龄</th><th>手机号</th></tr></thead><tbody><tr><td>张三</td><td>男</td><td>22</td><td>134525456789</td></tr><tr><td>李四</td><td>女</td><td>23</td><td>188528789456</td></tr><tr><td>王五</td><td>男</td><td>25</td><td>137321561234</td></tr></tbody></table> <!-- more --> <h2 id="4-连接"><a href="#4-连接" class="headerlink" title="4.连接"></a>4.连接</h2><h3 id="4-1图片"><a href="#4-1图片" class="headerlink" title="4.1图片"></a>4.1图片</h3><p>*本地图片（加载很慢，可选择七牛云）</p><p><img src="http://q1o3t6lvp.bkt.clouddn.com/bridge.jpg" alt="bridge"></p><p>*网络图片</p><p><img src="http://img.netbian.com/file/2019/1118/7484348e1e863797925e9869687131b3.jpg" alt></p><h3 id="4-2超链接"><a href="#4-2超链接" class="headerlink" title="4.2超链接"></a>4.2超链接</h3><p>*行内式链接</p><p>[百度一下][<a href="https://www.baidu.com/]" target="_blank" rel="noopener">https://www.baidu.com/]</a></p><p>*参考式链接</p><p>*自动链接</p><p><a href="https://www.github.com/nedlee329" target="_blank" rel="noopener">https://www.github.com/nedlee329</a></p><h2 id="5-其他"><a href="#5-其他" class="headerlink" title="5.其他"></a>5.其他</h2><h3 id="5-1斜体"><a href="#5-1斜体" class="headerlink" title="5.1斜体"></a>5.1斜体</h3><p><em>斜体1</em></p><p><em>斜体2</em></p><h3 id="5-2加粗"><a href="#5-2加粗" class="headerlink" title="5.2加粗"></a>5.2加粗</h3><p><strong>加粗1</strong></p><p><strong>加粗2</strong></p><h3 id="5-3-下划线"><a href="#5-3-下划线" class="headerlink" title="5.3 下划线"></a>5.3 下划线</h3><p><u>下划线</u></p><h3 id="5-4删除线"><a href="#5-4删除线" class="headerlink" title="5.4删除线"></a>5.4删除线</h3><p><del>删除线</del></p><h3 id="5-5分割线"><a href="#5-5分割线" class="headerlink" title="5.5分割线"></a>5.5分割线</h3><hr><hr><hr><h3 id="5-6注脚"><a href="#5-6注脚" class="headerlink" title="5.6注脚"></a>5.6注脚</h3><p>Typora[^1]</p><h3 id="5-7上下标"><a href="#5-7上下标" class="headerlink" title="5.7上下标"></a>5.7上下标</h3><p>3^2=9$$</p><p>$ 3^{(3-1)}=9 $</p><p>$ H_2SO_4 $</p><p>$ H_{2SO_4} $</p> <!-- more --> <h3 id="5-8符号的输入-输入之前加反斜杠"><a href="#5-8符号的输入-输入之前加反斜杠" class="headerlink" title="5.8符号的输入(输入之前加反斜杠)"></a>5.8符号的输入(输入之前加反斜杠)</h3><p>\     反斜线</p><p>&#39;     反引号</p><p>*    星号</p><p>_    底线</p><p>{}    花括号</p><p>[ ]    方括号</p><p>()    括弧</p><p>#    井号</p><p>+    加号</p><p>-    减号</p><p>.    英文点</p><p>!    感叹号</p><h3 id="5-9Typora快捷键"><a href="#5-9Typora快捷键" class="headerlink" title="5.9Typora快捷键"></a>5.9Typora快捷键</h3><ul><li><p>标题：ctrl+数字</p></li><li><p>表格：ctrl+t</p></li><li><p>生成目录：[TOC]按回车</p></li><li><p>选中一整行：ctrl+l</p></li><li><p>选中单词：ctrl+d</p></li><li><p>选中相同格式的文字：ctrl+e</p></li><li><p>搜索：ctrl+f</p></li><li><p>替换：ctrl+h</p></li><li><p>引用：输入&gt;之后输入空格</p></li><li><p>代码块：ctrl+alt+f</p></li><li><p>加粗：ctrl+b</p></li><li><p>倾斜：ctrl+i</p></li><li><p>下划线：ctrl+u</p></li><li><p>删除线：alt+shift+5</p></li><li><p>插入图片：直接拖动到指定位置即可或者ctrl+shift+i</p></li><li><p>插入链接：ctrl+k</p><h3 id="5-10-控制文字颜色"><a href="#5-10-控制文字颜色" class="headerlink" title="5.10 控制文字颜色"></a>5.10 控制文字颜色</h3><p>在markdown中采用如下方式能够控制文字的颜色：</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">浅红色文字：<span class="tag">&lt;<span class="name">font</span> <span class="attr">color</span>=<span class="string">"#dd0000"</span>&gt;</span>浅红色文字：<span class="tag">&lt;/<span class="name">font</span>&gt;</span><span class="tag">&lt;<span class="name">br</span> /&gt;</span> </span><br><span class="line">深红色文字：<span class="tag">&lt;<span class="name">font</span> <span class="attr">color</span>=<span class="string">"#660000"</span>&gt;</span>深红色文字<span class="tag">&lt;/<span class="name">font</span>&gt;</span><span class="tag">&lt;<span class="name">br</span> /&gt;</span> </span><br><span class="line">浅绿色文字：<span class="tag">&lt;<span class="name">font</span> <span class="attr">color</span>=<span class="string">"#00dd00"</span>&gt;</span>浅绿色文字<span class="tag">&lt;/<span class="name">font</span>&gt;</span><span class="tag">&lt;<span class="name">br</span> /&gt;</span> </span><br><span class="line">深绿色文字：<span class="tag">&lt;<span class="name">font</span> <span class="attr">color</span>=<span class="string">"#006600"</span>&gt;</span>深绿色文字<span class="tag">&lt;/<span class="name">font</span>&gt;</span><span class="tag">&lt;<span class="name">br</span> /&gt;</span> </span><br><span class="line">浅蓝色文字：<span class="tag">&lt;<span class="name">font</span> <span class="attr">color</span>=<span class="string">"#0000dd"</span>&gt;</span>浅蓝色文字<span class="tag">&lt;/<span class="name">font</span>&gt;</span><span class="tag">&lt;<span class="name">br</span> /&gt;</span> </span><br><span class="line">深蓝色文字：<span class="tag">&lt;<span class="name">font</span> <span class="attr">color</span>=<span class="string">"#000066"</span>&gt;</span>深蓝色文字<span class="tag">&lt;/<span class="name">font</span>&gt;</span><span class="tag">&lt;<span class="name">br</span> /&gt;</span> </span><br><span class="line">浅黄色文字：<span class="tag">&lt;<span class="name">font</span> <span class="attr">color</span>=<span class="string">"#dddd00"</span>&gt;</span>浅黄色文字<span class="tag">&lt;/<span class="name">font</span>&gt;</span><span class="tag">&lt;<span class="name">br</span> /&gt;</span> </span><br><span class="line">深黄色文字：<span class="tag">&lt;<span class="name">font</span> <span class="attr">color</span>=<span class="string">"#666600"</span>&gt;</span>深黄色文字<span class="tag">&lt;/<span class="name">font</span>&gt;</span><span class="tag">&lt;<span class="name">br</span> /&gt;</span> </span><br><span class="line">浅青色文字：<span class="tag">&lt;<span class="name">font</span> <span class="attr">color</span>=<span class="string">"#00dddd"</span>&gt;</span>浅青色文字<span class="tag">&lt;/<span class="name">font</span>&gt;</span><span class="tag">&lt;<span class="name">br</span> /&gt;</span> </span><br><span class="line">深青色文字：<span class="tag">&lt;<span class="name">font</span> <span class="attr">color</span>=<span class="string">"#006666"</span>&gt;</span>深青色文字<span class="tag">&lt;/<span class="name">font</span>&gt;</span><span class="tag">&lt;<span class="name">br</span> /&gt;</span> </span><br><span class="line">浅紫色文字：<span class="tag">&lt;<span class="name">font</span> <span class="attr">color</span>=<span class="string">"#dd00dd"</span>&gt;</span>浅紫色文字<span class="tag">&lt;/<span class="name">font</span>&gt;</span><span class="tag">&lt;<span class="name">br</span> /&gt;</span> </span><br><span class="line">深紫色文字：<span class="tag">&lt;<span class="name">font</span> <span class="attr">color</span>=<span class="string">"#660066"</span>&gt;</span>深紫色文字<span class="tag">&lt;/<span class="name">font</span>&gt;</span><span class="tag">&lt;<span class="name">br</span> /&gt;</span></span><br></pre></td></tr></table></figure><p>效果如下：</p><p>浅红色文字：<font color="#dd0000">浅红色文字：</font><br><br>深红色文字：<font color="#660000">深红色文字</font><br><br>浅绿色文字：<font color="#00dd00">浅绿色文字</font><br><br>深绿色文字：<font color="#006600">深绿色文字</font><br><br>浅蓝色文字：<font color="#0000dd">浅蓝色文字</font><br><br>深蓝色文字：<font color="#000066">深蓝色文字</font><br><br>浅黄色文字：<font color="#dddd00">浅黄色文字</font><br><br>深黄色文字：<font color="#666600">深黄色文字</font><br><br>浅青色文字：<font color="#00dddd">浅青色文字</font><br><br>深青色文字：<font color="#006666">深青色文字</font><br><br>浅紫色文字：<font color="#dd00dd">浅紫色文字</font><br><br>深紫色文字：<font color="#660066">深紫色文字</font><br> </p></li></ul><h2 id="6-Typora下载地址"><a href="#6-Typora下载地址" class="headerlink" title="6.Typora下载地址"></a>6.Typora下载地址</h2><p><a href="https://www.typora.io/" target="_blank" rel="noopener">https://www.typora.io/</a></p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;blockquote&gt;
-&lt;blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;” &lt;strong&gt;Markdown&lt;/strong&gt; 是一种&lt;strong&gt;轻量级&lt;/strong&gt;标记语言，创始人是&lt;strong&gt;约翰·格鲁伯&lt;/strong&gt;（John Gruber）。它允许人们 “使用易读易写的纯文本格式编写文档，然后转换成有效的 HTML 文档。” &lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/blockquote&gt;
-&lt;/blockquote&gt;
-    
-    </summary>
-    
-    
-      <category term="教程" scheme="http://yoursite.com/categories/%E6%95%99%E7%A8%8B/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>我的第一篇博客文章</title>
-    <link href="http://yoursite.com/2019/11/22/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/"/>
-    <id>http://yoursite.com/2019/11/22/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/</id>
-    <published>2019-11-22T07:58:25.000Z</published>
-    <updated>2019-11-22T08:09:08.549Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="第一章"><a href="#第一章" class="headerlink" title="第一章"></a>第一章</h2><p>内容</p><hr><h2 id="第二章"><a href="#第二章" class="headerlink" title="第二章"></a>第二章</h2><p>内容</p><hr><h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><p><a href="http://www.nedlee.com" target="_blank" rel="noopener">www.nedlee.com</a></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h2 id=&quot;第一章&quot;&gt;&lt;a href=&quot;#第一章&quot; class=&quot;headerlink&quot; title=&quot;第一章&quot;&gt;&lt;/a&gt;第一章&lt;/h2&gt;&lt;p&gt;内容&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&quot;第二章&quot;&gt;&lt;a href=&quot;#第二章&quot; class=&quot;headerlink&quot; title=&quot;
-      
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="http://yoursite.com/2019/11/22/hello-world/"/>
-    <id>http://yoursite.com/2019/11/22/hello-world/</id>
-    <published>2019-11-22T07:45:32.094Z</published>
-    <updated>2019-11-22T07:45:32.094Z</updated>
-    
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
-      
-    
-    </summary>
-    
-    
     
   </entry>
   
