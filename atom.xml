@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-05-12T12:44:10.341Z</updated>
+  <updated>2020-05-12T13:11:52.224Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,60 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>java中的classloader类加载器</title>
+    <link href="http://yoursite.com/2020/05/12/java%E4%B8%AD%E7%9A%84classloader%E7%B1%BB%E5%8A%A0%E8%BD%BD%E5%99%A8/"/>
+    <id>http://yoursite.com/2020/05/12/java%E4%B8%AD%E7%9A%84classloader%E7%B1%BB%E5%8A%A0%E8%BD%BD%E5%99%A8/</id>
+    <published>2020-05-12T13:00:57.000Z</published>
+    <updated>2020-05-12T13:11:52.224Z</updated>
+    
+    <content type="html"><![CDATA[<p>JDK中提供了三个ClassLoader，根据层级从高到低为：</p><p>1.Bootstrap ClassLoader，（根加载器）主要加载JVM自身工作需要的类。</p><p>2.Extension ClassLoader，（扩展类加载器）主要加载%JAVA_HOME%\lib\ext目录下的库类。</p><p>3.Application ClassLoader，（系统类加载器）主要加载Classpath指定的库类，一般情况下这是程序中的默认类加载器，也是<strong>ClassLoader.getSystemClassLoader()</strong> 的返回值。（这里的Classpath默认指的是环境变量中配置的Classpath，但是可以在执行Java命令的时候使用-cp 参数来修改当前程序使用的Classpath）</p><p>即使同一个名，用了不同的类加载器就判定为不同的类</p><p>JVM加载类的实现方式，我们称为 <strong>双亲委托模型</strong>：</p><p>如果一个类加载器收到了类加载的请求，他首先不会自己去尝试加载这个类，而是把这个请求委托给自己的父加载器，每一层的类加载器都是如此，因此所有的类加载请求最终都应该传送到顶层的<strong>Bootstrap ClassLoader</strong>中，只有当父加载器反馈自己无法完成加载请求时，子加载器才会尝试自己加载。</p><p><strong>双亲委托模型的重要用途是为了解决类载入过程中的安全性问题。</strong></p><p>假设有一个开发者自己编写了一个名为<a href="http://lib.csdn.net/base/java" target="_blank" rel="noopener">Java</a><em>.lang.Object</em>的类，想借此欺骗JVM。现在他要使用<strong>自定义ClassLoader</strong>来加载自己编写的<em>java.lang.Object</em>类。然而幸运的是，<strong>双亲委托模型</strong>不会让他成功。因为JVM会优先在<strong>Bootstrap ClassLoader</strong>的路径下找到<em>java.lang.Object</em>类，并载入它</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;JDK中提供了三个ClassLoader，根据层级从高到低为：&lt;/p&gt;
+&lt;p&gt;1.Bootstrap ClassLoader，（根加载器）主要加载JVM自身工作需要的类。&lt;/p&gt;
+&lt;p&gt;2.Extension ClassLoader，（扩展类加载器）主要加载%JAVA_HO
+      
+    
+    </summary>
+    
+    
+      <category term="牛客小知识" scheme="http://yoursite.com/categories/%E7%89%9B%E5%AE%A2%E5%B0%8F%E7%9F%A5%E8%AF%86/"/>
+    
+    
+      <category term="面试题" scheme="http://yoursite.com/tags/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Java锁的种类以及辨析</title>
+    <link href="http://yoursite.com/2020/05/12/Java%E9%94%81%E7%9A%84%E7%A7%8D%E7%B1%BB%E4%BB%A5%E5%8F%8A%E8%BE%A8%E6%9E%90/"/>
+    <id>http://yoursite.com/2020/05/12/Java%E9%94%81%E7%9A%84%E7%A7%8D%E7%B1%BB%E4%BB%A5%E5%8F%8A%E8%BE%A8%E6%9E%90/</id>
+    <published>2020-05-12T12:55:32.000Z</published>
+    <updated>2020-05-12T12:59:53.160Z</updated>
+    
+    <content type="html"><![CDATA[<h5 id="锁作为并发共享数据，保证一致性的工具，在JAVA平台有多种实现-如-synchronized-和-ReentrantLock等等-。这些已经写好提供的锁为我们开发提供了便利。"><a href="#锁作为并发共享数据，保证一致性的工具，在JAVA平台有多种实现-如-synchronized-和-ReentrantLock等等-。这些已经写好提供的锁为我们开发提供了便利。" class="headerlink" title="锁作为并发共享数据，保证一致性的工具，在JAVA平台有多种实现(如 synchronized 和 ReentrantLock等等 ) 。这些已经写好提供的锁为我们开发提供了便利。"></a>锁作为并发共享数据，保证一致性的工具，在JAVA平台有多种实现(如 synchronized 和 ReentrantLock等等 ) 。这些已经写好提供的锁为我们开发提供了便利。</h5><p>1、自旋锁 ,自旋，jvm默认是10次吧，有jvm自己控制。for去争取锁</p><p>2、阻塞锁 被阻塞的线程，不会争夺锁。</p><p>3、可重入锁 多次进入改锁的域</p><p>4、读写锁</p><p>5、互斥锁 锁本身就是互斥的</p><p>6、悲观锁 不相信，这里会是安全的，必须全部上锁</p><p>7、乐观锁 相信，这里是安全的。</p><p>8、公平锁 有优先级的锁</p><p>9、非公平锁 无优先级的锁</p><p>10、偏向锁 无竞争不锁，有竞争挂起，转为轻量锁</p><p>11、对象锁 锁住对象</p><p>12、线程锁</p><p>13、锁粗化 多锁变成一个，自己处理</p><p>14、轻量级锁 CAS 实现</p><p>15、锁消除 偏向锁就是锁消除的一种</p><p>16、锁膨胀 jvm实现，锁粗化</p><p>17、信号量 使用阻塞锁 实现的一种策略</p><p>18、排它锁：X锁，若事务T对数据对象A加上X锁，则只允许T读取和修改A，其他任何事务都不能再对A加任何类型的锁，直到T释放A上的锁。这就保证了其他事务在T释放A上的锁之前不能再读取和修改A。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h5 id=&quot;锁作为并发共享数据，保证一致性的工具，在JAVA平台有多种实现-如-synchronized-和-ReentrantLock等等-。这些已经写好提供的锁为我们开发提供了便利。&quot;&gt;&lt;a href=&quot;#锁作为并发共享数据，保证一致性的工具，在JAVA平台有多种实现-如
+      
+    
+    </summary>
+    
+    
+      <category term="牛客小知识" scheme="http://yoursite.com/categories/%E7%89%9B%E5%AE%A2%E5%B0%8F%E7%9F%A5%E8%AF%86/"/>
+    
+    
+      <category term="面试题" scheme="http://yoursite.com/tags/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    
+  </entry>
   
   <entry>
     <title>什么操作会使得当前线程停止？</title>
@@ -559,53 +613,6 @@
     
     
       <category term="Spring" scheme="http://yoursite.com/tags/Spring/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>随笔</title>
-    <link href="http://yoursite.com/2019/11/24/%E9%9A%8F%E7%AC%94/"/>
-    <id>http://yoursite.com/2019/11/24/%E9%9A%8F%E7%AC%94/</id>
-    <published>2019-11-24T11:57:51.000Z</published>
-    <updated>2020-05-11T02:57:39.354Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
-      <category term="file" scheme="http://yoursite.com/categories/file/"/>
-    
-    
-      <category term="随笔" scheme="http://yoursite.com/tags/%E9%9A%8F%E7%AC%94/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>图片测试</title>
-    <link href="http://yoursite.com/2019/11/24/%E5%9B%BE%E7%89%87%E6%B5%8B%E8%AF%95/"/>
-    <id>http://yoursite.com/2019/11/24/%E5%9B%BE%E7%89%87%E6%B5%8B%E8%AF%95/</id>
-    <published>2019-11-24T07:54:50.000Z</published>
-    <updated>2020-05-11T02:55:03.523Z</updated>
-    
-    <content type="html"><![CDATA[<p><img src="/bridge.jpg" alt="没有找到图片"></p><p><img src="/2019/11/24/%E5%9B%BE%E7%89%87%E6%B5%8B%E8%AF%95/bridge.jpg" alt="找不到图片"></p><p><img src="/2019/11/24/%E5%9B%BE%E7%89%87%E6%B5%8B%E8%AF%95/%5Cbridge.jpg" alt="实在找不到"></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;img src=&quot;/bridge.jpg&quot; alt=&quot;没有找到图片&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/2019/11/24/%E5%9B%BE%E7%89%87%E6%B5%8B%E8%AF%95/bridge.jpg&quot; alt=&quot;找不到图片&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;i
-      
-    
-    </summary>
-    
-    
-      <category term="测试" scheme="http://yoursite.com/categories/%E6%B5%8B%E8%AF%95/"/>
-    
-    
-      <category term="测试" scheme="http://yoursite.com/tags/%E6%B5%8B%E8%AF%95/"/>
     
   </entry>
   
