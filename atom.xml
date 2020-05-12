@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-05-12T07:19:59.262Z</updated>
+  <updated>2020-05-12T11:42:07.005Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,84 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>关于ArrayLinst与LinkList</title>
+    <link href="http://yoursite.com/2020/05/12/%E5%85%B3%E4%BA%8EArrayLinst%E4%B8%8ELinkList/"/>
+    <id>http://yoursite.com/2020/05/12/%E5%85%B3%E4%BA%8EArrayLinst%E4%B8%8ELinkList/</id>
+    <published>2020-05-12T11:33:30.000Z</published>
+    <updated>2020-05-12T11:42:07.005Z</updated>
+    
+    <content type="html"><![CDATA[<p>A. ArrayList是实现了基于动态数组的数据结构，LinkedList基于链表的数据结构。 这里的所谓动态数组并不是那个“ 有多少元素就申请多少空间 ”的意思，通过查看源码，可以发现，这个动态数组是这样实现的，如果没指定数组大小，则申请默认大小为10的数组，当元素个数增加，数组无法存储时，系统会另个申请一个长度为当前长度1.5倍的数组，然后，把之前的数据拷贝到新建的数组。</p><p>- ———————————————————————</p><p>B. 对于随机访问get和set，ArrayList绝对优于LinkedList，因为LinkedList要移动指针。ArrayList是数组，所以，直接定位到相应位置取元素，LinkedLIst是链表，所以需要从前往后遍历。</p><p>-———————————————————————-</p><p>C. 对于新增和删除操作add和remove，LinedList比较占优势，因为ArrayList要移动数据。ArrayList的新增和删除就是数组的新增和删除，LinkedList与链表一致。</p><p>-————————————————————————</p><p>D. ArrayList的空间浪费主要体现在在list列表的结尾预留一定的容量空间，而LinkedList的空间花费则体现在它的每一个元素都需要消耗相当的空间。因为ArrayList空间的增长率为1.5倍，所以，最后很可能留下一部分空间是没有用到的，因此，会造成浪费的情况。对于LInkedList的话，由于每个节点都需要额外的指针，所以，你懂的。</p><p>下面放一张ArrayList和LinkedList的区别表：</p><img src="/2020/05/12/%E5%85%B3%E4%BA%8EArrayLinst%E4%B8%8ELinkList/p1.png" class title="ArrayList和LinkedList的区别表">]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;A. ArrayList是实现了基于动态数组的数据结构，LinkedList基于链表的数据结构。 这里的所谓动态数组并不是那个“ 有多少元素就申请多少空间 ”的意思，通过查看源码，可以发现，这个动态数组是这样实现的，如果没指定数组大小，则申请默认大小为10的数组，当元素个数
+      
+    
+    </summary>
+    
+    
+      <category term="牛客小知识" scheme="http://yoursite.com/categories/%E7%89%9B%E5%AE%A2%E5%B0%8F%E7%9F%A5%E8%AF%86/"/>
+    
+    
+      <category term="面试题" scheme="http://yoursite.com/tags/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>关于java内存区域</title>
+    <link href="http://yoursite.com/2020/05/12/%E5%85%B3%E4%BA%8Ejava%E5%86%85%E5%AD%98%E5%8C%BA%E5%9F%9F/"/>
+    <id>http://yoursite.com/2020/05/12/%E5%85%B3%E4%BA%8Ejava%E5%86%85%E5%AD%98%E5%8C%BA%E5%9F%9F/</id>
+    <published>2020-05-12T11:26:47.000Z</published>
+    <updated>2020-05-12T11:31:43.382Z</updated>
+    
+    <content type="html"><![CDATA[<p>A.程序计数器是一块较小的内存空间，它的作用可以看做是当前线程所执行的字节码的信号指示器（偏移地址），Java编译过程中产生的字节码有点类似编译原理的指令，程序计数器的内存空间存储的是当前执行的字节码的偏移地址，每一个线程都有一个独立的程序计数器（程序计数器的内存空间是线程私有的），因为当执行语句时，改变的是程序计数器的内存空间，因此它不会发生内存溢出 ，并且程序计数器是jvm虚拟机规范中唯一一个没有规定 OutOfMemoryError 异常 的区域；</p><p>B.java虚拟机栈：线程私有，生命周期和线程一致。描述的是 Java 方法执行的内存模型：每个方法在执行时都会创建一个栈帧(Stack Frame)用于存储局部变量表、操作数栈、动态链接、方法出口等信息。每一个方法从调用直至执行结束，就对应着一个栈帧从虚拟机栈中入栈到出栈的过程。 没有类信息，类信息是在方法区中</p><p>C.java堆：对于绝大多数应用来说，这块区域是 JVM 所管理的内存中最大的一块。线程共享，主要是存放对象实例和数组</p><p>D.方法区：属于共享内存区域，存储已被虚拟机加载的类信息、常量、静态变量、即时编译器编译后的代码等数据。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;A.程序计数器是一块较小的内存空间，它的作用可以看做是当前线程所执行的字节码的信号指示器（偏移地址），Java编译过程中产生的字节码有点类似编译原理的指令，程序计数器的内存空间存储的是当前执行的字节码的偏移地址，每一个线程都有一个独立的程序计数器（程序计数器的内存空间是线程
+      
+    
+    </summary>
+    
+    
+      <category term="牛客小知识" scheme="http://yoursite.com/categories/%E7%89%9B%E5%AE%A2%E5%B0%8F%E7%9F%A5%E8%AF%86/"/>
+    
+    
+      <category term="面试题" scheme="http://yoursite.com/tags/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>二叉树查找的时间复杂度</title>
+    <link href="http://yoursite.com/2020/05/12/%E4%BA%8C%E5%8F%89%E6%A0%91%E6%9F%A5%E6%89%BE%E7%9A%84%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6/"/>
+    <id>http://yoursite.com/2020/05/12/%E4%BA%8C%E5%8F%89%E6%A0%91%E6%9F%A5%E6%89%BE%E7%9A%84%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6/</id>
+    <published>2020-05-12T11:22:50.000Z</published>
+    <updated>2020-05-12T11:25:39.246Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="二叉树查找的时间复杂度"><a href="#二叉树查找的时间复杂度" class="headerlink" title="二叉树查找的时间复杂度"></a>二叉树查找的时间复杂度</h4><p>​        给定值的比较次数等于给定值节点在二叉排序树中的层数。如果二叉排序树是平衡的，则n个节点的二叉排序树的高度为Log2(n+1),其查找效率为O(Log2n)，近似于折半查找。如果二叉排序树完全不平衡，则其深度可达到n，查找效率为O(n)，退化为顺序查找。一般的，二叉排序树的查找性能在O(Log2n)到O(n)之间。因此，为了获得较好的查找性能，就要构造一棵平衡的二叉排序树。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h4 id=&quot;二叉树查找的时间复杂度&quot;&gt;&lt;a href=&quot;#二叉树查找的时间复杂度&quot; class=&quot;headerlink&quot; title=&quot;二叉树查找的时间复杂度&quot;&gt;&lt;/a&gt;二叉树查找的时间复杂度&lt;/h4&gt;&lt;p&gt;​        给定值的比较次数等于给定值节点在二叉排序树中的层数
+      
+    
+    </summary>
+    
+    
+      <category term="牛客小知识" scheme="http://yoursite.com/categories/%E7%89%9B%E5%AE%A2%E5%B0%8F%E7%9F%A5%E8%AF%86/"/>
+    
+    
+      <category term="面试题" scheme="http://yoursite.com/tags/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    
+  </entry>
   
   <entry>
     <title>堆与栈的概念和区别</title>
