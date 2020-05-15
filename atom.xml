@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-05-15T13:11:45.218Z</updated>
+  <updated>2020-05-15T13:14:41.989Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Sleep和wait的qubie</title>
+    <title>Sleep和wait的区别</title>
     <link href="http://yoursite.com/2020/05/15/Sleep%E5%92%8Cwait%E7%9A%84%E5%8C%BA%E5%88%AB/"/>
     <id>http://yoursite.com/2020/05/15/Sleep%E5%92%8Cwait%E7%9A%84%E5%8C%BA%E5%88%AB/</id>
     <published>2020-05-15T12:49:02.000Z</published>
-    <updated>2020-05-15T13:11:45.218Z</updated>
+    <updated>2020-05-15T13:14:41.989Z</updated>
     
     <content type="html"><![CDATA[<h4 id="Sleep和wait的区别"><a href="#Sleep和wait的区别" class="headerlink" title="Sleep和wait的区别"></a>Sleep和wait的区别</h4><h5 id="1-所属的类不同"><a href="#1-所属的类不同" class="headerlink" title="1.所属的类不同"></a>1.所属的类不同</h5><p>sleep方法是定义在Thread上的</p><p>wait方法是定义在object上的</p><h5 id="2-对于锁资源的处理方式不同"><a href="#2-对于锁资源的处理方式不同" class="headerlink" title="2.对于锁资源的处理方式不同"></a>2.对于锁资源的处理方式不同</h5><p>sleep不会释放锁，也就是说，该资源还是在当前方法上，其他线程无法访问其资源</p><p>wait会释放锁，调用wait后，其他线程可访问先前被锁住的资源</p><h5 id="3-使用范围不同"><a href="#3-使用范围不同" class="headerlink" title="3.使用范围不同"></a>3.使用范围不同</h5><p>sleep可以使用在任何代码块</p><p>wait必须在同步方法或同步代码块执行</p><h5 id="4-与wait配套使用的方法"><a href="#4-与wait配套使用的方法" class="headerlink" title="4.与wait配套使用的方法"></a>4.与wait配套使用的方法</h5><ul><li>void notify()</li></ul><p>作用：唤醒在此对象监视器上等待的单个线程</p><ul><li>void notifyall()</li></ul><p>作用：唤醒在此对象监视器上等待的所有线程</p><ul><li>void wait() </li></ul><p>作用：导致当前线程等待，直到其他线程调用此对象的notify()方法或notifyall()方法</p><h5 id="5-生命周期"><a href="#5-生命周期" class="headerlink" title="5.生命周期"></a>5.生命周期</h5><p>(1)当线程调用wait()或者join时，线程都会进入到waiting状态，当调用notify或notifyall时，或者join的线程执行结束后，会进入runnable状态</p><p>(2)当线程调用sleep(time)，或者wait(time)时，进入time waiting状态</p><h5 id="6-为什么wait要定义在object中，而不定义在thread中？"><a href="#6-为什么wait要定义在object中，而不定义在thread中？" class="headerlink" title="6.为什么wait要定义在object中，而不定义在thread中？"></a>6.为什么wait要定义在object中，而不定义在thread中？</h5><p>因为Java的锁是对象级别的，而不是线程级别的</p><h5 id="7-为什么wait必须卸载同步代码块中"><a href="#7-为什么wait必须卸载同步代码块中" class="headerlink" title="7.为什么wait必须卸载同步代码块中"></a>7.为什么wait必须卸载同步代码块中</h5><p>原因是避免CPU切换到其他线程，而其他线程又提前执行了notify方法，那样就达不到我们的预期（先wait再由其他线程来唤醒），所以需要一个同步锁来保护</p>]]></content>
     
