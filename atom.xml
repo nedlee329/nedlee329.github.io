@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-05-13T02:27:46.822Z</updated>
+  <updated>2020-05-15T08:02:59.938Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>解决hash冲突的方法</title>
+    <link href="http://yoursite.com/2020/05/15/%E8%A7%A3%E5%86%B3hash%E5%86%B2%E7%AA%81%E7%9A%84%E6%96%B9%E6%B3%95/"/>
+    <id>http://yoursite.com/2020/05/15/%E8%A7%A3%E5%86%B3hash%E5%86%B2%E7%AA%81%E7%9A%84%E6%96%B9%E6%B3%95/</id>
+    <published>2020-05-15T07:44:48.000Z</published>
+    <updated>2020-05-15T08:02:59.938Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="1-什么是哈希冲突？"><a href="#1-什么是哈希冲突？" class="headerlink" title="1.什么是哈希冲突？"></a>1.什么是哈希冲突？</h4><p>理解哈希函数</p><p>关键字和它在表中存储位置之间存在一种函数关系。这个函数我们称为为哈希函数。</p><p>hash:散列、杂凑 </p><p>​        就是把任意长度的输入，通过散列算法，变成固定长度的输出，这种是一种压缩映射.</p><pre><code>那么在这种情况下，不同的输入可能会产生相同的散列值，即这种状况下他们对应的哈希数的值是相同的，因为值相同所以不可能由散列值确定唯一的输入值，这种情况就是哈希冲突</code></pre><p>​        键(key)经过hash函数得到的结果作为地址去存放当前的键值对(key-value)(hashmap的存值方式)，但是却发现该地址已经有值了，就会产生冲突。这个冲突就是hash冲突了。</p><p>​        换句话说就是：如果两个不同对象的hashCode相同，这种现象称为hash冲突。</p><h4 id="2-解决哈希冲突"><a href="#2-解决哈希冲突" class="headerlink" title="2. 解决哈希冲突"></a>2. 解决哈希冲突</h4><p>解决哈希冲突主要有以下几种方法：</p><p><strong>开放定址法</strong></p><p><strong>再哈希法</strong></p><p><strong>链地址法</strong></p><p><strong>建立公共溢出区</strong></p><h5 id="1-开放定址法"><a href="#1-开放定址法" class="headerlink" title="(1)开放定址法"></a>(1)开放定址法</h5><p>这种方法的意思是：当关键字key的哈希地址p=H（key）出现冲突时，以p为基础，产生另一个哈希地址p1，如果p1仍然冲突，再以p为基础，产生另一个哈希地址p2，…，直到找出一个不冲突的哈希地址pi ，将相应元素存入其中。（ThreadLocalMap中使用开放地址法来处理散列冲突，而HashMap中使用的是分离链表法。之所以采用不同的方式主要是因为：在ThreadLocalMap中的散列值分散得十分均匀，很少会出现冲突。并且ThreadLocalMap经常需要清除无用的对象，使用纯数组更加方便。）</p><p>线性探测再散列</p><p>当发生冲突的时候，顺序的查看下一个单元</p><p>二次(平方)探测再散列</p><p>当发生冲突的时候，在表的左右进行跳跃式探测</p><h5 id="2-再hash法"><a href="#2-再hash法" class="headerlink" title="(2)再hash法"></a>(2)再hash法</h5><p>​        这种方式是同时构造多个哈希函数，当产生冲突时，计算另一个哈希函数的值。</p><p>​        这种方法不易产生聚集，但增加了计算时间。</p><h5 id="3-链地址法"><a href="#3-链地址法" class="headerlink" title="(3)链地址法"></a>(3)链地址法</h5><p>​        将所有哈希地址相同的都链接在同一个链表中 ，因而查找、插入和删除主要在同义词链中进行。链地址法适用于经常进行插入和删除的情况。</p><p>​        hashmap就是用此方法解决冲突的。这是Java1.7之前解决hash冲突的主要办法，但是在Java1.8之后，就对该方法进行了升级，运用红黑树的算法解决插入值相同过多的问题。</p><h5 id="4-建立一个公共溢出区"><a href="#4-建立一个公共溢出区" class="headerlink" title="(4)建立一个公共溢出区"></a>(4)建立一个公共溢出区</h5><p>​        将哈希表分为基本表和溢出表两部分，凡是和基本表发生冲突的元素，一律填入溢出表。</p><h4 id="3-HashMap-HaspTable-ConcurrentHaspMap的区别"><a href="#3-HashMap-HaspTable-ConcurrentHaspMap的区别" class="headerlink" title="3.HashMap,HaspTable,ConcurrentHaspMap的区别"></a>3.HashMap,HaspTable,ConcurrentHaspMap的区别</h4><h5 id="1-haspmap是线程不安全的，但是效率快，如果不是在多线程环境下，一般使用的就是hashmap"><a href="#1-haspmap是线程不安全的，但是效率快，如果不是在多线程环境下，一般使用的就是hashmap" class="headerlink" title="(1)haspmap是线程不安全的，但是效率快，如果不是在多线程环境下，一般使用的就是hashmap."></a>(1)haspmap是线程不安全的，但是效率快，如果不是在多线程环境下，一般使用的就是hashmap.</h5><h5 id="2-hashtable虽然是线程安全的，但是效率很低，就算是在多线程环境中，一般也不会用它。"><a href="#2-hashtable虽然是线程安全的，但是效率很低，就算是在多线程环境中，一般也不会用它。" class="headerlink" title="(2)hashtable虽然是线程安全的，但是效率很低，就算是在多线程环境中，一般也不会用它。"></a>(2)hashtable虽然是线程安全的，但是效率很低，就算是在多线程环境中，一般也不会用它。</h5><h5 id="3-concurrenthashmap采用的是分段上锁机制，也就是将其中存储的hash表进行分段上锁，这样就在效率和安全上做到了两者兼顾。"><a href="#3-concurrenthashmap采用的是分段上锁机制，也就是将其中存储的hash表进行分段上锁，这样就在效率和安全上做到了两者兼顾。" class="headerlink" title="(3)concurrenthashmap采用的是分段上锁机制，也就是将其中存储的hash表进行分段上锁，这样就在效率和安全上做到了两者兼顾。"></a>(3)concurrenthashmap采用的是分段上锁机制，也就是将其中存储的hash表进行分段上锁，这样就在效率和安全上做到了两者兼顾。</h5>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h4 id=&quot;1-什么是哈希冲突？&quot;&gt;&lt;a href=&quot;#1-什么是哈希冲突？&quot; class=&quot;headerlink&quot; title=&quot;1.什么是哈希冲突？&quot;&gt;&lt;/a&gt;1.什么是哈希冲突？&lt;/h4&gt;&lt;p&gt;理解哈希函数&lt;/p&gt;
+&lt;p&gt;关键字和它在表中存储位置之间存在一种函数关系。这
+      
+    
+    </summary>
+    
+    
+      <category term="牛客小知识" scheme="http://yoursite.com/categories/%E7%89%9B%E5%AE%A2%E5%B0%8F%E7%9F%A5%E8%AF%86/"/>
+    
+    
+      <category term="面试题" scheme="http://yoursite.com/tags/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    
+  </entry>
   
   <entry>
     <title>java子父类构造器的调用</title>
@@ -523,33 +550,6 @@
 &lt;li&gt;&lt;p&gt;服务器处理请求&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;p
-      
-    
-    </summary>
-    
-    
-      <category term="牛客小知识" scheme="http://yoursite.com/categories/%E7%89%9B%E5%AE%A2%E5%B0%8F%E7%9F%A5%E8%AF%86/"/>
-    
-    
-      <category term="面试题" scheme="http://yoursite.com/tags/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>什么是事务？</title>
-    <link href="http://yoursite.com/2020/05/11/%E4%BB%80%E4%B9%88%E6%98%AF%E4%BA%8B%E5%8A%A1%EF%BC%9F/"/>
-    <id>http://yoursite.com/2020/05/11/%E4%BB%80%E4%B9%88%E6%98%AF%E4%BA%8B%E5%8A%A1%EF%BC%9F/</id>
-    <published>2020-05-11T07:07:00.000Z</published>
-    <updated>2020-05-11T07:13:46.244Z</updated>
-    
-    <content type="html"><![CDATA[<p><strong>事务：</strong>是数据库操作的最小工作单元，是作为单个逻辑工作单元执行的一系列操作；这些操作作为一个整体一起向系统提交，要么都执行、要么都不执行；事务是一组不可再分割的操作集合（工作逻辑单元）；</p><p><strong>事务的四大特性：</strong></p><h6 id="1-、原子性"><a href="#1-、原子性" class="headerlink" title="1 、原子性"></a>1 、原子性</h6><p>事务是数据库的逻辑工作单位，事务中包含的各操作要么都做，要么都不做</p><h6 id="2-、一致性"><a href="#2-、一致性" class="headerlink" title="2 、一致性"></a>2 、一致性</h6><p>事务执行的结果必须是使数据库从一个一致性状态变到另一个一致性状态。因此当数据库只包含成功事务提交的结果时，就说数据库处于一致性状态。如果数据库系统运行中发生故障，有些事务尚未完成就被迫中断，这些未完成事务对数据库所做的修改有一部分已写入物理数据库，这时数据库就处于一种不正确的状态，或者说是 不一致的状态。 </p><h6 id="3-、隔离性"><a href="#3-、隔离性" class="headerlink" title="3 、隔离性"></a>3 、隔离性</h6><p>一个事务的执行不能其它事务干扰。即一个事务内部的操作及使用的数据对其它并发事务是隔离的，并发执行的各个事务之间不能互相干扰。</p><h6 id="4-、持续性"><a href="#4-、持续性" class="headerlink" title="4 、持续性"></a>4 、持续性</h6><p>也称永久性，指一个事务一旦提交，它对数据库中的数据的改变就应该是永久性的。接下来的其它操作或故障不应该对其执行结果有任何影响。</p><p>原子性是基础，隔离性是手段，一致性是约束条件，而持久性是目的。</p><p>简称ACID</p><p>原子性（Atomicity），一致性（Consistency）,隔离性（Isolation）和持久性（Durability）</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;strong&gt;事务：&lt;/strong&gt;是数据库操作的最小工作单元，是作为单个逻辑工作单元执行的一系列操作；这些操作作为一个整体一起向系统提交，要么都执行、要么都不执行；事务是一组不可再分割的操作集合（工作逻辑单元）；&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;事务的四大特性：&lt;/st
       
     
     </summary>
