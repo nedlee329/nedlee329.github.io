@@ -1,34 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Hello World</title>
-    <url>/2019/11/22/hello-world/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-]]></content>
-  </entry>
-  <entry>
-    <title>我的第一篇博客文章</title>
-    <url>/2019/11/22/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h2 id="第一章"><a href="#第一章" class="headerlink" title="第一章"></a>第一章</h2><p>内容</p>
-<hr>
-<h2 id="第二章"><a href="#第二章" class="headerlink" title="第二章"></a>第二章</h2><p>内容</p>
-<hr>
-<h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><p><a href="http://www.nedlee.com" target="_blank" rel="noopener">www.nedlee.com</a></p>
-]]></content>
-  </entry>
-  <entry>
     <title>Typora使用教程</title>
     <url>/2019/11/24/Typora%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><blockquote>
@@ -205,6 +177,24 @@
       </categories>
   </entry>
   <entry>
+    <title>Hello World</title>
+    <url>/2019/11/22/hello-world/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+]]></content>
+  </entry>
+  <entry>
     <title>图片测试</title>
     <url>/2019/11/24/%E5%9B%BE%E7%89%87%E6%B5%8B%E8%AF%95/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p><img src="/bridge.jpg" alt="没有找到图片"></p>
@@ -217,6 +207,16 @@
       <tags>
         <tag>测试</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>我的第一篇博客文章</title>
+    <url>/2019/11/22/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h2 id="第一章"><a href="#第一章" class="headerlink" title="第一章"></a>第一章</h2><p>内容</p>
+<hr>
+<h2 id="第二章"><a href="#第二章" class="headerlink" title="第二章"></a>第二章</h2><p>内容</p>
+<hr>
+<h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><p><a href="http://www.nedlee.com" target="_blank" rel="noopener">www.nedlee.com</a></p>
+]]></content>
   </entry>
   <entry>
     <title>Java锁的种类以及辨析</title>
@@ -239,39 +239,6 @@
 <p>16、锁膨胀 jvm实现，锁粗化</p>
 <p>17、信号量 使用阻塞锁 实现的一种策略</p>
 <p>18、排它锁：X锁，若事务T对数据对象A加上X锁，则只允许T读取和修改A，其他任何事务都不能再对A加任何类型的锁，直到T释放A上的锁。这就保证了其他事务在T释放A上的锁之前不能再读取和修改A。</p>
-]]></content>
-      <categories>
-        <category>牛客小知识</category>
-      </categories>
-      <tags>
-        <tag>面试题</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Sleep和wait的区别</title>
-    <url>/2020/05/15/Sleep%E5%92%8Cwait%E7%9A%84%E5%8C%BA%E5%88%AB/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h4 id="Sleep和wait的区别"><a href="#Sleep和wait的区别" class="headerlink" title="Sleep和wait的区别"></a>Sleep和wait的区别</h4><h5 id="1-所属的类不同"><a href="#1-所属的类不同" class="headerlink" title="1.所属的类不同"></a>1.所属的类不同</h5><p>sleep方法是定义在Thread上的</p>
-<p>wait方法是定义在object上的</p>
-<h5 id="2-对于锁资源的处理方式不同"><a href="#2-对于锁资源的处理方式不同" class="headerlink" title="2.对于锁资源的处理方式不同"></a>2.对于锁资源的处理方式不同</h5><p>sleep不会释放锁，也就是说，该资源还是在当前方法上，其他线程无法访问其资源</p>
-<p>wait会释放锁，调用wait后，其他线程可访问先前被锁住的资源</p>
-<h5 id="3-使用范围不同"><a href="#3-使用范围不同" class="headerlink" title="3.使用范围不同"></a>3.使用范围不同</h5><p>sleep可以使用在任何代码块</p>
-<p>wait必须在同步方法或同步代码块执行</p>
-<h5 id="4-与wait配套使用的方法"><a href="#4-与wait配套使用的方法" class="headerlink" title="4.与wait配套使用的方法"></a>4.与wait配套使用的方法</h5><ul>
-<li>void notify()</li>
-</ul>
-<p>作用：唤醒在此对象监视器上等待的单个线程</p>
-<ul>
-<li>void notifyall()</li>
-</ul>
-<p>作用：唤醒在此对象监视器上等待的所有线程</p>
-<ul>
-<li>void wait() </li>
-</ul>
-<p>作用：导致当前线程等待，直到其他线程调用此对象的notify()方法或notifyall()方法</p>
-<h5 id="5-生命周期"><a href="#5-生命周期" class="headerlink" title="5.生命周期"></a>5.生命周期</h5><p>(1)当线程调用wait()或者join时，线程都会进入到waiting状态，当调用notify或notifyall时，或者join的线程执行结束后，会进入runnable状态</p>
-<p>(2)当线程调用sleep(time)，或者wait(time)时，进入time waiting状态</p>
-<h5 id="6-为什么wait要定义在object中，而不定义在thread中？"><a href="#6-为什么wait要定义在object中，而不定义在thread中？" class="headerlink" title="6.为什么wait要定义在object中，而不定义在thread中？"></a>6.为什么wait要定义在object中，而不定义在thread中？</h5><p>因为Java的锁是对象级别的，而不是线程级别的</p>
-<h5 id="7-为什么wait必须卸载同步代码块中"><a href="#7-为什么wait必须卸载同步代码块中" class="headerlink" title="7.为什么wait必须卸载同步代码块中"></a>7.为什么wait必须卸载同步代码块中</h5><p>原因是避免CPU切换到其他线程，而其他线程又提前执行了notify方法，那样就达不到我们的预期（先wait再由其他线程来唤醒），所以需要一个同步锁来保护</p>
 ]]></content>
       <categories>
         <category>牛客小知识</category>
@@ -340,6 +307,39 @@
       </tags>
   </entry>
   <entry>
+    <title>Sleep和wait的区别</title>
+    <url>/2020/05/15/Sleep%E5%92%8Cwait%E7%9A%84%E5%8C%BA%E5%88%AB/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h4 id="Sleep和wait的区别"><a href="#Sleep和wait的区别" class="headerlink" title="Sleep和wait的区别"></a>Sleep和wait的区别</h4><h5 id="1-所属的类不同"><a href="#1-所属的类不同" class="headerlink" title="1.所属的类不同"></a>1.所属的类不同</h5><p>sleep方法是定义在Thread上的</p>
+<p>wait方法是定义在object上的</p>
+<h5 id="2-对于锁资源的处理方式不同"><a href="#2-对于锁资源的处理方式不同" class="headerlink" title="2.对于锁资源的处理方式不同"></a>2.对于锁资源的处理方式不同</h5><p>sleep不会释放锁，也就是说，该资源还是在当前方法上，其他线程无法访问其资源</p>
+<p>wait会释放锁，调用wait后，其他线程可访问先前被锁住的资源</p>
+<h5 id="3-使用范围不同"><a href="#3-使用范围不同" class="headerlink" title="3.使用范围不同"></a>3.使用范围不同</h5><p>sleep可以使用在任何代码块</p>
+<p>wait必须在同步方法或同步代码块执行</p>
+<h5 id="4-与wait配套使用的方法"><a href="#4-与wait配套使用的方法" class="headerlink" title="4.与wait配套使用的方法"></a>4.与wait配套使用的方法</h5><ul>
+<li>void notify()</li>
+</ul>
+<p>作用：唤醒在此对象监视器上等待的单个线程</p>
+<ul>
+<li>void notifyall()</li>
+</ul>
+<p>作用：唤醒在此对象监视器上等待的所有线程</p>
+<ul>
+<li>void wait() </li>
+</ul>
+<p>作用：导致当前线程等待，直到其他线程调用此对象的notify()方法或notifyall()方法</p>
+<h5 id="5-生命周期"><a href="#5-生命周期" class="headerlink" title="5.生命周期"></a>5.生命周期</h5><p>(1)当线程调用wait()或者join时，线程都会进入到waiting状态，当调用notify或notifyall时，或者join的线程执行结束后，会进入runnable状态</p>
+<p>(2)当线程调用sleep(time)，或者wait(time)时，进入time waiting状态</p>
+<h5 id="6-为什么wait要定义在object中，而不定义在thread中？"><a href="#6-为什么wait要定义在object中，而不定义在thread中？" class="headerlink" title="6.为什么wait要定义在object中，而不定义在thread中？"></a>6.为什么wait要定义在object中，而不定义在thread中？</h5><p>因为Java的锁是对象级别的，而不是线程级别的</p>
+<h5 id="7-为什么wait必须卸载同步代码块中"><a href="#7-为什么wait必须卸载同步代码块中" class="headerlink" title="7.为什么wait必须卸载同步代码块中"></a>7.为什么wait必须卸载同步代码块中</h5><p>原因是避免CPU切换到其他线程，而其他线程又提前执行了notify方法，那样就达不到我们的预期（先wait再由其他线程来唤醒），所以需要一个同步锁来保护</p>
+]]></content>
+      <categories>
+        <category>牛客小知识</category>
+      </categories>
+      <tags>
+        <tag>面试题</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>java创建对象的几种方式</title>
     <url>/2020/05/12/java%E5%88%9B%E5%BB%BA%E5%AF%B9%E8%B1%A1%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E5%BC%8F/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h4 id="java有5种方式来创建对象："><a href="#java有5种方式来创建对象：" class="headerlink" title="java有5种方式来创建对象："></a>java有5种方式来创建对象：</h4><p>1、使用 new 关键字（最常用）： <code>ObjectName obj = new ObjectName();</code></p>
@@ -380,6 +380,18 @@
       </tags>
   </entry>
   <entry>
+    <title>二叉树查找的时间复杂度</title>
+    <url>/2020/05/12/%E4%BA%8C%E5%8F%89%E6%A0%91%E6%9F%A5%E6%89%BE%E7%9A%84%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h4 id="二叉树查找的时间复杂度"><a href="#二叉树查找的时间复杂度" class="headerlink" title="二叉树查找的时间复杂度"></a>二叉树查找的时间复杂度</h4><p>​        给定值的比较次数等于给定值节点在二叉排序树中的层数。如果二叉排序树是平衡的，则n个节点的二叉排序树的高度为Log2(n+1),其查找效率为O(Log2n)，近似于折半查找。如果二叉排序树完全不平衡，则其深度可达到n，查找效率为O(n)，退化为顺序查找。一般的，二叉排序树的查找性能在O(Log2n)到O(n)之间。因此，为了获得较好的查找性能，就要构造一棵平衡的二叉排序树。</p>
+]]></content>
+      <categories>
+        <category>牛客小知识</category>
+      </categories>
+      <tags>
+        <tag>面试题</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>synchronized和lock的区别</title>
     <url>/2020/05/16/synchronized%E5%92%8Clock%E7%9A%84%E5%8C%BA%E5%88%AB/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h4 id="1-作用的位置不同"><a href="#1-作用的位置不同" class="headerlink" title="1.作用的位置不同"></a>1.作用的位置不同</h4><p>synchronized可以给方法，代码块加锁</p>
@@ -398,18 +410,6 @@
 <p>//线程进入，就自动获取到锁</p>
 <p>//线程执行结束，自动释放锁</p>
 <p>}</p>
-]]></content>
-      <categories>
-        <category>牛客小知识</category>
-      </categories>
-      <tags>
-        <tag>面试题</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>二叉树查找的时间复杂度</title>
-    <url>/2020/05/12/%E4%BA%8C%E5%8F%89%E6%A0%91%E6%9F%A5%E6%89%BE%E7%9A%84%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h4 id="二叉树查找的时间复杂度"><a href="#二叉树查找的时间复杂度" class="headerlink" title="二叉树查找的时间复杂度"></a>二叉树查找的时间复杂度</h4><p>​        给定值的比较次数等于给定值节点在二叉排序树中的层数。如果二叉排序树是平衡的，则n个节点的二叉排序树的高度为Log2(n+1),其查找效率为O(Log2n)，近似于折半查找。如果二叉排序树完全不平衡，则其深度可达到n，查找效率为O(n)，退化为顺序查找。一般的，二叉排序树的查找性能在O(Log2n)到O(n)之间。因此，为了获得较好的查找性能，就要构造一棵平衡的二叉排序树。</p>
 ]]></content>
       <categories>
         <category>牛客小知识</category>
@@ -508,6 +508,21 @@
       </tags>
   </entry>
   <entry>
+    <title>关于java内存区域</title>
+    <url>/2020/05/12/%E5%85%B3%E4%BA%8Ejava%E5%86%85%E5%AD%98%E5%8C%BA%E5%9F%9F/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>A.程序计数器是一块较小的内存空间，它的作用可以看做是当前线程所执行的字节码的信号指示器（偏移地址），Java编译过程中产生的字节码有点类似编译原理的指令，程序计数器的内存空间存储的是当前执行的字节码的偏移地址，每一个线程都有一个独立的程序计数器（程序计数器的内存空间是线程私有的），因为当执行语句时，改变的是程序计数器的内存空间，因此它不会发生内存溢出 ，并且程序计数器是jvm虚拟机规范中唯一一个没有规定 OutOfMemoryError 异常 的区域；</p>
+<p>B.java虚拟机栈：线程私有，生命周期和线程一致。描述的是 Java 方法执行的内存模型：每个方法在执行时都会创建一个栈帧(Stack Frame)用于存储局部变量表、操作数栈、动态链接、方法出口等信息。每一个方法从调用直至执行结束，就对应着一个栈帧从虚拟机栈中入栈到出栈的过程。 没有类信息，类信息是在方法区中</p>
+<p>C.java堆：对于绝大多数应用来说，这块区域是 JVM 所管理的内存中最大的一块。线程共享，主要是存放对象实例和数组</p>
+<p>D.方法区：属于共享内存区域，存储已被虚拟机加载的类信息、常量、静态变量、即时编译器编译后的代码等数据。</p>
+]]></content>
+      <categories>
+        <category>牛客小知识</category>
+      </categories>
+      <tags>
+        <tag>面试题</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>关于Java的反射</title>
     <url>/2020/05/12/%E5%85%B3%E4%BA%8EJava%E7%9A%84%E5%8F%8D%E5%B0%84/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>反射指的是在运行时能够分析类的能力的程序。</p>
@@ -529,21 +544,6 @@
 <p>   Reflection是Java程序开发语言的特征之一，它允许运行中的Java程序对自身进行检查，或者说”自审”，并能直接操作程序的内部属性。例如，使用它能获得Java类中各成员的名称并显示出来。</p>
 <p>   Java的这-能力在实际应用中也许用得不是很多，但是在其它的程序设计语言中根本就不存在这一-特性。例如，Pascal. C或者C++中就没有办法在程序中获得函数定义相关的信息。</p>
 <p>   JavaBean是reflection的实际应用之一，它能让一些工具可视化的操作软件组件。这些工具通过reflection动态的载入并取得Java组件(类)的属性。</p>
-]]></content>
-      <categories>
-        <category>牛客小知识</category>
-      </categories>
-      <tags>
-        <tag>面试题</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>关于java内存区域</title>
-    <url>/2020/05/12/%E5%85%B3%E4%BA%8Ejava%E5%86%85%E5%AD%98%E5%8C%BA%E5%9F%9F/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>A.程序计数器是一块较小的内存空间，它的作用可以看做是当前线程所执行的字节码的信号指示器（偏移地址），Java编译过程中产生的字节码有点类似编译原理的指令，程序计数器的内存空间存储的是当前执行的字节码的偏移地址，每一个线程都有一个独立的程序计数器（程序计数器的内存空间是线程私有的），因为当执行语句时，改变的是程序计数器的内存空间，因此它不会发生内存溢出 ，并且程序计数器是jvm虚拟机规范中唯一一个没有规定 OutOfMemoryError 异常 的区域；</p>
-<p>B.java虚拟机栈：线程私有，生命周期和线程一致。描述的是 Java 方法执行的内存模型：每个方法在执行时都会创建一个栈帧(Stack Frame)用于存储局部变量表、操作数栈、动态链接、方法出口等信息。每一个方法从调用直至执行结束，就对应着一个栈帧从虚拟机栈中入栈到出栈的过程。 没有类信息，类信息是在方法区中</p>
-<p>C.java堆：对于绝大多数应用来说，这块区域是 JVM 所管理的内存中最大的一块。线程共享，主要是存放对象实例和数组</p>
-<p>D.方法区：属于共享内存区域，存储已被虚拟机加载的类信息、常量、静态变量、即时编译器编译后的代码等数据。</p>
 ]]></content>
       <categories>
         <category>牛客小知识</category>
@@ -690,51 +690,6 @@
       </tags>
   </entry>
   <entry>
-    <title>对ThreadLocal的理解</title>
-    <url>/2020/05/16/%E5%AF%B9ThreadLocal%E7%9A%84%E7%90%86%E8%A7%A3/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>作用：</p>
-<p>为每一个线程创建一个副本</p>
-<p>主要实现了在线程的上下文传递对象</p>
-<p><strong>第一个问题：证明ThreadLocal为每个线程创建一个变量副本</strong></p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">public class ThreadLocalTest &#123;</span><br><span class="line"></span><br><span class="line">    private static ThreadLocal&lt;Long&gt; threadLocal &#x3D; new ThreadLocal&lt;&gt;();</span><br><span class="line"></span><br><span class="line">    public static void main(String[] args) throws InterruptedException &#123;</span><br><span class="line">        &#x2F;&#x2F;开启多个线程来执行任务</span><br><span class="line">        Task task &#x3D; new Task();</span><br><span class="line">        new Thread(task).start();</span><br><span class="line">        Thread.sleep(10);</span><br><span class="line">        new Thread(task).start();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    static class Task implements Runnable&#123;</span><br><span class="line">        @Override</span><br><span class="line">        public void run() &#123;</span><br><span class="line">            Long result &#x3D; threadLocal.get();</span><br><span class="line">            if(result &#x3D;&#x3D; null)&#123;</span><br><span class="line">                threadLocal.set(System.currentTimeMillis());</span><br><span class="line">                System.out.println(Thread.currentThread().getName()+&quot;-&gt;&quot;+threadLocal.get());</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>输出的结果是不同的</p>
-<p><strong>问题二：为什么可以给每个线程保存一个不同的副本</strong></p>
-<p>那我们来分析源码</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">Long result = threadLocal.get();</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">public</span> T <span class="title">get</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="comment">//1.获取当前线程</span></span><br><span class="line">        Thread t = Thread.currentThread();</span><br><span class="line">        <span class="comment">//2，获取到当前线程对应的map</span></span><br><span class="line">        ThreadLocalMap map = getMap(t);</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">if</span> (map != <span class="keyword">null</span>) &#123;</span><br><span class="line">            <span class="comment">//3.以threadLocal为key，获取到entry</span></span><br><span class="line">            ThreadLocalMap.Entry e = map.getEntry(<span class="keyword">this</span>);</span><br><span class="line">            <span class="keyword">if</span> (e != <span class="keyword">null</span>) &#123;</span><br><span class="line">                <span class="meta">@SuppressWarnings</span>(<span class="string">"unchecked"</span>)</span><br><span class="line">                <span class="comment">//4.获取对应entry的value，就是我们存放到里面的变量的副本</span></span><br><span class="line">                T result = (T)e.value;</span><br><span class="line">                <span class="keyword">return</span> result;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> setInitialValue();</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
-
-<p>我们需要结合set方法的源码分析，才可以更好理解</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">threadLocal.set(System.currentTimeMillis());</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">set</span><span class="params">(T value)</span> </span>&#123;</span><br><span class="line">        <span class="comment">//1.获取到当前线程</span></span><br><span class="line">        Thread t = Thread.currentThread();</span><br><span class="line">        <span class="comment">//2.获取当前线程对应的map</span></span><br><span class="line">        ThreadLocalMap map = getMap(t);</span><br><span class="line">        <span class="keyword">if</span> (map != <span class="keyword">null</span>)</span><br><span class="line">            <span class="comment">//3.往map存放一个键值对</span></span><br><span class="line">            <span class="comment">//this ThreadLocal</span></span><br><span class="line">            <span class="comment">//value 保存的副本</span></span><br><span class="line">            map.set(<span class="keyword">this</span>, value);</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">            createMap(t, value);</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
-
-<p>所以，我们得到结论：</p>
-<p>每个线程都会有对应的map，map来保存键值对。</p>
-<p><strong>问题三：ThreadLocal这种特性，在实际开发中解决了什么问题？</strong></p>
-<p>比如：hibernate管理session，mybatis管理sqlsession，其内部都是采用ThreadLocal来实现的。</p>
-<p>前提知识：不管是什么框架，最本质的操作都是基于JDBC，当我们需要跟数据库打交道的时候，都需要有一个connection。</p>
-<p>那么，当我们需要在业务层实现事务控制时，该如何达到这个效果？</p>
-<p>我们构建下代码如下：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">public class UserService &#123;</span><br><span class="line"></span><br><span class="line">    &#x2F;&#x2F;省略接口的声明</span><br><span class="line">    private UserDao userDao &#x3D; new UserDao();</span><br><span class="line">    private LogDao logDao &#x3D; new LogDao();</span><br><span class="line"></span><br><span class="line">    &#x2F;&#x2F;事务的边界放在业务层</span><br><span class="line">    &#x2F;&#x2F;JDBC的封装，connection</span><br><span class="line">    public void add()&#123;</span><br><span class="line">        userDao.add();</span><br><span class="line">        logDao.add();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">public class UserDao &#123;</span><br><span class="line"></span><br><span class="line">    public void add()&#123;</span><br><span class="line">        System.out.println(&quot;UserDao add。。。&quot;);</span><br><span class="line">        &#x2F;&#x2F;创建connection对象</span><br><span class="line">        &#x2F;&#x2F;connection.commit();</span><br><span class="line">        &#x2F;&#x2F;connection.rollback();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">public class LogDao &#123;</span><br><span class="line"></span><br><span class="line">    public void add()&#123;</span><br><span class="line">        System.out.println(&quot;LogDao add。。。&quot;);</span><br><span class="line">        &#x2F;&#x2F;创建connection对象</span><br><span class="line">        &#x2F;&#x2F;connection.commit();</span><br><span class="line">        &#x2F;&#x2F;connection.rollback();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>如果代码按上面的方式来管理connection，我们还可以保证service的事务控制吗？</p>
-<p>这是不行的，假设第一个dao操作成功了，那么它就提交事务了，而第二个dao操作失败了，它回滚了事务，但不会影响到第一个dao的事务，因为上面这么写是两个独立的事务</p>
-<p>那么怎么解决。</p>
-<p>上面的根源就是两个dao操作的是不同的connection</p>
-<p>所以，我们保证是同个connection即可</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;&#x2F;事务的边界放在业务层</span><br><span class="line">&#x2F;&#x2F;JDBC的封装，connection</span><br><span class="line">public void add()&#123;</span><br><span class="line">    Connection connection &#x3D; new Connection();</span><br><span class="line">    userDao.add(connection);</span><br><span class="line">    logDao.add(connection);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>上面的方式代码不够优雅</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">public class ConnectionUtils &#123;</span><br><span class="line"></span><br><span class="line">    private static ThreadLocal&lt;Connection&gt; threadLocal &#x3D; new ThreadLocal&lt;&gt;();</span><br><span class="line"></span><br><span class="line">    public static Connection getConnection()&#123;</span><br><span class="line">        Connection connection &#x3D; threadLocal.get();</span><br><span class="line">        if(connection &#x3D;&#x3D; null)&#123;</span><br><span class="line">            connection &#x3D; new Connection();</span><br><span class="line">            threadLocal.set(connection);</span><br><span class="line">        &#125;</span><br><span class="line">        return connection;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">public class UserDao &#123;</span><br><span class="line"></span><br><span class="line">    public void add()&#123;</span><br><span class="line">        System.out.println(&quot;UserDao add。。。&quot;);</span><br><span class="line">        &#x2F;&#x2F;创建connection对象</span><br><span class="line">        &#x2F;&#x2F;connection.commit();</span><br><span class="line">        &#x2F;&#x2F;connection.rollback();</span><br><span class="line">        Connection connection &#x3D; ConnectionUtils.getConnection();</span><br><span class="line">        System.out.println(&quot;UserDao-&gt;&quot;+connection);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>到此，我们可以保证两个dao操作的是同一个connection</p>
-]]></content>
-      <categories>
-        <category>牛客小知识</category>
-      </categories>
-      <tags>
-        <tag>面试题</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>数据库的三大范式</title>
     <url>/2020/05/16/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9A%84%E4%B8%89%E5%A4%A7%E8%8C%83%E5%BC%8F/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h2 id="1，数据库的三大范式"><a href="#1，数据库的三大范式" class="headerlink" title="1，数据库的三大范式"></a><strong>1，数据库的三大范式</strong></h2><blockquote>
@@ -843,13 +798,49 @@
       </tags>
   </entry>
   <entry>
-    <title>测试</title>
-    <url>/2020/05/08/%E6%B5%8B%E8%AF%95/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>没有什么，测试而已</p>
+    <title>对ThreadLocal的理解</title>
+    <url>/2020/05/16/%E5%AF%B9ThreadLocal%E7%9A%84%E7%90%86%E8%A7%A3/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>作用：</p>
+<p>为每一个线程创建一个副本</p>
+<p>主要实现了在线程的上下文传递对象</p>
+<p><strong>第一个问题：证明ThreadLocal为每个线程创建一个变量副本</strong></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">public class ThreadLocalTest &#123;</span><br><span class="line"></span><br><span class="line">    private static ThreadLocal&lt;Long&gt; threadLocal &#x3D; new ThreadLocal&lt;&gt;();</span><br><span class="line"></span><br><span class="line">    public static void main(String[] args) throws InterruptedException &#123;</span><br><span class="line">        &#x2F;&#x2F;开启多个线程来执行任务</span><br><span class="line">        Task task &#x3D; new Task();</span><br><span class="line">        new Thread(task).start();</span><br><span class="line">        Thread.sleep(10);</span><br><span class="line">        new Thread(task).start();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    static class Task implements Runnable&#123;</span><br><span class="line">        @Override</span><br><span class="line">        public void run() &#123;</span><br><span class="line">            Long result &#x3D; threadLocal.get();</span><br><span class="line">            if(result &#x3D;&#x3D; null)&#123;</span><br><span class="line">                threadLocal.set(System.currentTimeMillis());</span><br><span class="line">                System.out.println(Thread.currentThread().getName()+&quot;-&gt;&quot;+threadLocal.get());</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>输出的结果是不同的</p>
+<p><strong>问题二：为什么可以给每个线程保存一个不同的副本</strong></p>
+<p>那我们来分析源码</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">Long result = threadLocal.get();</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">public</span> T <span class="title">get</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="comment">//1.获取当前线程</span></span><br><span class="line">        Thread t = Thread.currentThread();</span><br><span class="line">        <span class="comment">//2，获取到当前线程对应的map</span></span><br><span class="line">        ThreadLocalMap map = getMap(t);</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">if</span> (map != <span class="keyword">null</span>) &#123;</span><br><span class="line">            <span class="comment">//3.以threadLocal为key，获取到entry</span></span><br><span class="line">            ThreadLocalMap.Entry e = map.getEntry(<span class="keyword">this</span>);</span><br><span class="line">            <span class="keyword">if</span> (e != <span class="keyword">null</span>) &#123;</span><br><span class="line">                <span class="meta">@SuppressWarnings</span>(<span class="string">"unchecked"</span>)</span><br><span class="line">                <span class="comment">//4.获取对应entry的value，就是我们存放到里面的变量的副本</span></span><br><span class="line">                T result = (T)e.value;</span><br><span class="line">                <span class="keyword">return</span> result;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> setInitialValue();</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+
+<p>我们需要结合set方法的源码分析，才可以更好理解</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">threadLocal.set(System.currentTimeMillis());</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">set</span><span class="params">(T value)</span> </span>&#123;</span><br><span class="line">        <span class="comment">//1.获取到当前线程</span></span><br><span class="line">        Thread t = Thread.currentThread();</span><br><span class="line">        <span class="comment">//2.获取当前线程对应的map</span></span><br><span class="line">        ThreadLocalMap map = getMap(t);</span><br><span class="line">        <span class="keyword">if</span> (map != <span class="keyword">null</span>)</span><br><span class="line">            <span class="comment">//3.往map存放一个键值对</span></span><br><span class="line">            <span class="comment">//this ThreadLocal</span></span><br><span class="line">            <span class="comment">//value 保存的副本</span></span><br><span class="line">            map.set(<span class="keyword">this</span>, value);</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">            createMap(t, value);</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+
+<p>所以，我们得到结论：</p>
+<p>每个线程都会有对应的map，map来保存键值对。</p>
+<p><strong>问题三：ThreadLocal这种特性，在实际开发中解决了什么问题？</strong></p>
+<p>比如：hibernate管理session，mybatis管理sqlsession，其内部都是采用ThreadLocal来实现的。</p>
+<p>前提知识：不管是什么框架，最本质的操作都是基于JDBC，当我们需要跟数据库打交道的时候，都需要有一个connection。</p>
+<p>那么，当我们需要在业务层实现事务控制时，该如何达到这个效果？</p>
+<p>我们构建下代码如下：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">public class UserService &#123;</span><br><span class="line"></span><br><span class="line">    &#x2F;&#x2F;省略接口的声明</span><br><span class="line">    private UserDao userDao &#x3D; new UserDao();</span><br><span class="line">    private LogDao logDao &#x3D; new LogDao();</span><br><span class="line"></span><br><span class="line">    &#x2F;&#x2F;事务的边界放在业务层</span><br><span class="line">    &#x2F;&#x2F;JDBC的封装，connection</span><br><span class="line">    public void add()&#123;</span><br><span class="line">        userDao.add();</span><br><span class="line">        logDao.add();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">public class UserDao &#123;</span><br><span class="line"></span><br><span class="line">    public void add()&#123;</span><br><span class="line">        System.out.println(&quot;UserDao add。。。&quot;);</span><br><span class="line">        &#x2F;&#x2F;创建connection对象</span><br><span class="line">        &#x2F;&#x2F;connection.commit();</span><br><span class="line">        &#x2F;&#x2F;connection.rollback();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">public class LogDao &#123;</span><br><span class="line"></span><br><span class="line">    public void add()&#123;</span><br><span class="line">        System.out.println(&quot;LogDao add。。。&quot;);</span><br><span class="line">        &#x2F;&#x2F;创建connection对象</span><br><span class="line">        &#x2F;&#x2F;connection.commit();</span><br><span class="line">        &#x2F;&#x2F;connection.rollback();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>如果代码按上面的方式来管理connection，我们还可以保证service的事务控制吗？</p>
+<p>这是不行的，假设第一个dao操作成功了，那么它就提交事务了，而第二个dao操作失败了，它回滚了事务，但不会影响到第一个dao的事务，因为上面这么写是两个独立的事务</p>
+<p>那么怎么解决。</p>
+<p>上面的根源就是两个dao操作的是不同的connection</p>
+<p>所以，我们保证是同个connection即可</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;&#x2F;事务的边界放在业务层</span><br><span class="line">&#x2F;&#x2F;JDBC的封装，connection</span><br><span class="line">public void add()&#123;</span><br><span class="line">    Connection connection &#x3D; new Connection();</span><br><span class="line">    userDao.add(connection);</span><br><span class="line">    logDao.add(connection);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>上面的方式代码不够优雅</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">public class ConnectionUtils &#123;</span><br><span class="line"></span><br><span class="line">    private static ThreadLocal&lt;Connection&gt; threadLocal &#x3D; new ThreadLocal&lt;&gt;();</span><br><span class="line"></span><br><span class="line">    public static Connection getConnection()&#123;</span><br><span class="line">        Connection connection &#x3D; threadLocal.get();</span><br><span class="line">        if(connection &#x3D;&#x3D; null)&#123;</span><br><span class="line">            connection &#x3D; new Connection();</span><br><span class="line">            threadLocal.set(connection);</span><br><span class="line">        &#125;</span><br><span class="line">        return connection;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">public class UserDao &#123;</span><br><span class="line"></span><br><span class="line">    public void add()&#123;</span><br><span class="line">        System.out.println(&quot;UserDao add。。。&quot;);</span><br><span class="line">        &#x2F;&#x2F;创建connection对象</span><br><span class="line">        &#x2F;&#x2F;connection.commit();</span><br><span class="line">        &#x2F;&#x2F;connection.rollback();</span><br><span class="line">        Connection connection &#x3D; ConnectionUtils.getConnection();</span><br><span class="line">        System.out.println(&quot;UserDao-&gt;&quot;+connection);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>到此，我们可以保证两个dao操作的是同一个connection</p>
 ]]></content>
       <categories>
-        <category>测试</category>
+        <category>牛客小知识</category>
       </categories>
+      <tags>
+        <tag>面试题</tag>
+      </tags>
   </entry>
   <entry>
     <title>浏览器中输入url会发生的过程</title>
@@ -936,6 +927,15 @@
       </tags>
   </entry>
   <entry>
+    <title>测试</title>
+    <url>/2020/05/08/%E6%B5%8B%E8%AF%95/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>没有什么，测试而已</p>
+]]></content>
+      <categories>
+        <category>测试</category>
+      </categories>
+  </entry>
+  <entry>
     <title>解决hash冲突的方法</title>
     <url>/2020/05/15/%E8%A7%A3%E5%86%B3hash%E5%86%B2%E7%AA%81%E7%9A%84%E6%96%B9%E6%B3%95/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h4 id="1-什么是哈希冲突？"><a href="#1-什么是哈希冲突？" class="headerlink" title="1.什么是哈希冲突？"></a>1.什么是哈希冲突？</h4><p>理解哈希函数</p>
@@ -986,156 +986,6 @@
       </categories>
       <tags>
         <tag>面试题</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>SpringBoot-day01</title>
-    <url>/2019/12/17/SpringBoot-day01/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h2 id="一、了解-Spring-Boot"><a href="#一、了解-Spring-Boot" class="headerlink" title="一、了解 Spring Boot"></a>一、了解 Spring Boot</h2><h3 id="1-1-什么是Spring-Boot？"><a href="#1-1-什么是Spring-Boot？" class="headerlink" title="1.1 什么是Spring Boot？"></a>1.1 什么是Spring Boot？</h3><pre><code>Spring Boot是Spring项目中的一个子工程，与我们所熟知的Spring-framework 同属于spring的产品。</code></pre><p>​        官网解释翻译为：</p>
-<blockquote>
-<p>用一些固定的方式来构建生产级别的spring应用。Spring Boot 推崇约定大于配置的方式以便于你能够尽可能快速的启动并运行程序。</p>
-</blockquote>
-<p>其实人们把Spring Boot 称为搭建程序的`<strong>脚手架</strong>`。其最主要作用就是帮我们快速的构建庞大的spring项目，并且尽可能的减少一切xml配置，做到开箱即用，迅速上手，让我们关注与业务而非配置。</p>
-<h3 id="1-2-为什么学习Spring-Boot？"><a href="#1-2-为什么学习Spring-Boot？" class="headerlink" title="1.2 为什么学习Spring Boot？"></a>1.2 为什么学习Spring Boot？</h3><p>java一直被人诟病的一点就是臃肿、麻烦。其主要原因有两点：</p>
-<ul>
-<li><p>复杂的配置</p>
-<p>项目各种配置其实是开发时的损耗， 因为在思考 Spring 特性配置和解决业务问题之间需要进行思维切换，所以写配置挤占了写应用程序逻辑的时间。</p>
-</li>
-<li><p>一个是混乱的依赖管理</p>
-<p>项目的依赖管理也是件吃力不讨好的事情。决定项目里要用哪些库就已经够让人头痛的了，你还要知道这些库的哪个版本和其他库不会有冲突，这难题实在太棘手。并且，依赖管理也是一种损耗，添加依赖不是写应用程序代码。一旦选错了依赖的版本，随之而来的不兼容问题毫无疑问会是生产力杀手。</p>
-</li>
-</ul>
-<p>而Spring Boot让这一切成为过去！</p>
-<blockquote>
-<p>Spring Boot 简化了基于Spring的应用开发，只需要“run”就能创建一个独立的、生产级别的Spring应用。Spring Boot为Spring平台及第三方库提供开箱即用的设置（提供默认设置，存放默认配置的包就是启动器），这样我们就可以简单的开始。多数Spring Boot应用只需要很少的Spring配置。</p>
-</blockquote>
-<p>我们可以使用SpringBoot创建java应用，并使用java –jar 启动它，就能得到一个生产级别的web工程。</p>
-<a id="more"></a>
-
-<h3 id="1-3-SpringBoot的特点"><a href="#1-3-SpringBoot的特点" class="headerlink" title="1.3 SpringBoot的特点"></a>1.3 SpringBoot的特点</h3><p>Spring Boot 主要目标是：</p>
-<ul>
-<li>为所有 Spring 的开发者提供一个非常快速的、广泛接受的入门体验</li>
-<li>开箱即用（启动器starter-其实就是SpringBoot提供的一个jar包），但通过自己设置参数（.properties），即可快速摆脱这种方式。</li>
-<li>提供了一些大型项目中常见的非功能性特性，如内嵌服务器、安全、指标，健康检测、外部化配置等</li>
-<li>绝对没有代码生成，也无需 XML 配置。</li>
-</ul>
-<p>更多细节，大家可以到<a href="http://projects.spring.io/spring-boot/" target="_blank" rel="noopener">官网</a>查看。</p>
-<h2 id="二、快速入门"><a href="#二、快速入门" class="headerlink" title="二、快速入门"></a>二、快速入门</h2><h3 id="2-1-创建工程"><a href="#2-1-创建工程" class="headerlink" title="2.1 创建工程"></a>2.1 创建工程</h3><p>快速创建一个maven工程，在idea中使用自己的maven仓库，maven版本不能太高，否则项目依赖无法正常导入，配置maven的settings.xml文件网上有很多教程，使用国内的阿里镜像导入依赖会很快。</p>
-<h3 id="2-2-添加依赖"><a href="#2-2-添加依赖" class="headerlink" title="2.2 添加依赖"></a>2.2 添加依赖</h3><p>在pom.xml中添加使用springboot相关的依赖。</p>
-<h4 id="2-2-1-添加父工程坐标"><a href="#2-2-1-添加父工程坐标" class="headerlink" title="2.2.1 添加父工程坐标"></a>2.2.1 添加父工程坐标</h4><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">parent</span>&gt;</span></span><br><span class="line">       <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework.boot<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">       <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-boot-starter-parent<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">       <span class="tag">&lt;<span class="name">version</span>&gt;</span>2.0.0.RELEASE<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">parent</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<h4 id="2-2-2-添加web启动器"><a href="#2-2-2-添加web启动器" class="headerlink" title="2.2.2 添加web启动器"></a>2.2.2 添加web启动器</h4><p>为了让SpringBoot帮我们完成各种自动配置，我们必须引入SpringBoot提供的自动配置依赖，我们称为`启动器`。因为我们是web项目，这里我们引入web启动器：</p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependencies</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework.boot<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-boot-starter-web<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependencies</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p>需要注意的是，我们并没有在这里指定版本信息。因为SpringBoot的父工程已经对版本进行了管理了。</p>
-<p>这个时候，我们会发现项目中多出了大量的依赖。</p>
-<h4 id="2-2-3-管理jdk版本"><a href="#2-2-3-管理jdk版本" class="headerlink" title="2.2.3 管理jdk版本"></a>2.2.3 管理jdk版本</h4><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">properties</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">java.version</span>&gt;</span>1.8<span class="tag">&lt;/<span class="name">java.version</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">properties</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<h4 id="2-2-4-完整-pom-xml文件"><a href="#2-2-4-完整-pom-xml文件" class="headerlink" title="2.2.4 完整 pom.xml文件"></a>2.2.4 完整 pom.xml文件</h4><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">project</span> <span class="attr">xmlns</span>=<span class="string">"http://maven.apache.org/POM/4.0.0"</span></span></span><br><span class="line"><span class="tag">         <span class="attr">xmlns:xsi</span>=<span class="string">"http://www.w3.org/2001/XMLSchema-instance"</span></span></span><br><span class="line"><span class="tag">         <span class="attr">xsi:schemaLocation</span>=<span class="string">"http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">modelVersion</span>&gt;</span>4.0.0<span class="tag">&lt;/<span class="name">modelVersion</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>com.leyou.demo<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>springboot-demo<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>1.0-SNAPSHOT<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">properties</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">java.version</span>&gt;</span>1.8<span class="tag">&lt;/<span class="name">java.version</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">properties</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">parent</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework.boot<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-boot-starter-parent<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">version</span>&gt;</span>2.0.0.RELEASE<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">parent</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">dependencies</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework.boot<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-boot-starter-web<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">dependencies</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">project</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="2-3-启动类"><a href="#2-3-启动类" class="headerlink" title="2.3 启动类"></a>2.3 启动类</h3><p>Spring Boot项目通过main函数即可启动，我们需要创建一个启动类：</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@SpringBootApplication</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Application</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        SpringApplication.run(Application<span class="class">.<span class="keyword">class</span>, <span class="title">args</span>)</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="2-4-编写controller"><a href="#2-4-编写controller" class="headerlink" title="2.4 编写controller"></a>2.4 编写controller</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">@Controller</span><br><span class="line">public class HelloController &#123;</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F;responseBody一般是作用在方法上的，加上该注解表示该方法的返回结果直接写到Http response Body中，常用在ajax异步请求中，</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F;在RequestMapping中 return返回值默认解析为跳转路径，如果你此时想让Controller返回一个字符串或者对象到前台 就会报404 not response的错误。</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F;当加上@ResponseBody注解后不会解析成跳转地址 会解析成相应的json格式的对象 集合 字符串或者xml等直接返回给前台 可以通过 ajax 的“success”：fucntion(data)&#123;&#125; data直接获取到。</span><br><span class="line">    @GetMapping(&quot;hello&quot;)</span><br><span class="line">    @ResponseBody</span><br><span class="line">    public String hello()&#123;</span><br><span class="line">        return &quot;hello spring boot&quot;;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="2-5-启动测试"><a href="#2-5-启动测试" class="headerlink" title="2.5 启动测试"></a>2.5 启动测试</h3><ul>
-<li>1）监听的端口是8080</li>
-<li>2）SpringMVC的映射路径是：/</li>
-<li>3）<code>/hello</code>路径已经映射到了<code>HelloController</code>中的<code>hello()</code>方法</li>
-</ul>
-<p>打开页面访问：<a href="http://localhost:8080/hello" target="_blank" rel="noopener">http://localhost:8080/hello</a>    页面有所显示就是成功了！</p>
-<h2 id="三、Java配置"><a href="#三、Java配置" class="headerlink" title="三、Java配置"></a>三、Java配置</h2><h3 id="3-1-尝试java配置数据库连接池"><a href="#3-1-尝试java配置数据库连接池" class="headerlink" title="3.1 尝试java配置数据库连接池"></a>3.1 尝试java配置数据库连接池</h3><p>java配置主要靠java类和一些注解，比较常用的注解有：</p>
-<ul>
-<li><code>@Configuration</code>：声明一个类作为配置类，代替xml文件</li>
-<li><code>@Bean</code>：声明在方法上，将方法的返回值加入Bean容器，代替<code>&lt;bean&gt;</code>标签</li>
-<li><code>@value</code>：属性注入</li>
-<li><code>@PropertySource</code>：指定外部属性文件，</li>
-</ul>
-<p>接下来用java配置来尝试实现连接池配置：</p>
-<p>首先引入Druid连接池依赖：</p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>com.alibaba<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>druid<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>1.1.6<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p>创建一个jdbc.properties文件，编写jdbc属性：</p>
-<figure class="highlight properties"><table><tr><td class="code"><pre><span class="line"><span class="meta">jdbc.driverClassName</span>=<span class="string">com.mysql.jdbc.Driver</span></span><br><span class="line"><span class="meta">jdbc.url</span>=<span class="string">jdbc:mysql://127.0.0.1:3306/leyou</span></span><br><span class="line"><span class="meta">jdbc.username</span>=<span class="string">root</span></span><br><span class="line"><span class="meta">jdbc.password</span>=<span class="string">123</span></span><br></pre></td></tr></table></figure>
-
-<p>然后编写代码：</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@Configuration</span></span><br><span class="line"><span class="meta">@PropertySource</span>(<span class="string">"classpath:jdbc.properties"</span>)</span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">JdbcConfig</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Value</span>(<span class="string">"$&#123;jdbc.url&#125;"</span>)</span><br><span class="line">    String url;</span><br><span class="line">    <span class="meta">@Value</span>(<span class="string">"$&#123;jdbc.driverClassName&#125;"</span>)</span><br><span class="line">    String driverClassName;</span><br><span class="line">    <span class="meta">@Value</span>(<span class="string">"$&#123;jdbc.username&#125;"</span>)</span><br><span class="line">    String username;</span><br><span class="line">    <span class="meta">@Value</span>(<span class="string">"$&#123;jdbc.password&#125;"</span>)</span><br><span class="line">    String password;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Bean</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> DataSource <span class="title">dataSource</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        DruidDataSource dataSource = <span class="keyword">new</span> DruidDataSource();</span><br><span class="line">        dataSource.setUrl(url);</span><br><span class="line">        dataSource.setDriverClassName(driverClassName);</span><br><span class="line">        dataSource.setUsername(username);</span><br><span class="line">        dataSource.setPassword(password);</span><br><span class="line">        <span class="keyword">return</span> dataSource;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>解读：</p>
-<ul>
-<li><code>@Configuration</code>：声明我们<code>JdbcConfig</code>是一个配置类</li>
-<li><code>@PropertySource</code>：指定属性文件的路径是:<code>classpath:jdbc.properties</code></li>
-<li>通过<code>@Value</code>为属性注入值</li>
-<li>通过@Bean将 <code>dataSource()</code>方法声明为一个注册Bean的方法，Spring会自动调用该方法，将方法的返回值加入Spring容器中。</li>
-</ul>
-<p>然后我们就可以在任意位置通过<code>@Autowired</code>注入DataSource了！</p>
-<p>我们在<code>HelloController</code>中测试：</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@RestController</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">HelloController</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Autowired</span></span><br><span class="line">    <span class="keyword">private</span> DataSource dataSource;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@GetMapping</span>(<span class="string">"hello"</span>)</span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">hello</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="string">"hello, spring boot!"</span> + dataSource;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>然后Debug运行并查看，重新访问hello页面，之后到控制台进行查看，只要有之前jdbc.properties </p>
-<p>中的属性显示，就算成功了！</p>
-<h3 id="3-2-SpringBoot的属性注入"><a href="#3-2-SpringBoot的属性注入" class="headerlink" title="3.2 SpringBoot的属性注入"></a>3.2 SpringBoot的属性注入</h3><p>在上面的案例中，实现了java配置方式。不过属性注入使用的是@Value注解。这种方式虽然可行，但是不够强大，因为它只能注入基本类型值。</p>
-<p>在SpringBoot中，提供了一种新的属性注入方式，支持各种java基本数据类型及复杂类型的注入。</p>
-<p>1）新建一个类，用来进行属性注入：</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@ConfigurationProperties</span>(prefix = <span class="string">"jdbc"</span>)</span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">JdbcProperties</span> </span>&#123;</span><br><span class="line">    <span class="keyword">private</span> String url;</span><br><span class="line">    <span class="keyword">private</span> String driverClassName;</span><br><span class="line">    <span class="keyword">private</span> String username;</span><br><span class="line">    <span class="keyword">private</span> String password;</span><br><span class="line">    <span class="comment">// ... 略</span></span><br><span class="line">    <span class="comment">// getters 和 setters</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li><p>在类上通过@ConfigurationProperties注解声明当前类为属性读取类</p>
-</li>
-<li><p><code>prefix=&quot;jdbc&quot;</code>读取属性文件中，前缀为jdbc的值。</p>
-</li>
-<li><p>在类上定义各个属性，名称必须与属性文件中<code>jdbc.</code>后面部分一致</p>
-</li>
-<li><p>需要注意的是，这里我们并没有指定属性文件的地址，所以我们需要把jdbc.properties名称改为application.properties，这是SpringBoot默认读取的属性文件名：</p>
-</li>
-</ul>
-<p>2）在JdbcConfig中使用这个属性：</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@Configuration</span></span><br><span class="line"><span class="meta">@EnableConfigurationProperties</span>(JdbcProperties<span class="class">.<span class="keyword">class</span>)</span></span><br><span class="line"><span class="class"><span class="title">public</span> <span class="title">class</span> <span class="title">JdbcConfig</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Bean</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> DataSource <span class="title">dataSource</span><span class="params">(JdbcProperties jdbc)</span> </span>&#123;</span><br><span class="line">        DruidDataSource dataSource = <span class="keyword">new</span> DruidDataSource();</span><br><span class="line">        dataSource.setUrl(jdbc.getUrl());</span><br><span class="line">        dataSource.setDriverClassName(jdbc.getDriverClassName());</span><br><span class="line">        dataSource.setUsername(jdbc.getUsername());</span><br><span class="line">        dataSource.setPassword(jdbc.getPassword());</span><br><span class="line">        <span class="keyword">return</span> dataSource;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li><p>通过<code>@EnableConfigurationProperties(JdbcProperties.class)</code>来声明要使用<code>JdbcProperties</code>这个类的对象</p>
-</li>
-<li><p>然后你可以通过以下方式注入JdbcProperties：</p>
-<ul>
-<li>@Autowired注入</li>
-</ul>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@Autowired</span></span><br><span class="line"><span class="keyword">private</span> JdbcProperties prop;</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>构造函数注入</li>
-</ul>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">private</span> JdbcProperties prop;</span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="title">JdbcConfig</span><span class="params">(Jdbcproperties prop)</span></span>&#123;</span><br><span class="line">    <span class="keyword">this</span>.prop = prop;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>声明有@Bean的方法参数注入</li>
-</ul>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@Bean</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> Datasource <span class="title">dataSource</span><span class="params">(JdbcProperties prop)</span></span>&#123;</span><br><span class="line">    <span class="comment">// ...</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-</li>
-</ul>
-<p>本例中，我们采用第三种方式。</p>
-<p>3）测试结果会如上一次一样。</p>
-<p>优势：</p>
-<ul>
-<li><p>Relaxed binding：松散绑定</p>
-<ul>
-<li><p>不严格要求属性文件中的属性名与成员变量名一致。支持驼峰，中划线，下划线等等转换，甚至支持对象引导。比如：user.friend.name：代表的是user对象中的friend属性中的name属性，显然friend也是对象。@value注解就难以完成这样的注入方式。</p>
-</li>
-<li><p>meta-data support：元数据支持，帮助IDE生成属性提示（写开源框架会用到）。</p>
-</li>
-</ul>
-</li>
-</ul>
-<h3 id="3-3-更优雅的注入"><a href="#3-3-更优雅的注入" class="headerlink" title="3.3 更优雅的注入"></a>3.3 更优雅的注入</h3><p>事实上，如果一段属性只有一个Bean需要使用，我们无需将其注入到一个类（JdbcProperties）中。而是直接在需要的地方声明即可：</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@Configuration</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">JdbcConfig</span> </span>&#123;</span><br><span class="line">    </span><br><span class="line">    <span class="meta">@Bean</span></span><br><span class="line">    <span class="comment">// 声明要注入的属性前缀，SpringBoot会自动把相关属性通过set方法注入到DataSource中</span></span><br><span class="line">    <span class="meta">@ConfigurationProperties</span>(prefix = <span class="string">"jdbc"</span>)</span><br><span class="line">    <span class="function"><span class="keyword">public</span> DataSource <span class="title">dataSource</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        DruidDataSource dataSource = <span class="keyword">new</span> DruidDataSource();</span><br><span class="line">        <span class="keyword">return</span> dataSource;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>我们直接把<code>@ConfigurationProperties(prefix = &quot;jdbc&quot;)</code>声明在需要使用的<code>@Bean</code>的方法上，然后SpringBoot就会自动调用这个Bean（此处是DataSource）的set方法，然后完成注入。使用的前提是：<strong>该类必须有对应属性的set方法！</strong></p>
-]]></content>
-      <categories>
-        <category>框架学习</category>
-      </categories>
-      <tags>
-        <tag>SpringBoot</tag>
       </tags>
   </entry>
   <entry>
@@ -1591,93 +1441,153 @@
       </tags>
   </entry>
   <entry>
-    <title>利用Eureka注册中心动态获取服务</title>
-    <url>/2019/12/21/%E5%88%A9%E7%94%A8Eureka%E6%B3%A8%E5%86%8C%E4%B8%AD%E5%BF%83%E5%8A%A8%E6%80%81%E8%8E%B7%E5%8F%96%E6%9C%8D%E5%8A%A1/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>​        在上一节的微服务场景模拟中，存在以下问题：</p>
+    <title>SpringBoot-day01</title>
+    <url>/2019/12/17/SpringBoot-day01/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h2 id="一、了解-Spring-Boot"><a href="#一、了解-Spring-Boot" class="headerlink" title="一、了解 Spring Boot"></a>一、了解 Spring Boot</h2><h3 id="1-1-什么是Spring-Boot？"><a href="#1-1-什么是Spring-Boot？" class="headerlink" title="1.1 什么是Spring Boot？"></a>1.1 什么是Spring Boot？</h3><pre><code>Spring Boot是Spring项目中的一个子工程，与我们所熟知的Spring-framework 同属于spring的产品。</code></pre><p>​        官网解释翻译为：</p>
+<blockquote>
+<p>用一些固定的方式来构建生产级别的spring应用。Spring Boot 推崇约定大于配置的方式以便于你能够尽可能快速的启动并运行程序。</p>
+</blockquote>
+<p>其实人们把Spring Boot 称为搭建程序的`<strong>脚手架</strong>`。其最主要作用就是帮我们快速的构建庞大的spring项目，并且尽可能的减少一切xml配置，做到开箱即用，迅速上手，让我们关注与业务而非配置。</p>
+<h3 id="1-2-为什么学习Spring-Boot？"><a href="#1-2-为什么学习Spring-Boot？" class="headerlink" title="1.2 为什么学习Spring Boot？"></a>1.2 为什么学习Spring Boot？</h3><p>java一直被人诟病的一点就是臃肿、麻烦。其主要原因有两点：</p>
 <ul>
-<li>在consumer中，我们把url地址硬编码到了代码中，不方便后期维护</li>
-<li>consumer需要记忆user-service的地址，如果出现变更，可能得不到通知，地址将失效</li>
-<li>consumer不清楚user-service的状态，服务宕机也不知道</li>
-<li>user-service只有1台服务，不具备高可用性</li>
-<li>即便user-service形成集群，consumer还需自己实现负载均衡</li>
-</ul>
-<p>其实上面说的问题，概括一下就是分布式服务必然要面临的问题：</p>
-<ul>
-<li>服务管理<ul>
-<li>如何自动注册和发现</li>
-<li>如何实现状态监管</li>
-<li>如何实现动态路由</li>
-</ul>
+<li><p>复杂的配置</p>
+<p>项目各种配置其实是开发时的损耗， 因为在思考 Spring 特性配置和解决业务问题之间需要进行思维切换，所以写配置挤占了写应用程序逻辑的时间。</p>
 </li>
-<li>服务如何实现负载均衡</li>
-<li>服务如何解决容灾问题</li>
-<li>服务如何实现统一配置</li>
+<li><p>一个是混乱的依赖管理</p>
+<p>项目的依赖管理也是件吃力不讨好的事情。决定项目里要用哪些库就已经够让人头痛的了，你还要知道这些库的哪个版本和其他库不会有冲突，这难题实在太棘手。并且，依赖管理也是一种损耗，添加依赖不是写应用程序代码。一旦选错了依赖的版本，随之而来的不兼容问题毫无疑问会是生产力杀手。</p>
+</li>
 </ul>
+<p>而Spring Boot让这一切成为过去！</p>
+<blockquote>
+<p>Spring Boot 简化了基于Spring的应用开发，只需要“run”就能创建一个独立的、生产级别的Spring应用。Spring Boot为Spring平台及第三方库提供开箱即用的设置（提供默认设置，存放默认配置的包就是启动器），这样我们就可以简单的开始。多数Spring Boot应用只需要很少的Spring配置。</p>
+</blockquote>
+<p>我们可以使用SpringBoot创建java应用，并使用java –jar 启动它，就能得到一个生产级别的web工程。</p>
 <a id="more"></a>
 
-<h3 id="一、Eureka注册中心"><a href="#一、Eureka注册中心" class="headerlink" title="一、Eureka注册中心"></a>一、Eureka注册中心</h3><h4 id="1-1-了解Eureka"><a href="#1-1-了解Eureka" class="headerlink" title="1.1 了解Eureka"></a>1.1 了解Eureka</h4><p>​        Eureka就像是一个中介，负责管理、记录服务提供者的信息，服务提供者在这个中心上注册自己所提供的服务，Eureka负责检测这个服务提供者是否在持续的提供服务，如果检测到服务终止，那么就会在注册中心进行注销，服务调用者也就不会使用到没法提供服务的服务商；同时，服务调用者也需在中心进行注册，把自己的需求告诉Eureka，然后Eureka会把负荷你需求的服务告诉你。</p>
-<p>​        Eureka实现了服务的自动注册、发现、状态监控。</p>
-<h4 id="1-2-编写EurekaServer"><a href="#1-2-编写EurekaServer" class="headerlink" title="1.2 编写EurekaServer"></a>1.2 编写EurekaServer</h4><p>​        创建module，以cloud-demo为父工程，添加依赖。</p>
+<h3 id="1-3-SpringBoot的特点"><a href="#1-3-SpringBoot的特点" class="headerlink" title="1.3 SpringBoot的特点"></a>1.3 SpringBoot的特点</h3><p>Spring Boot 主要目标是：</p>
 <ul>
-<li>子工程Eureka-server的pom.xml配置文件</li>
+<li>为所有 Spring 的开发者提供一个非常快速的、广泛接受的入门体验</li>
+<li>开箱即用（启动器starter-其实就是SpringBoot提供的一个jar包），但通过自己设置参数（.properties），即可快速摆脱这种方式。</li>
+<li>提供了一些大型项目中常见的非功能性特性，如内嵌服务器、安全、指标，健康检测、外部化配置等</li>
+<li>绝对没有代码生成，也无需 XML 配置。</li>
 </ul>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">project</span> <span class="attr">xmlns</span>=<span class="string">"http://maven.apache.org/POM/4.0.0"</span></span></span><br><span class="line"><span class="tag">         <span class="attr">xmlns:xsi</span>=<span class="string">"http://www.w3.org/2001/XMLSchema-instance"</span></span></span><br><span class="line"><span class="tag">         <span class="attr">xsi:schemaLocation</span>=<span class="string">"http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">parent</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>cloud-demo<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>cn.nedlee.demo<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">version</span>&gt;</span>1.0.0-SNAPSHOT<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">parent</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">modelVersion</span>&gt;</span>4.0.0<span class="tag">&lt;/<span class="name">modelVersion</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>eureka-server<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">dependencies</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- Eureka服务端 --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework.cloud<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-cloud-starter-netflix-eureka-server<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependencies</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">project</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>更多细节，大家可以到<a href="http://projects.spring.io/spring-boot/" target="_blank" rel="noopener">官网</a>查看。</p>
+<h2 id="二、快速入门"><a href="#二、快速入门" class="headerlink" title="二、快速入门"></a>二、快速入门</h2><h3 id="2-1-创建工程"><a href="#2-1-创建工程" class="headerlink" title="2.1 创建工程"></a>2.1 创建工程</h3><p>快速创建一个maven工程，在idea中使用自己的maven仓库，maven版本不能太高，否则项目依赖无法正常导入，配置maven的settings.xml文件网上有很多教程，使用国内的阿里镜像导入依赖会很快。</p>
+<h3 id="2-2-添加依赖"><a href="#2-2-添加依赖" class="headerlink" title="2.2 添加依赖"></a>2.2 添加依赖</h3><p>在pom.xml中添加使用springboot相关的依赖。</p>
+<h4 id="2-2-1-添加父工程坐标"><a href="#2-2-1-添加父工程坐标" class="headerlink" title="2.2.1 添加父工程坐标"></a>2.2.1 添加父工程坐标</h4><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">parent</span>&gt;</span></span><br><span class="line">       <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework.boot<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">       <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-boot-starter-parent<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">       <span class="tag">&lt;<span class="name">version</span>&gt;</span>2.0.0.RELEASE<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">parent</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="2-2-2-添加web启动器"><a href="#2-2-2-添加web启动器" class="headerlink" title="2.2.2 添加web启动器"></a>2.2.2 添加web启动器</h4><p>为了让SpringBoot帮我们完成各种自动配置，我们必须引入SpringBoot提供的自动配置依赖，我们称为`启动器`。因为我们是web项目，这里我们引入web启动器：</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependencies</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework.boot<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-boot-starter-web<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependencies</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>需要注意的是，我们并没有在这里指定版本信息。因为SpringBoot的父工程已经对版本进行了管理了。</p>
+<p>这个时候，我们会发现项目中多出了大量的依赖。</p>
+<h4 id="2-2-3-管理jdk版本"><a href="#2-2-3-管理jdk版本" class="headerlink" title="2.2.3 管理jdk版本"></a>2.2.3 管理jdk版本</h4><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">properties</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">java.version</span>&gt;</span>1.8<span class="tag">&lt;/<span class="name">java.version</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">properties</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="2-2-4-完整-pom-xml文件"><a href="#2-2-4-完整-pom-xml文件" class="headerlink" title="2.2.4 完整 pom.xml文件"></a>2.2.4 完整 pom.xml文件</h4><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">project</span> <span class="attr">xmlns</span>=<span class="string">"http://maven.apache.org/POM/4.0.0"</span></span></span><br><span class="line"><span class="tag">         <span class="attr">xmlns:xsi</span>=<span class="string">"http://www.w3.org/2001/XMLSchema-instance"</span></span></span><br><span class="line"><span class="tag">         <span class="attr">xsi:schemaLocation</span>=<span class="string">"http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">modelVersion</span>&gt;</span>4.0.0<span class="tag">&lt;/<span class="name">modelVersion</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>com.leyou.demo<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>springboot-demo<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>1.0-SNAPSHOT<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">properties</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">java.version</span>&gt;</span>1.8<span class="tag">&lt;/<span class="name">java.version</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">properties</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">parent</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework.boot<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-boot-starter-parent<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">version</span>&gt;</span>2.0.0.RELEASE<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">parent</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">dependencies</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework.boot<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-boot-starter-web<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">dependencies</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">project</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="2-3-启动类"><a href="#2-3-启动类" class="headerlink" title="2.3 启动类"></a>2.3 启动类</h3><p>Spring Boot项目通过main函数即可启动，我们需要创建一个启动类：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@SpringBootApplication</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Application</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        SpringApplication.run(Application<span class="class">.<span class="keyword">class</span>, <span class="title">args</span>)</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-4-编写controller"><a href="#2-4-编写controller" class="headerlink" title="2.4 编写controller"></a>2.4 编写controller</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">@Controller</span><br><span class="line">public class HelloController &#123;</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F;responseBody一般是作用在方法上的，加上该注解表示该方法的返回结果直接写到Http response Body中，常用在ajax异步请求中，</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F;在RequestMapping中 return返回值默认解析为跳转路径，如果你此时想让Controller返回一个字符串或者对象到前台 就会报404 not response的错误。</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F;当加上@ResponseBody注解后不会解析成跳转地址 会解析成相应的json格式的对象 集合 字符串或者xml等直接返回给前台 可以通过 ajax 的“success”：fucntion(data)&#123;&#125; data直接获取到。</span><br><span class="line">    @GetMapping(&quot;hello&quot;)</span><br><span class="line">    @ResponseBody</span><br><span class="line">    public String hello()&#123;</span><br><span class="line">        return &quot;hello spring boot&quot;;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-5-启动测试"><a href="#2-5-启动测试" class="headerlink" title="2.5 启动测试"></a>2.5 启动测试</h3><ul>
+<li>1）监听的端口是8080</li>
+<li>2）SpringMVC的映射路径是：/</li>
+<li>3）<code>/hello</code>路径已经映射到了<code>HelloController</code>中的<code>hello()</code>方法</li>
+</ul>
+<p>打开页面访问：<a href="http://localhost:8080/hello" target="_blank" rel="noopener">http://localhost:8080/hello</a>    页面有所显示就是成功了！</p>
+<h2 id="三、Java配置"><a href="#三、Java配置" class="headerlink" title="三、Java配置"></a>三、Java配置</h2><h3 id="3-1-尝试java配置数据库连接池"><a href="#3-1-尝试java配置数据库连接池" class="headerlink" title="3.1 尝试java配置数据库连接池"></a>3.1 尝试java配置数据库连接池</h3><p>java配置主要靠java类和一些注解，比较常用的注解有：</p>
+<ul>
+<li><code>@Configuration</code>：声明一个类作为配置类，代替xml文件</li>
+<li><code>@Bean</code>：声明在方法上，将方法的返回值加入Bean容器，代替<code>&lt;bean&gt;</code>标签</li>
+<li><code>@value</code>：属性注入</li>
+<li><code>@PropertySource</code>：指定外部属性文件，</li>
+</ul>
+<p>接下来用java配置来尝试实现连接池配置：</p>
+<p>首先引入Druid连接池依赖：</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>com.alibaba<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>druid<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>1.1.6<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>创建一个jdbc.properties文件，编写jdbc属性：</p>
+<figure class="highlight properties"><table><tr><td class="code"><pre><span class="line"><span class="meta">jdbc.driverClassName</span>=<span class="string">com.mysql.jdbc.Driver</span></span><br><span class="line"><span class="meta">jdbc.url</span>=<span class="string">jdbc:mysql://127.0.0.1:3306/leyou</span></span><br><span class="line"><span class="meta">jdbc.username</span>=<span class="string">root</span></span><br><span class="line"><span class="meta">jdbc.password</span>=<span class="string">123</span></span><br></pre></td></tr></table></figure>
+
+<p>然后编写代码：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@Configuration</span></span><br><span class="line"><span class="meta">@PropertySource</span>(<span class="string">"classpath:jdbc.properties"</span>)</span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">JdbcConfig</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Value</span>(<span class="string">"$&#123;jdbc.url&#125;"</span>)</span><br><span class="line">    String url;</span><br><span class="line">    <span class="meta">@Value</span>(<span class="string">"$&#123;jdbc.driverClassName&#125;"</span>)</span><br><span class="line">    String driverClassName;</span><br><span class="line">    <span class="meta">@Value</span>(<span class="string">"$&#123;jdbc.username&#125;"</span>)</span><br><span class="line">    String username;</span><br><span class="line">    <span class="meta">@Value</span>(<span class="string">"$&#123;jdbc.password&#125;"</span>)</span><br><span class="line">    String password;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Bean</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> DataSource <span class="title">dataSource</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        DruidDataSource dataSource = <span class="keyword">new</span> DruidDataSource();</span><br><span class="line">        dataSource.setUrl(url);</span><br><span class="line">        dataSource.setDriverClassName(driverClassName);</span><br><span class="line">        dataSource.setUsername(username);</span><br><span class="line">        dataSource.setPassword(password);</span><br><span class="line">        <span class="keyword">return</span> dataSource;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>解读：</p>
+<ul>
+<li><code>@Configuration</code>：声明我们<code>JdbcConfig</code>是一个配置类</li>
+<li><code>@PropertySource</code>：指定属性文件的路径是:<code>classpath:jdbc.properties</code></li>
+<li>通过<code>@Value</code>为属性注入值</li>
+<li>通过@Bean将 <code>dataSource()</code>方法声明为一个注册Bean的方法，Spring会自动调用该方法，将方法的返回值加入Spring容器中。</li>
+</ul>
+<p>然后我们就可以在任意位置通过<code>@Autowired</code>注入DataSource了！</p>
+<p>我们在<code>HelloController</code>中测试：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@RestController</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">HelloController</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Autowired</span></span><br><span class="line">    <span class="keyword">private</span> DataSource dataSource;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@GetMapping</span>(<span class="string">"hello"</span>)</span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">hello</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="string">"hello, spring boot!"</span> + dataSource;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>然后Debug运行并查看，重新访问hello页面，之后到控制台进行查看，只要有之前jdbc.properties </p>
+<p>中的属性显示，就算成功了！</p>
+<h3 id="3-2-SpringBoot的属性注入"><a href="#3-2-SpringBoot的属性注入" class="headerlink" title="3.2 SpringBoot的属性注入"></a>3.2 SpringBoot的属性注入</h3><p>在上面的案例中，实现了java配置方式。不过属性注入使用的是@Value注解。这种方式虽然可行，但是不够强大，因为它只能注入基本类型值。</p>
+<p>在SpringBoot中，提供了一种新的属性注入方式，支持各种java基本数据类型及复杂类型的注入。</p>
+<p>1）新建一个类，用来进行属性注入：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@ConfigurationProperties</span>(prefix = <span class="string">"jdbc"</span>)</span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">JdbcProperties</span> </span>&#123;</span><br><span class="line">    <span class="keyword">private</span> String url;</span><br><span class="line">    <span class="keyword">private</span> String driverClassName;</span><br><span class="line">    <span class="keyword">private</span> String username;</span><br><span class="line">    <span class="keyword">private</span> String password;</span><br><span class="line">    <span class="comment">// ... 略</span></span><br><span class="line">    <span class="comment">// getters 和 setters</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <ul>
-<li>启动类</li>
+<li><p>在类上通过@ConfigurationProperties注解声明当前类为属性读取类</p>
+</li>
+<li><p><code>prefix=&quot;jdbc&quot;</code>读取属性文件中，前缀为jdbc的值。</p>
+</li>
+<li><p>在类上定义各个属性，名称必须与属性文件中<code>jdbc.</code>后面部分一致</p>
+</li>
+<li><p>需要注意的是，这里我们并没有指定属性文件的地址，所以我们需要把jdbc.properties名称改为application.properties，这是SpringBoot默认读取的属性文件名：</p>
+</li>
 </ul>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">package</span> cn.nedlee;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> org.springframework.boot.SpringApplication;</span><br><span class="line"><span class="keyword">import</span> org.springframework.boot.autoconfigure.SpringBootApplication;</span><br><span class="line"><span class="keyword">import</span> org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;</span><br><span class="line"></span><br><span class="line"><span class="meta">@EnableEurekaServer</span><span class="comment">//注解提供Eureka服务</span></span><br><span class="line"><span class="meta">@SpringBootApplication</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">EurekaServer</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        SpringApplication.run(EurekaServer<span class="class">.<span class="keyword">class</span>)</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>2）在JdbcConfig中使用这个属性：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@Configuration</span></span><br><span class="line"><span class="meta">@EnableConfigurationProperties</span>(JdbcProperties<span class="class">.<span class="keyword">class</span>)</span></span><br><span class="line"><span class="class"><span class="title">public</span> <span class="title">class</span> <span class="title">JdbcConfig</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Bean</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> DataSource <span class="title">dataSource</span><span class="params">(JdbcProperties jdbc)</span> </span>&#123;</span><br><span class="line">        DruidDataSource dataSource = <span class="keyword">new</span> DruidDataSource();</span><br><span class="line">        dataSource.setUrl(jdbc.getUrl());</span><br><span class="line">        dataSource.setDriverClassName(jdbc.getDriverClassName());</span><br><span class="line">        dataSource.setUsername(jdbc.getUsername());</span><br><span class="line">        dataSource.setPassword(jdbc.getPassword());</span><br><span class="line">        <span class="keyword">return</span> dataSource;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <ul>
-<li>application.yml配置文件</li>
-</ul>
-<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">server:</span></span><br><span class="line">  <span class="attr">port:</span> <span class="number">10086</span></span><br><span class="line"><span class="attr">spring:</span></span><br><span class="line">  <span class="attr">application:</span></span><br><span class="line">    <span class="attr">name:</span> <span class="string">eureka-server</span></span><br><span class="line"><span class="attr">eureka:</span></span><br><span class="line">  <span class="attr">client:</span></span><br><span class="line">    <span class="attr">service-url:</span></span><br><span class="line">      <span class="attr">defaultZone:</span> <span class="string">http://127.0.0.1:10086/eureka</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="二、将user-service注册到Eureka"><a href="#二、将user-service注册到Eureka" class="headerlink" title="二、将user-service注册到Eureka"></a>二、将user-service注册到Eureka</h3><p>​        注册服务，就是在服务上添加Eureka的客户端依赖，客户端代码会自动把服务注册到EurekaServer中。</p>
+<li><p>通过<code>@EnableConfigurationProperties(JdbcProperties.class)</code>来声明要使用<code>JdbcProperties</code>这个类的对象</p>
+</li>
+<li><p>然后你可以通过以下方式注入JdbcProperties：</p>
 <ul>
-<li>在user-service子工程的pom.xml中添加springcloud依赖</li>
+<li>@Autowired注入</li>
 </ul>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">project</span> <span class="attr">xmlns</span>=<span class="string">"http://maven.apache.org/POM/4.0.0"</span></span></span><br><span class="line"><span class="tag">         <span class="attr">xmlns:xsi</span>=<span class="string">"http://www.w3.org/2001/XMLSchema-instance"</span></span></span><br><span class="line"><span class="tag">         <span class="attr">xsi:schemaLocation</span>=<span class="string">"http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">parent</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>cloud-demo<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>cn.nedlee.demo<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">version</span>&gt;</span>1.0.0-SNAPSHOT<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">parent</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">modelVersion</span>&gt;</span>4.0.0<span class="tag">&lt;/<span class="name">modelVersion</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>user-service<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">dependencies</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework.boot<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-boot-starter-web<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>mysql<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>mysql-connector-java<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>tk.mybatis<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>mapper-spring-boot-starter<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework.cloud<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-cloud-starter-netflix-eureka-client<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">dependencies</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">project</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<p>在启动类上开启Eureka客户端功能</p>
-</blockquote>
-<p>通过添加<code>@EnableDiscoveryClient</code>来开启Eureka客户端功能</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@SpringBootApplication</span></span><br><span class="line"><span class="meta">@EnableDiscoveryClient</span> <span class="comment">// 开启EurekaClient功能</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">UserServiceDemoApplication</span> </span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">		SpringApplication.run(UserServiceDemoApplication<span class="class">.<span class="keyword">class</span>, <span class="title">args</span>)</span>;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<p>application.yml文件配置</p>
-</blockquote>
-<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">server:</span></span><br><span class="line">  <span class="attr">port:</span> <span class="number">8081</span></span><br><span class="line"><span class="attr">spring:</span></span><br><span class="line">  <span class="attr">application:</span></span><br><span class="line">    <span class="attr">name:</span> <span class="string">user-service</span> <span class="comment"># 应用名称</span></span><br><span class="line">  <span class="attr">datasource:</span></span><br><span class="line">    <span class="attr">url:</span> <span class="string">jdbc:mysql://localhost:3306/leyou</span></span><br><span class="line">    <span class="attr">username:</span> <span class="string">root</span></span><br><span class="line">    <span class="attr">password:</span> <span class="number">873383</span></span><br><span class="line"><span class="attr">mybatis:</span></span><br><span class="line">  <span class="attr">type-aliases-package:</span> <span class="string">cn.nedlee.user.pojo</span></span><br><span class="line"><span class="attr">eureka:</span></span><br><span class="line">  <span class="attr">client:</span></span><br><span class="line">    <span class="attr">service-url:</span> <span class="comment"># EurekaServer地址</span></span><br><span class="line">      <span class="attr">defaultZone:</span> <span class="string">http://127.0.0.1:10086/eureka</span></span><br><span class="line">      <span class="attr">ip-address:</span> <span class="number">127.0</span><span class="number">.0</span><span class="number">.1</span> <span class="comment"># 指定自己的ip信息，不指定的话会自己寻找</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="三、消费者从Eureka获取服务"><a href="#三、消费者从Eureka获取服务" class="headerlink" title="三、消费者从Eureka获取服务"></a>三、消费者从Eureka获取服务</h3><p>​        方法与服务提供者类似，只需要在项目中添加EurekaClient依赖，就可以通过服务名称来获取信息了！</p>
-<ul>
-<li>在子工程consumer-demo的pom.xml中添加springcloud依赖</li>
-</ul>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">project</span> <span class="attr">xmlns</span>=<span class="string">"http://maven.apache.org/POM/4.0.0"</span></span></span><br><span class="line"><span class="tag">         <span class="attr">xmlns:xsi</span>=<span class="string">"http://www.w3.org/2001/XMLSchema-instance"</span></span></span><br><span class="line"><span class="tag">         <span class="attr">xsi:schemaLocation</span>=<span class="string">"http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">parent</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>cloud-demo<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>cn.nedlee.demo<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">version</span>&gt;</span>1.0.0-SNAPSHOT<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">parent</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">modelVersion</span>&gt;</span>4.0.0<span class="tag">&lt;/<span class="name">modelVersion</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>consumer-demo<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">dependencies</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework.boot<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-boot-starter-web<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework.cloud<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-cloud-starter-netflix-eureka-client<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">dependencies</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">project</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@Autowired</span></span><br><span class="line"><span class="keyword">private</span> JdbcProperties prop;</span><br></pre></td></tr></table></figure>
 
 <ul>
-<li>在启动类开启Eureka客户端</li>
+<li>构造函数注入</li>
 </ul>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@SpringBootApplication</span></span><br><span class="line"><span class="meta">@EnableDiscoveryClient</span> <span class="comment">// 开启Eureka客户端</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">UserConsumerDemoApplication</span> </span>&#123;</span><br><span class="line">    <span class="meta">@Bean</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> RestTemplate <span class="title">restTemplate</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">new</span> RestTemplate(<span class="keyword">new</span> OkHttp3ClientHttpRequestFactory());</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        SpringApplication.run(UserConsumerDemoApplication<span class="class">.<span class="keyword">class</span>, <span class="title">args</span>)</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">private</span> JdbcProperties prop;</span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="title">JdbcConfig</span><span class="params">(Jdbcproperties prop)</span></span>&#123;</span><br><span class="line">    <span class="keyword">this</span>.prop = prop;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <ul>
-<li>修改application.yml配置文件</li>
+<li>声明有@Bean的方法参数注入</li>
 </ul>
-<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">server:</span></span><br><span class="line">  <span class="attr">port:</span> <span class="number">8088</span></span><br><span class="line"><span class="attr">spring:</span></span><br><span class="line">  <span class="attr">application:</span></span><br><span class="line">    <span class="attr">name:</span> <span class="string">consumer</span></span><br><span class="line"><span class="attr">eureka:</span></span><br><span class="line">  <span class="attr">client:</span></span><br><span class="line">    <span class="attr">service-url:</span></span><br><span class="line">      <span class="attr">defaultZone:</span> <span class="string">http://127.0.0.1:10086/eureka</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@Bean</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> Datasource <span class="title">dataSource</span><span class="params">(JdbcProperties prop)</span></span>&#123;</span><br><span class="line">    <span class="comment">// ...</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
+</li>
+</ul>
+<p>本例中，我们采用第三种方式。</p>
+<p>3）测试结果会如上一次一样。</p>
+<p>优势：</p>
 <ul>
-<li>修改代码，用DiscoveryClient类的方法，根据服务名称，获取服务实例。</li>
+<li><p>Relaxed binding：松散绑定</p>
+<ul>
+<li><p>不严格要求属性文件中的属性名与成员变量名一致。支持驼峰，中划线，下划线等等转换，甚至支持对象引导。比如：user.friend.name：代表的是user对象中的friend属性中的name属性，显然friend也是对象。@value注解就难以完成这样的注入方式。</p>
+</li>
+<li><p>meta-data support：元数据支持，帮助IDE生成属性提示（写开源框架会用到）。</p>
+</li>
 </ul>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">package</span> cn.nedlee.consumer.web;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> cn.nedlee.consumer.pojo.User;</span><br><span class="line"><span class="keyword">import</span> org.springframework.beans.factory.annotation.Autowired;</span><br><span class="line"><span class="keyword">import</span> org.springframework.cloud.client.ServiceInstance;</span><br><span class="line"><span class="keyword">import</span> org.springframework.cloud.client.discovery.DiscoveryClient;</span><br><span class="line"><span class="keyword">import</span> org.springframework.web.bind.annotation.GetMapping;</span><br><span class="line"><span class="keyword">import</span> org.springframework.web.bind.annotation.PathVariable;</span><br><span class="line"><span class="keyword">import</span> org.springframework.web.bind.annotation.RequestMapping;</span><br><span class="line"><span class="keyword">import</span> org.springframework.web.bind.annotation.RestController;</span><br><span class="line"><span class="keyword">import</span> org.springframework.web.client.RestTemplate;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.util.List;</span><br><span class="line"></span><br><span class="line"><span class="meta">@RestController</span></span><br><span class="line"><span class="meta">@RequestMapping</span>(<span class="string">"consumer"</span>)</span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ConsumerController</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Autowired</span></span><br><span class="line">    <span class="keyword">private</span> RestTemplate restTemplate;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Autowired</span></span><br><span class="line">    <span class="keyword">private</span> DiscoveryClient discoveryClient;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@GetMapping</span>(<span class="string">"&#123;id&#125;"</span>)</span><br><span class="line">    <span class="function"><span class="keyword">public</span> User <span class="title">queryById</span><span class="params">(@PathVariable(<span class="string">"id"</span>)</span> Long id)</span>&#123;</span><br><span class="line">        <span class="comment">//根据服务id获取实例</span></span><br><span class="line">        List&lt;ServiceInstance&gt; instances = discoveryClient.getInstances(<span class="string">"user-service"</span>);</span><br><span class="line">        <span class="comment">//从实例中取出ip和端口</span></span><br><span class="line">        <span class="comment">// 因为只有一个User-Service,因此我们直接get(0)获取</span></span><br><span class="line">        ServiceInstance instance = instances.get(<span class="number">0</span>);</span><br><span class="line">        String url = <span class="string">"http://"</span>+instance.getHost() + <span class="string">":"</span> +instance.getPort()+<span class="string">"/user/"</span> + id;</span><br><span class="line">        User user = restTemplate.getForObject(url,User<span class="class">.<span class="keyword">class</span>)</span>;</span><br><span class="line">        <span class="keyword">return</span> user;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="3-3-更优雅的注入"><a href="#3-3-更优雅的注入" class="headerlink" title="3.3 更优雅的注入"></a>3.3 更优雅的注入</h3><p>事实上，如果一段属性只有一个Bean需要使用，我们无需将其注入到一个类（JdbcProperties）中。而是直接在需要的地方声明即可：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@Configuration</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">JdbcConfig</span> </span>&#123;</span><br><span class="line">    </span><br><span class="line">    <span class="meta">@Bean</span></span><br><span class="line">    <span class="comment">// 声明要注入的属性前缀，SpringBoot会自动把相关属性通过set方法注入到DataSource中</span></span><br><span class="line">    <span class="meta">@ConfigurationProperties</span>(prefix = <span class="string">"jdbc"</span>)</span><br><span class="line">    <span class="function"><span class="keyword">public</span> DataSource <span class="title">dataSource</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        DruidDataSource dataSource = <span class="keyword">new</span> DruidDataSource();</span><br><span class="line">        <span class="keyword">return</span> dataSource;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<p>​        至此，Eureka注册中心的功能以基本实现，需要注意的是Eureka注册中心也需要将自己注册到该中心，以@EurekaServer的方式开启服务，在中心的服务提供者与调用者都是以@EurekaDiscoveryClient的方式开启客户端，也可以使用@EurekaClient，但是前者更加通用，因为服务中心不止Eureka这一家。</p>
+<p>我们直接把<code>@ConfigurationProperties(prefix = &quot;jdbc&quot;)</code>声明在需要使用的<code>@Bean</code>的方法上，然后SpringBoot就会自动调用这个Bean（此处是DataSource）的set方法，然后完成注入。使用的前提是：<strong>该类必须有对应属性的set方法！</strong></p>
 ]]></content>
       <categories>
-        <category>框架学习、springboot与springcloud</category>
+        <category>框架学习</category>
       </categories>
       <tags>
-        <tag>springcloud</tag>
+        <tag>SpringBoot</tag>
       </tags>
   </entry>
   <entry>
@@ -1900,6 +1810,96 @@
       </categories>
       <tags>
         <tag>Spring</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>利用Eureka注册中心动态获取服务</title>
+    <url>/2019/12/21/%E5%88%A9%E7%94%A8Eureka%E6%B3%A8%E5%86%8C%E4%B8%AD%E5%BF%83%E5%8A%A8%E6%80%81%E8%8E%B7%E5%8F%96%E6%9C%8D%E5%8A%A1/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>​        在上一节的微服务场景模拟中，存在以下问题：</p>
+<ul>
+<li>在consumer中，我们把url地址硬编码到了代码中，不方便后期维护</li>
+<li>consumer需要记忆user-service的地址，如果出现变更，可能得不到通知，地址将失效</li>
+<li>consumer不清楚user-service的状态，服务宕机也不知道</li>
+<li>user-service只有1台服务，不具备高可用性</li>
+<li>即便user-service形成集群，consumer还需自己实现负载均衡</li>
+</ul>
+<p>其实上面说的问题，概括一下就是分布式服务必然要面临的问题：</p>
+<ul>
+<li>服务管理<ul>
+<li>如何自动注册和发现</li>
+<li>如何实现状态监管</li>
+<li>如何实现动态路由</li>
+</ul>
+</li>
+<li>服务如何实现负载均衡</li>
+<li>服务如何解决容灾问题</li>
+<li>服务如何实现统一配置</li>
+</ul>
+<a id="more"></a>
+
+<h3 id="一、Eureka注册中心"><a href="#一、Eureka注册中心" class="headerlink" title="一、Eureka注册中心"></a>一、Eureka注册中心</h3><h4 id="1-1-了解Eureka"><a href="#1-1-了解Eureka" class="headerlink" title="1.1 了解Eureka"></a>1.1 了解Eureka</h4><p>​        Eureka就像是一个中介，负责管理、记录服务提供者的信息，服务提供者在这个中心上注册自己所提供的服务，Eureka负责检测这个服务提供者是否在持续的提供服务，如果检测到服务终止，那么就会在注册中心进行注销，服务调用者也就不会使用到没法提供服务的服务商；同时，服务调用者也需在中心进行注册，把自己的需求告诉Eureka，然后Eureka会把负荷你需求的服务告诉你。</p>
+<p>​        Eureka实现了服务的自动注册、发现、状态监控。</p>
+<h4 id="1-2-编写EurekaServer"><a href="#1-2-编写EurekaServer" class="headerlink" title="1.2 编写EurekaServer"></a>1.2 编写EurekaServer</h4><p>​        创建module，以cloud-demo为父工程，添加依赖。</p>
+<ul>
+<li>子工程Eureka-server的pom.xml配置文件</li>
+</ul>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">project</span> <span class="attr">xmlns</span>=<span class="string">"http://maven.apache.org/POM/4.0.0"</span></span></span><br><span class="line"><span class="tag">         <span class="attr">xmlns:xsi</span>=<span class="string">"http://www.w3.org/2001/XMLSchema-instance"</span></span></span><br><span class="line"><span class="tag">         <span class="attr">xsi:schemaLocation</span>=<span class="string">"http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">parent</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>cloud-demo<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>cn.nedlee.demo<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">version</span>&gt;</span>1.0.0-SNAPSHOT<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">parent</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">modelVersion</span>&gt;</span>4.0.0<span class="tag">&lt;/<span class="name">modelVersion</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>eureka-server<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">dependencies</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- Eureka服务端 --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework.cloud<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-cloud-starter-netflix-eureka-server<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependencies</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">project</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>启动类</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">package</span> cn.nedlee;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> org.springframework.boot.SpringApplication;</span><br><span class="line"><span class="keyword">import</span> org.springframework.boot.autoconfigure.SpringBootApplication;</span><br><span class="line"><span class="keyword">import</span> org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;</span><br><span class="line"></span><br><span class="line"><span class="meta">@EnableEurekaServer</span><span class="comment">//注解提供Eureka服务</span></span><br><span class="line"><span class="meta">@SpringBootApplication</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">EurekaServer</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        SpringApplication.run(EurekaServer<span class="class">.<span class="keyword">class</span>)</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>application.yml配置文件</li>
+</ul>
+<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">server:</span></span><br><span class="line">  <span class="attr">port:</span> <span class="number">10086</span></span><br><span class="line"><span class="attr">spring:</span></span><br><span class="line">  <span class="attr">application:</span></span><br><span class="line">    <span class="attr">name:</span> <span class="string">eureka-server</span></span><br><span class="line"><span class="attr">eureka:</span></span><br><span class="line">  <span class="attr">client:</span></span><br><span class="line">    <span class="attr">service-url:</span></span><br><span class="line">      <span class="attr">defaultZone:</span> <span class="string">http://127.0.0.1:10086/eureka</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="二、将user-service注册到Eureka"><a href="#二、将user-service注册到Eureka" class="headerlink" title="二、将user-service注册到Eureka"></a>二、将user-service注册到Eureka</h3><p>​        注册服务，就是在服务上添加Eureka的客户端依赖，客户端代码会自动把服务注册到EurekaServer中。</p>
+<ul>
+<li>在user-service子工程的pom.xml中添加springcloud依赖</li>
+</ul>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">project</span> <span class="attr">xmlns</span>=<span class="string">"http://maven.apache.org/POM/4.0.0"</span></span></span><br><span class="line"><span class="tag">         <span class="attr">xmlns:xsi</span>=<span class="string">"http://www.w3.org/2001/XMLSchema-instance"</span></span></span><br><span class="line"><span class="tag">         <span class="attr">xsi:schemaLocation</span>=<span class="string">"http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">parent</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>cloud-demo<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>cn.nedlee.demo<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">version</span>&gt;</span>1.0.0-SNAPSHOT<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">parent</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">modelVersion</span>&gt;</span>4.0.0<span class="tag">&lt;/<span class="name">modelVersion</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>user-service<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">dependencies</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework.boot<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-boot-starter-web<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>mysql<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>mysql-connector-java<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>tk.mybatis<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>mapper-spring-boot-starter<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework.cloud<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-cloud-starter-netflix-eureka-client<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">dependencies</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">project</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>在启动类上开启Eureka客户端功能</p>
+</blockquote>
+<p>通过添加<code>@EnableDiscoveryClient</code>来开启Eureka客户端功能</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@SpringBootApplication</span></span><br><span class="line"><span class="meta">@EnableDiscoveryClient</span> <span class="comment">// 开启EurekaClient功能</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">UserServiceDemoApplication</span> </span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">		SpringApplication.run(UserServiceDemoApplication<span class="class">.<span class="keyword">class</span>, <span class="title">args</span>)</span>;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>application.yml文件配置</p>
+</blockquote>
+<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">server:</span></span><br><span class="line">  <span class="attr">port:</span> <span class="number">8081</span></span><br><span class="line"><span class="attr">spring:</span></span><br><span class="line">  <span class="attr">application:</span></span><br><span class="line">    <span class="attr">name:</span> <span class="string">user-service</span> <span class="comment"># 应用名称</span></span><br><span class="line">  <span class="attr">datasource:</span></span><br><span class="line">    <span class="attr">url:</span> <span class="string">jdbc:mysql://localhost:3306/leyou</span></span><br><span class="line">    <span class="attr">username:</span> <span class="string">root</span></span><br><span class="line">    <span class="attr">password:</span> <span class="number">873383</span></span><br><span class="line"><span class="attr">mybatis:</span></span><br><span class="line">  <span class="attr">type-aliases-package:</span> <span class="string">cn.nedlee.user.pojo</span></span><br><span class="line"><span class="attr">eureka:</span></span><br><span class="line">  <span class="attr">client:</span></span><br><span class="line">    <span class="attr">service-url:</span> <span class="comment"># EurekaServer地址</span></span><br><span class="line">      <span class="attr">defaultZone:</span> <span class="string">http://127.0.0.1:10086/eureka</span></span><br><span class="line">      <span class="attr">ip-address:</span> <span class="number">127.0</span><span class="number">.0</span><span class="number">.1</span> <span class="comment"># 指定自己的ip信息，不指定的话会自己寻找</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="三、消费者从Eureka获取服务"><a href="#三、消费者从Eureka获取服务" class="headerlink" title="三、消费者从Eureka获取服务"></a>三、消费者从Eureka获取服务</h3><p>​        方法与服务提供者类似，只需要在项目中添加EurekaClient依赖，就可以通过服务名称来获取信息了！</p>
+<ul>
+<li>在子工程consumer-demo的pom.xml中添加springcloud依赖</li>
+</ul>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">project</span> <span class="attr">xmlns</span>=<span class="string">"http://maven.apache.org/POM/4.0.0"</span></span></span><br><span class="line"><span class="tag">         <span class="attr">xmlns:xsi</span>=<span class="string">"http://www.w3.org/2001/XMLSchema-instance"</span></span></span><br><span class="line"><span class="tag">         <span class="attr">xsi:schemaLocation</span>=<span class="string">"http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">parent</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>cloud-demo<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>cn.nedlee.demo<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">version</span>&gt;</span>1.0.0-SNAPSHOT<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">parent</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">modelVersion</span>&gt;</span>4.0.0<span class="tag">&lt;/<span class="name">modelVersion</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>consumer-demo<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">dependencies</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework.boot<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-boot-starter-web<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework.cloud<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-cloud-starter-netflix-eureka-client<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">dependencies</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">project</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>在启动类开启Eureka客户端</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@SpringBootApplication</span></span><br><span class="line"><span class="meta">@EnableDiscoveryClient</span> <span class="comment">// 开启Eureka客户端</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">UserConsumerDemoApplication</span> </span>&#123;</span><br><span class="line">    <span class="meta">@Bean</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> RestTemplate <span class="title">restTemplate</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">new</span> RestTemplate(<span class="keyword">new</span> OkHttp3ClientHttpRequestFactory());</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        SpringApplication.run(UserConsumerDemoApplication<span class="class">.<span class="keyword">class</span>, <span class="title">args</span>)</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>修改application.yml配置文件</li>
+</ul>
+<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">server:</span></span><br><span class="line">  <span class="attr">port:</span> <span class="number">8088</span></span><br><span class="line"><span class="attr">spring:</span></span><br><span class="line">  <span class="attr">application:</span></span><br><span class="line">    <span class="attr">name:</span> <span class="string">consumer</span></span><br><span class="line"><span class="attr">eureka:</span></span><br><span class="line">  <span class="attr">client:</span></span><br><span class="line">    <span class="attr">service-url:</span></span><br><span class="line">      <span class="attr">defaultZone:</span> <span class="string">http://127.0.0.1:10086/eureka</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>修改代码，用DiscoveryClient类的方法，根据服务名称，获取服务实例。</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">package</span> cn.nedlee.consumer.web;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> cn.nedlee.consumer.pojo.User;</span><br><span class="line"><span class="keyword">import</span> org.springframework.beans.factory.annotation.Autowired;</span><br><span class="line"><span class="keyword">import</span> org.springframework.cloud.client.ServiceInstance;</span><br><span class="line"><span class="keyword">import</span> org.springframework.cloud.client.discovery.DiscoveryClient;</span><br><span class="line"><span class="keyword">import</span> org.springframework.web.bind.annotation.GetMapping;</span><br><span class="line"><span class="keyword">import</span> org.springframework.web.bind.annotation.PathVariable;</span><br><span class="line"><span class="keyword">import</span> org.springframework.web.bind.annotation.RequestMapping;</span><br><span class="line"><span class="keyword">import</span> org.springframework.web.bind.annotation.RestController;</span><br><span class="line"><span class="keyword">import</span> org.springframework.web.client.RestTemplate;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.util.List;</span><br><span class="line"></span><br><span class="line"><span class="meta">@RestController</span></span><br><span class="line"><span class="meta">@RequestMapping</span>(<span class="string">"consumer"</span>)</span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ConsumerController</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Autowired</span></span><br><span class="line">    <span class="keyword">private</span> RestTemplate restTemplate;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Autowired</span></span><br><span class="line">    <span class="keyword">private</span> DiscoveryClient discoveryClient;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@GetMapping</span>(<span class="string">"&#123;id&#125;"</span>)</span><br><span class="line">    <span class="function"><span class="keyword">public</span> User <span class="title">queryById</span><span class="params">(@PathVariable(<span class="string">"id"</span>)</span> Long id)</span>&#123;</span><br><span class="line">        <span class="comment">//根据服务id获取实例</span></span><br><span class="line">        List&lt;ServiceInstance&gt; instances = discoveryClient.getInstances(<span class="string">"user-service"</span>);</span><br><span class="line">        <span class="comment">//从实例中取出ip和端口</span></span><br><span class="line">        <span class="comment">// 因为只有一个User-Service,因此我们直接get(0)获取</span></span><br><span class="line">        ServiceInstance instance = instances.get(<span class="number">0</span>);</span><br><span class="line">        String url = <span class="string">"http://"</span>+instance.getHost() + <span class="string">":"</span> +instance.getPort()+<span class="string">"/user/"</span> + id;</span><br><span class="line">        User user = restTemplate.getForObject(url,User<span class="class">.<span class="keyword">class</span>)</span>;</span><br><span class="line">        <span class="keyword">return</span> user;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>​        至此，Eureka注册中心的功能以基本实现，需要注意的是Eureka注册中心也需要将自己注册到该中心，以@EurekaServer的方式开启服务，在中心的服务提供者与调用者都是以@EurekaDiscoveryClient的方式开启客户端，也可以使用@EurekaClient，但是前者更加通用，因为服务中心不止Eureka这一家。</p>
+]]></content>
+      <categories>
+        <category>框架学习、springboot与springcloud</category>
+      </categories>
+      <tags>
+        <tag>springcloud</tag>
       </tags>
   </entry>
   <entry>
